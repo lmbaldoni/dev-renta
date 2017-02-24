@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+     	  "./assets/custom-theme.scss"
       ],
       "scripts": ["../node_modules/hammerjs/hammer.min.js"],
       "environments": {
