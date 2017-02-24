@@ -1,0 +1,17 @@
+[24/Feb/2017 05:41:27] "GET /users/ HTTP/1.1" 200 9515
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[24/Feb/2017 05:41:27] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[24/Feb/2017 05:44:37] "GET /users/ HTTP/1.1" 200 154
+[24/Feb/2017 05:48:31] "GET /users/ HTTP/1.1" 200 154
+[24/Feb/2017 05:50:46] "GET /users/ HTTP/1.1" 200 154
+[24/Feb/2017 05:51:25] "GET /users/ HTTP/1.1" 200 154
+[24/Feb/2017 06:10:21] "GET /users/ HTTP/1.1" 200 154
