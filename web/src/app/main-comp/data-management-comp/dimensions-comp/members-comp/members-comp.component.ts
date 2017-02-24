@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+/*import {Member} from './model/member';*/
 
 @Component({
   selector: 'app-members-comp',
@@ -7,9 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembersCompComponent implements OnInit {
 
-  constructor() { }
+
+  private users: string[] = [];
+
+  constructor(private http: Http) {
+       
+
+    let url = "http://localhost:8000/"+"users/"; 
+
+    this.http.get(url).subscribe(
+      response => {
+        let data = response.json();
+        for (var i = 0; i < data.results.length; i++) {
+          let name = data.results[i].username;
+          this.users.push(name);
+        }
+      },
+      error => console.error(error)
+    );
+
+
+   }
 
   ngOnInit() {
   }
 
 }
+
+
+
+
+ 
