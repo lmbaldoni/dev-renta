@@ -1,5 +1,3 @@
-
-Crear un miembro
 <div> Numeric Code: <input type="text" [(ngModel)]="id" name="id"></div> 
 <div> Alphanumeric Code: <input type="text" [(ngModel)]="id_alfa" name="id_alfa"></div> 
 <div> Name: <input type="text" [(ngModel)]="name" name="Name"></div> 
@@ -13,4 +11,7 @@ Crear un miembro
 </div> 
 
 <h1>Usuarios
+
+<!--<input #user type="text"><button (click)="search(user.value); user.value=''">Buscar</button>>-->
+
 <p *ngFor="let names of users">{{names}}</p>
