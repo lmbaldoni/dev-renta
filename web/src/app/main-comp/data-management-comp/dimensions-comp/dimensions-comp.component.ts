@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MembersCompComponent } from './members-comp/members-comp.component';
 
 @Component({
   selector: 'app-dimensions-comp',

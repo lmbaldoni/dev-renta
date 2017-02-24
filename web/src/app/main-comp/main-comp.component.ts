@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataManagementCompComponent } from './data-management-comp/data-management-comp.component';
 
 @Component({
   selector: 'app-main-comp',
