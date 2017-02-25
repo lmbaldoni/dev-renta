@@ -1,23 +1,19 @@
 
-<header id="main-header">
-<app-header-comp></app-header-comp>
-</header><!-- / #main-header -->
-
-<h1>
-  {{title}}
-  
-</h1>
-
-
-<p>
-<app-main-comp></app-main-comp>
-</p>
-
-
-<p>
-<app-menu-comp></app-menu-comp>
-</p>
-
-<footer id="main-footer">
-		<app-foot-comp></app-foot-comp>
-</footer> <!-- / #main-footer -->
+<div id="header">
+    <app-header-comp></app-header-comp>
+</div>
+<div id="main">
+<div class="col-sm-3 col-md-3">
+    <app-menu-comp></app-menu-comp>
+</div>
+<div class="col-sm-9 col-md-9">
+    <div class="well">
+        <h1>
+            <app-main-comp></app-main-comp>
+        </h1>
+    </div>
+ </div>
+</div>
+ <div id="footer">
+    <app-foot-comp></app-foot-comp>
+</div>

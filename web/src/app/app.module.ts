@@ -14,6 +14,7 @@ import { DimensionsCompComponent } from './main-comp/data-management-comp/dimens
 import { MembersCompComponent } from './main-comp/data-management-comp/dimensions-comp/members-comp/members-comp.component';
 import { AttributesCompComponent } from './main-comp/data-management-comp/dimensions-comp/attributes-comp/attributes-comp.component';
 import { HierarchiesCompComponent } from './main-comp/data-management-comp/dimensions-comp/hierarchies-comp/hierarchies-comp.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HierarchiesCompComponent } from './main-comp/data-management-comp/dimen
     DimensionsCompComponent,
     MembersCompComponent,
     AttributesCompComponent,
-    HierarchiesCompComponent
+    HierarchiesCompComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
