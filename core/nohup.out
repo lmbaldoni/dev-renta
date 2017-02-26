@@ -1,0 +1,8 @@
+[26/Feb/2017 06:37:32] "GET /batchs/ HTTP/1.1" 200 268
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 26, 2017 - 06:36:31
+Django version 1.10.5, using settings 'core.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
