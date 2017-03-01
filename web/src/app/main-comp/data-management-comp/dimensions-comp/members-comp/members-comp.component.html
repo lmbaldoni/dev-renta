@@ -30,22 +30,21 @@
         <input type="text" class="form-control" placeholder="Description" aria-describedby="sizing-addon2"  [(ngModel)]="description" name="Description">
     </div>
 </div> 
-<div class="form-group">
+<form class="form-horizontal">
+
     <form class="form-vertical"> 
-        <div class="btn-group">
+        <div class="btn-group col-md-offset-2">
             <button type="button" class="btn btn-success">Enabled</button>
             <button type="button" class="btn btn-success">Disabled</button>
         </div>
     </form>
-</div>
-<div class="form-group ">
     <form class="form-vertical"> 
-        <div class="btn-group ">
+        <div class="btn-group col-md-offset-6">
             <button type="button" class="btn btn-success">Is Leaf</button>
             <button type="button" class="btn btn-success">Is Node</button>
         </div>
     </form>
-</div>
+</form>
 <div class="form-group">
     <button type="button" class="btn btn-primary btn-md" (click)="save()" >Save</button>
     <button type="button" class="btn btn-primary btn-md" (click)="cancel()" >Cancel</button>
