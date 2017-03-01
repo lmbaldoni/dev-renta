@@ -6,44 +6,55 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-th-list">
-                            </span>INFRASTRUCTURE</a>
+                            </span>Infrastructure</a>
                         </h4>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body">
                             <table class="table">
                                 <tr>
-                                    <li>
-                                        
-                                        <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#toggleDemo" class="panel-heading">
-                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a>Data Management</a> 
-                                        </a>
-                                        <div class="collapse" id="toggleDemo" style="height: 0px;">
-                                            <ul class="nav nav-list">
-                                            <li><a href="#"><span class="glyphicon glyphicon-file"></span>Members</a></li>
-                                            <li><a href="#"><span class="glyphicon glyphicon-paperclip"></span>Attributes</a></li>
-                                            <li><a href="#"><span class="glyphicon glyphicon-tasks"></span>Hierarchies</a></li>
-                                            <li><a href="#"><span class="glyphicon glyphicon-filter"></span>Filters</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    
+                                    <td>
+                                    <a data-toggle="collapse" data-target="#toggleData" data-parent="#toggleData" class="panel-heading">
+                                    <span class="glyphicon glyphicon-unchecked text-primary"></span><a>Data Management</a> 
+                                    </a>
+                                    <div class="collapse" id="toggleData" style="height: 0px;">
+                                        <ul class="nav nav-list">
+                                        <li><a href="#"><span class="text-success glyphicon glyphicon-file"></span>Members</a></li>
+                                        <li><a href="#"><span class="text-success glyphicon glyphicon-paperclip"></span>Attributes</a></li>
+                                        <li><a href="#"><span class="text-success glyphicon glyphicon-tasks"></span>Hierarchies</a></li>
+                                        <li><a href="#"><span class="text-success glyphicon glyphicon-filter"></span>Filters</a></li>
+                                        </ul>
+                                    </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-cog text-success"></span><a>Operations</a>
+                                      <td>
+                                    <a data-toggle="collapse" data-target="#toggleOper" data-parent="#toggleOper" class="panel-heading" id="Operations">
+                                    <span class="glyphicon glyphicon-cog text-primary"></span><a>Operations</a> 
+                                    </a>
+                                    <div class="collapse" id="toggleOper" style="height: 0px;">
+                                        <ul class="nav nav-list">
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-oil"></span>Batch Maintenance</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-play"></span>Batch Execution</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-check"></span>Batch Monitor</a></li>
+                                        </ul>
+                                    </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-file text-info"></span><a>Migration</a>
+                                    <a data-toggle="collapse" data-target="#toggleMigra" data-parent="#toggleMigra" class="panel-heading">
+                                    <span class="glyphicon glyphicon-transfer text-primary"></span><a>Migration</a> 
+                                    </a>
+                                    <div class="collapse" id="toggleMigra" style="height: 0px;">
+                                        <ul class="nav nav-list">
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-import"></span>Import</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-export"></span>Export</a></li>
+                                        </ul>
+                                    </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-comment text-success"></span><a>Administration</a>
-                                    </td>
-                                </tr>
+                                
                             </table>
                         </div>
                     </div>
@@ -60,52 +71,30 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <a>FTP</a>
+                                    <a data-toggle="collapse" data-target="#togglePFT" data-parent="#togglePFT" class="panel-heading">
+                                    <span class="glyphicon glyphicon-usd text-primary"></span><a>Profitability Management</a> 
+                                    </a>
+                                    <div class="collapse" id="togglePFT" style="height: 0px;">
+                                        <ul class="nav nav-list">
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-modal-window"></span>Allocation Specification</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-duplicate"></span>Allocation Model</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-list-alt"></span>Allocation History</a></li>
+                                        </ul>
+                                    </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <a>PFT</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a>ALM</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
-                            </span>Application Preferences</a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <a>Change Password</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a>Notifications</a> <span class="label label-info">5</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a>Import/Export</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-trash text-danger"></span><a class="text-danger">
-                                            Delete Account</a>
+                                   <td>
+                                    <a data-toggle="collapse" data-target="#toggleFTP" data-parent="#toggleFTP" class="panel-heading">
+                                    <span class="glyphicon glyphicon-stats text-primary"></span><a>Funds Transfer Pricing</a> 
+                                    </a>
+                                    <div class="collapse" id="toggleFTP" style="height: 0px;">
+                                        <ul class="nav nav-list">
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-blackboard"></span>Transfer Pricing Rules</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-indent-left"></span>Standard Process</a></li>
+                                            <li><a href="#"><span class="text-success glyphicon glyphicon-list-alt"></span>Rules History</a></li>
+                                        </ul>
+                                    </div>
                                     </td>
                                 </tr>
                             </table>
@@ -137,15 +126,22 @@
                                         <span class="glyphicon glyphicon-tasks"></span><a>Products</a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-shopping-cart"></span><a>Shopping Cart</a>
-                                    </td>
-                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
+                
+                 <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <span class="glyphicon glyphicon-user"  href="#"></span>Application Preferences
+                        </h4>
+                    </div>
+                    
+                </div>
+
+
+               
             </div>
         </div>
     </div>
