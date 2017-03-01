@@ -1,0 +1,11 @@
+.panel-info > .panel-heading {
+  color: white;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}
+.panel-info > .panel-body{
+  background-color: white;
+  border-color: white;
+  font-size: 15px;
+
+}
