@@ -9,3 +9,8 @@
   font-size: 15px;
 
 }
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  color: #ffffff !important;
+  background-color: seagreen !important;
+  border-color: #494F57 !important;
+}
