@@ -20,6 +20,11 @@
                 <li><a href="#">Product</a></li>
             </ul>
         </div>
+        
+        <div class="form-group col-sm-7">
+            <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-refresh pull-right" (click)="RefreshMember()" ></button>
+            <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search pull-right" (click)="SearchMember()" ></button>
+        </div>
 </div>
 <div  class="form-group">
     <label class="control-label col-sm-3" for="Code">Numeric Code</label>
@@ -62,17 +67,48 @@
     </form>
 </div>
 <div class="form-group col-sm-3">
-    <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search" (click)="SearchMember()" ></button>
     <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-plus" (click)="AddMember()" ></button>
     <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
+    <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-trash" (click)="RemoveMember()" ></button>
 </div> 
 </form>
   <!-- Table -->
-  <table class="table">
-Usuarios
-<p *ngFor="let names of users">{{names}}</p>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Alphanumeric Code</th>
+        <th>Numeric Code</th>
+        <th>Name</th>
+        <th>Is Leaf</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>Product1</td>
+        <td>No</td>
+      </tr>
+       <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>Product3</td>
+        <td>Yes</td>
+      </tr>
+        <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>Product3</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
   </table>
-</div>
+
+
+
+
+<p *ngFor="let names of users">{{names}}</p>
+ 
 
 
 
