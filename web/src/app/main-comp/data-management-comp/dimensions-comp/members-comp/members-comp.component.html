@@ -1,9 +1,26 @@
 
-<div class="panel panel-default" id="createMember">
+<div class="panel panel-default" id="searchMember" #searchMember *ngIf="SearchMemderbuttonWasClicked">
   <!-- Default panel contents -->
-  <div class="panel-heading">Create Member</div>
+  <div class="panel-heading">Search Member
+  </div>
   <div class="panel-body">
+
+ 
  <form class="form-horizontal">
+     
+<div class="form-group">
+    <div class="btn-group col-sm-3">
+            <button type="button" class="btn btn-primary dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dimensions <span class="caret"></span>
+            </button> 
+            <ul class="dropdown-menu  col-sm-3">
+                <li><a href="#">Banking</a></li>
+                <li><a href="#">Financial Element</a></li>
+                <li><a href="#">Organizational Unit</a></li>
+                <li><a href="#">Product</a></li>
+            </ul>
+        </div>
+</div>
 <div  class="form-group">
     <label class="control-label col-sm-3" for="Code">Numeric Code</label>
     <div class="col-sm-4">
@@ -45,72 +62,74 @@
     </form>
 </div>
 <div class="form-group col-sm-3">
-    <button type="button" class="btn btn-primary btn-md" (click)="save()" >Save</button>
-    <button type="button" class="btn btn-primary btn-md" (click)="cancel()" >Cancel</button>
+    <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search" (click)="SearchMember()" ></button>
+    <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-plus" (click)="AddMember()" ></button>
+    <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
 </div> 
 </form>
   <!-- Table -->
   <table class="table">
-
-  </table>
-</div>
-
-<div class="panel panel-default hidden" id="searchMember">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Create Member</div>
-  <div class="panel-body">
- <form class="form-horizontal">
-<div  class="form-group">
-    <label class="control-label col-sm-3" for="Code">Numeric Code</label>
-    <div class="col-sm-4">
-        <input type="text" class="form-control" placeholder="Numeric Code" [(ngModel)]="id" name="id">
-    </div> 
-</div> 
-
-<div class="form-group">
-    <label class="control-label col-sm-3" for="Alpha">Alphanumeric Code</label>
-    <div class="col-sm-4">
-        <input type="text" class="form-control" placeholder="Alphanumeric Code" aria-describedby="sizing-addon2" [(ngModel)]="id_alfa" name="id_alfa">
-    </div>
-</div> 
-    
-<div class="form-group">
-    <label class="control-label col-sm-3" for="Name">Name</label>
-    <div class="col-sm-7">
-        <input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2"  [(ngModel)]="name" name="Name">
-    </div>
-</div> 
-<div class="form-group">
-    <label class="control-label col-sm-3" for="Desc">Description</label>
-    <div class="col-sm-7">
-        <input type="text" class="form-control" placeholder="Description" aria-describedby="sizing-addon2"  [(ngModel)]="description" name="Description">
-    </div>
-</div> 
-<div class="form-group">
-
-    <form class="form-vertical col-sm-3"> 
-        <label class="checkbox-inline">
-            <input checked data-toggle="toggle" type="checkbox"> Enabled
-        </label>
-    </form>
-    <form class="form-vertical col-sm-6"> 
-        <div class="btn-group">
-            <button type="button" class="btn btn-default">Is Leaf</button>
-            <button type="button" class="btn btn-default">Is Node</button>
-        </div>
-    </form>
-</div>
-<div class="form-group col-sm-3">
-    <button type="button" class="btn btn-primary btn-md" (click)="save()" >Save</button>
-    <button type="button" class="btn btn-primary btn-md" (click)="cancel()" >Cancel</button>
-</div> 
-</form>
-  <!-- Table -->
-  <table class="table">
-
-  </table>
-</div>
-
-
 Usuarios
 <p *ngFor="let names of users">{{names}}</p>
+  </table>
+</div>
+
+
+
+
+
+<div class="panel panel-default" id="createMember" #createMember *ngIf="CreateMemderbuttonWasClicked">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Create Member</div>
+  <div class="panel-body">
+ <form class="form-horizontal">
+<div  class="form-group">
+    <label class="control-label col-sm-3" for="Code">Numeric Code</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" placeholder="Numeric Code" [(ngModel)]="id" name="id">
+    </div> 
+</div> 
+
+<div class="form-group">
+    <label class="control-label col-sm-3" for="Alpha">Alphanumeric Code</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" placeholder="Alphanumeric Code" aria-describedby="sizing-addon2" [(ngModel)]="id_alfa" name="id_alfa">
+    </div>
+</div> 
+    
+<div class="form-group">
+    <label class="control-label col-sm-3" for="Name">Name</label>
+    <div class="col-sm-7">
+        <input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2"  [(ngModel)]="name" name="Name">
+    </div>
+</div> 
+<div class="form-group">
+    <label class="control-label col-sm-3" for="Desc">Description</label>
+    <div class="col-sm-7">
+        <input type="text" class="form-control" placeholder="Description" aria-describedby="sizing-addon2"  [(ngModel)]="description" name="Description">
+    </div>
+</div> 
+<div class="form-group">
+
+    <form class="form-vertical col-sm-3"> 
+        <label class="checkbox-inline">
+            <input checked data-toggle="toggle" type="checkbox"> Enabled
+        </label>
+    </form>
+    <form class="form-vertical col-sm-6"> 
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Is Leaf</button>
+            <button type="button" class="btn btn-default">Is Node</button>
+        </div>
+    </form>
+</div>
+<div class="form-group col-sm-3">
+    <button type="button" class="btn btn-primary btn-md" (click)="save()" >Save</button>
+    <button type="button" class="btn btn-primary btn-md" (click)="setButtonClicked(true)" >Cancel</button>
+</div> 
+</form>
+ 
+
+<button class="filter-btn" (click)="setButtonClicked(true)">Category</button>
+<label #filter> hola </label>
+</div>

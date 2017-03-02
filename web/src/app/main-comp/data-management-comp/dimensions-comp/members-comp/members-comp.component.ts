@@ -31,6 +31,14 @@ export class MembersCompComponent implements OnInit {
 
    }
 
+   CreateMemderbuttonWasClicked: boolean = false;
+   SearchMemderbuttonWasClicked: boolean = true;
+
+  setButtonClicked(clicked: boolean) {
+      this.CreateMemderbuttonWasClicked = clicked;
+      this.SearchMemderbuttonWasClicked = !clicked;
+  }
+
   ngOnInit() {
   }
 
