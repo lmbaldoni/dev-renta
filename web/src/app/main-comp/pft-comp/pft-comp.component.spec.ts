@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { PftComponent } from './pft.component';
+import { PftCompComponent } from './pft-comp.component';
 
-describe('PftComponent', () => {
-  let component: PftComponent;
-  let fixture: ComponentFixture<PftComponent>;
+describe('PftCompComponent', () => {
+  let component: PftCompComponent;
+  let fixture: ComponentFixture<PftCompComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PftComponent ]
+      declarations: [ PftCompComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PftComponent);
+    fixture = TestBed.createComponent(PftCompComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

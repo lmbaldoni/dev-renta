@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataManagementCompComponent } from './data-management-comp/data-management-comp.component';
+import { PftCompComponent } from './pft-comp/pft-comp.component';
 
 @Component({
   selector: 'app-main-comp',

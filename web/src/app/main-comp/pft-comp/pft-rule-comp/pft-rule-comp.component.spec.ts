@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { PftruleComponent } from './pftrule.component';
+import { PftRuleCompComponent } from './pft-rule-comp.component';
 
-describe('PftruleComponent', () => {
-  let component: PftruleComponent;
-  let fixture: ComponentFixture<PftruleComponent>;
+describe('PftRuleCompComponent', () => {
+  let component: PftRuleCompComponent;
+  let fixture: ComponentFixture<PftRuleCompComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PftruleComponent ]
+      declarations: [ PftRuleCompComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PftruleComponent);
+    fixture = TestBed.createComponent(PftRuleCompComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
