@@ -113,11 +113,13 @@
   <!-- Default panel contents -->
     <div class="panel-heading">Create Member</div>
     <div class="panel-body">
-        <form class="form-horizontal">
+        <form class="form-horizontal" data-toggle="validator">
             <div  class="form-group">
                 <label class="control-label col-sm-3" for="Code">Numeric Code</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" placeholder="Numeric Code" [(ngModel)]="id" name="id">
+                    <input type="text" class="form-control"  pattern="0-9" data-maxlength="20" 
+                    data-error="numeric code invalid"   placeholder="Numeric Code" [(ngModel)]="id" name="id" requerid>
+                    <div class="help-block with-errors"></div>
                 </div> 
             </div> 
 
