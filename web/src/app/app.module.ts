@@ -15,6 +15,8 @@ import { MembersCompComponent } from './main-comp/data-management-comp/dimension
 import { AttributesCompComponent } from './main-comp/data-management-comp/dimensions-comp/attributes-comp/attributes-comp.component';
 import { HierarchiesCompComponent } from './main-comp/data-management-comp/dimensions-comp/hierarchies-comp/hierarchies-comp.component';
 import { LoginComponent } from './login/login.component';
+import { PftComponent } from './main-comp/pft/pft.component';
+import { PftruleComponent } from './main-comp/pft/pftrule/pftrule.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     MembersCompComponent,
     AttributesCompComponent,
     HierarchiesCompComponent,
-    LoginComponent
+    LoginComponent,
+    PftComponent,
+    PftruleComponent
   ],
   imports: [
     BrowserModule,
