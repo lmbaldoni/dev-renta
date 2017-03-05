@@ -36,6 +36,10 @@
     border-bottom-color: transparent;
 }
 
+.responsive-width {
+    font-size: 12px;
+}
+
 span.round-tab {
     width: 70px;
     height: 70px;
@@ -117,11 +121,22 @@ span.round-tab:hover {
 .step1 .row {
     margin-bottom:10px;
 }
-.step_21 {
+.step1 {
     border :1px solid #eee;
     border-radius:5px;
     padding:10px;
+    margin-bottom:10px;
 }
+.step2 {
+    border :1px solid #eee;
+    border-radius:5px;
+    padding:10px;
+    margin-bottom:10px;
+}
+.step2 .row {
+    margin-bottom:10px;
+}
+
 .step33 {
     border:1px solid #ccc;
     border-radius:5px;
