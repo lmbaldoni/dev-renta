@@ -72,21 +72,25 @@
                             </div>
                         </div>
                         <div class="row">
-                         <div class="col-md-4 col-xs-3">
-                                    <p align="right">FOLDER NAME</p>
-                                </div>
-                                <div class="col-md-8 col-xs-9">
-                                    <div class="row">
-                                        <div class="col-md-4 col-xs-4 wdth">
-                                            <select name="visa_status" id="visa_status" class="dropselectsec1">
-                                                <option value="">FOLDER NAME</option>
-                                                <option value="1">MAIN</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                            <p align="right">FOLDER NAME</p>
+                            <select class="selectpicker" data-style="btn-info">
+                                <option title="Folder 1">MAIN</option>
+                                <option title="Folder 2">TEST</option>
+                            </select>
+
+                            <div class="btn-group">
+                                <button type="button" class="form-control btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Folder Name <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a>Main</a></li>
+                                    <li><a>Test</a></li>
+                                </ul>
+                            </div>
+                       
+                             
                         </div>
-                           <div class="radio">
+                        <div class="radio">
                             <label>
                                 <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
                                Constant
