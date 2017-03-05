@@ -45,7 +45,7 @@
                       <li role="presentation" class="disabled">
                         <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
                             <span class="round-tab">
-                                <i class="glyphicon glyphicon-ok"></i>
+                                <i class="glyphicon glyphicon-share"></i>
                             </span>
                                 <label class="control-label col-md-offset-12">OutPut</label>
                         </a>
@@ -56,7 +56,94 @@
             <form role="form">
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="step1">
+                        <!--configuracion pagina initial-->
                         <div class="step1">
+                            <div class="row">
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1">Rule Name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" maxlength="20" placeholder="Rule Name">
+                            </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1">Description name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Description name">
+                            </div>
+                        </div>
+                        <div class="row">
+                         <div class="col-md-4 col-xs-3">
+                                    <p align="right">FOLDER NAME</p>
+                                </div>
+                                <div class="col-md-8 col-xs-9">
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select name="visa_status" id="visa_status" class="dropselectsec1">
+                                                <option value="">FOLDER NAME</option>
+                                                <option value="1">MAIN</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                           <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Constant
+                            </label>
+                              <label for="exampleInputEmail1"> Allocates a constant value to a destination. </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Static Driver
+                            </label>
+                              <label for="exampleInputEmail1">Performs simple factor calculations.</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Leaf
+                            </label>
+                              <label for="exampleInputEmail1">Performs mathematical operations between two groups of data in the ledger table where the two sets differ by the value in a single selected dimension. The source and the By Leaf rows match exactly except for the value in a single dimension.</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Field
+                            </label>
+                              <label for="exampleInputEmail1">Performs mathematical operations across a row between two or more columns in Instrument or Transaction tables.</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Dynamic Driver
+                            </label>
+                              <label for="exampleInputEmail1">Distributes a balance amount specified by the initial data source condition to a set of specified target rows on a percent or percent-to-total basis. </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Static Driver Table
+                            </label>
+                              <label for="exampleInputEmail1">Uses the dimensionality of the source rows to join with data in a table or set of values. These rules perform either a mathematical operation with the returned value or a distribution and dimensional reclassification of the results. </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                               Lookup Driver Table 
+                            </label>
+                              <label for="exampleInputEmail1">Processes source data by adding, multiplying, subtracting, or dividing by one or more statistics or lookup values stored in a user-defined lookup table.</label>
+                        </div>
+                     
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <!--configuracion SOURCE-->
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <div class="step2">
                             <div class="row">
                             <div class="col-md-6">
                                 <label for="exampleInputEmail1">First Name</label>
@@ -99,22 +186,7 @@
                             <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" role="tabpanel" id="step2">
-                        <div class="step2">
-                            <div class="step_21">
-                                <div class="row">
-                                   
-                                </div>
-                            </div>
-                            <div class="step-22">
-                            
-                            </div>
-                        </div>
-                        <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                        </ul>
-                    </div>
+                    <!--configuracion OPERATOR-->
                     <div class="tab-pane" role="tabpanel" id="step3">
                         <div class="step33">
                         <h5>Basic Details</h5>
@@ -294,6 +366,7 @@
                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
                         </ul>
                     </div>
+                    <!--configuracion DRIVER-->
                     <div class="tab-pane" role="tabpanel" id="step4">
                         <div class="step44">
                             <h5>Step 4</h5>
@@ -301,7 +374,7 @@
                           
                         </div>
                     </div>
-                   
+                   <!--configuracion OUTPUT-->
                     <div class="tab-pane" role="tabpanel" id="complete">
                         <div class="step55">
                             <h5>Completed</h5>
