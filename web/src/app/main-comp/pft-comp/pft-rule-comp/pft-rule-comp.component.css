@@ -1,8 +1,9 @@
-@import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css")
+@import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
 
 .wizard {
     margin: 10px auto;
     background: #fff;
+    font-size: 12px;
 }
 
     .wizard .nav-tabs {
