@@ -166,32 +166,63 @@
                                      
                     <div class="tab-pane" role="tabpanel" id="step2">
                         <div class="step2">
+                            <!--Sector del Allocation Rule Definition-->
                             <form class="form-horizontal">
                                 <div class="row">
-                                    <div class="col-md-4" style="display: block;">
+                                    <div class="col-md-6" style="display: block;">
                                         <div class="form-group" style="position: static;">
                                             <label for="input-id-3" class="control-label col-sm-4">Rule Name</label>
-                                            <div class="col-sm-8 pull-right">    
+                                            <div class="col-sm-6">    
                                                 <input type="text" class="form-control input-sm" id="input-id-3" placeholder="Rule Name">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-4 control-label" for="folder">Folder Name</label>
-                                                <div class="col-sm-8 pull-right">
+                                            <div class="form-group" style="position: static;">
+                                                <label for="input-id-4" class="control-label col-sm-4">Rule Description</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-sm" id="input-id-4" placeholder="Rule Description">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="display: block;">
+                                        <label class="col-sm-3 control-label" for="folder">Folder Name</label>
+                                                <div class="col-sm-4">
                                                     <select id="folder" name="folder" class="form-control">
                                                     <option value="1">Carga</option>
                                                     <option value="2">Procesamiento</option>
                                                     </select>
                                                 </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                            <hr class="divider">
+
+                            <!--sector del for-->
+                            <form class="form-horizontal">
+                                <div class="row">
+                                    <div class="col-md-6" style="display: block;">
+                                        <div class="form-group" style="position: static;">
+                                            <label class="col-sm-4 control-label" for="folder">Table Name</label>
+                                                <div class="col-sm-6">
+                                                    <select id="folder" name="tableName" class="form-control">
+                                                    <option value="1">LEDGER_STAT</option>
+                                                    <option value="2">FSI_D_CASA</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="folder">Column Name</label>
+                                                <div class="col-sm-6">
+                                                    <select id="folder" name="ColumnName" class="form-control">
+                                                    <option value="1">TRANSFER RATE</option>
+                                                    <option value="2">AMOUNT</option>
+                                                    </select>
+                                                </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6" style="display: block;">
-                                        <div class="form-group" style="position: static;">
-                                            <label for="input-id-4" class="control-label col-sm-3">Rule Description</label>
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control input-sm" id="input-id-4" placeholder="Rule Description">
-                                            </div>
-                                         </div>
                                         <div class="form-group">
                                             <label for="input-id-4" class="control-label col-sm-3">Column/Expression</label>
                                             <div class="btn-group col-sm-8">
@@ -202,6 +233,71 @@
                                     </div>
                                 </div>
                             </form>
+                            <hr class="divider">
+
+                            <!--sector allocation Source-->
+
+                             <form class="form-horizontal">
+                                <div class="row" id="rowSource">
+                                    <div class="col-md-6" style="display: block;">
+                                        <div class="form-group" style="position: static;">
+                                            <label class="col-sm-4 control-label" for="folder">Financial Element</label>
+                                                <div class="col-sm-6">
+                                                    <select id="folder" name="tableName" class="form-control" >
+                                                    <option value="1">100010</option>
+                                                    <option value="2">100011</option>
+                                                    </select>
+                                                </div>
+                                             <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search"></button>
+                                        </div>
+                                       <div class="form-group" style="position: static;">
+                                            <label class="col-sm-4 control-label" for="folder">Organizational Unit</label>
+                                                <div class="col-sm-6">
+                                                    <select id="folder" name="tableName" class="form-control" >
+                                                    <option value="1">100010</option>
+                                                    <option value="2">100011</option>
+                                                    </select>
+                                                </div>
+                                             <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search"></button>
+                                        </div>
+                                        <div class="form-group" style="position: static;">
+                                            <label class="col-sm-4 control-label" for="folder">General Ledger Account</label>
+                                                <div class="col-sm-6">
+                                                    <select id="folder" name="tableName" class="form-control" >
+                                                    <option value="1">100010</option>
+                                                    <option value="2">100011</option>
+                                                    </select>
+                                                </div>
+                                             <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search"></button>
+                                        </div>
+                                        <div class="form-group" style="position: static;">
+                                            <label class="col-sm-4 control-label" for="folder">Product</label>
+                                                <div class="col-sm-6">
+                                                    <select id="folder" name="tableName" class="form-control" >
+                                                    <option value="1">100010</option>
+                                                    <option value="2">100011</option>
+                                                    </select>
+                                                </div>
+                                             <button type="button" class="btn btn-primary btn-md glyphicon glyphicon-search"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="display: block;">
+                                        <div class="form-group" style="position: static;">
+                                            <label for="input-id-4" class="control-label col-sm-4 pull-left">Financial Element 100010</label>
+                                        </div>
+                                        <div class="form-group" style="position: static;">
+                                            <label for="input-id-4" class="control-label col-sm-4 pull-left">Territorio Norte 560</label>
+                                        </div>
+                                        <div class="form-group" style="position: static;">
+                                            <label for="input-id-4" class="control-label col-sm-4 pull-left">Cartera 400</label>
+                                        </div>
+                                        <div class="form-group" style="position: static;">
+                                            <label for="input-id-4" class="control-label col-sm-4 pull-left">Producto XP</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
                        </div>
                     </div>
                     <!--configuracion OPERATOR-->
