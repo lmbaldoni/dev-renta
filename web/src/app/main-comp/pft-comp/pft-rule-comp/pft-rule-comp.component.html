@@ -165,27 +165,26 @@
                     <!--configuracion SOURCE-->
                                      
                     <div class="tab-pane" role="tabpanel" id="step2">
-                        <div class="step2">
+                        <div class="step22">
+                        <h6 class="text-primary">Allocation Rule Definition</h6>
                             <!--Sector del Allocation Rule Definition-->
                             <form class="form-horizontal">
                                 <div class="row">
-                                    <div class="col-md-6" style="display: block;">
+                                    <div class="col-sm-6" style="display: block;">
                                         <div class="form-group" style="position: static;">
                                             <label for="input-id-3" class="control-label col-sm-4">Rule Name</label>
                                             <div class="col-sm-6">    
                                                 <input type="text" class="form-control input-sm" id="input-id-3" placeholder="Rule Name">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="form-group" style="position: static;">
-                                                <label for="input-id-4" class="control-label col-sm-4">Rule Description</label>
-                                                    <div class="col-sm-6">
+                                        <div class="form-group" style="position: static;">
+                                                <label for="input-id-3" class="control-label col-sm-4">Rule Description</label>
+                                                    <div class="col-sm-8  pull-right">
                                                         <input type="text" class="form-control input-sm" id="input-id-4" placeholder="Rule Description">
                                                     </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6" style="display: block;">
+                                    <div class="col-sm-6" style="display: block;">
                                         <label class="col-sm-3 control-label" for="folder">Folder Name</label>
                                                 <div class="col-sm-4">
                                                     <select id="folder" name="folder" class="form-control">
@@ -198,11 +197,11 @@
                             </form>
                             
                             <hr class="divider">
-
+                            <h6 class="text-primary">For</h6>
                             <!--sector del for-->
                             <form class="form-horizontal">
                                 <div class="row">
-                                    <div class="col-md-6" style="display: block;">
+                                    <div class="col-sm-6" style="display: block;">
                                         <div class="form-group" style="position: static;">
                                             <label class="col-sm-4 control-label" for="folder">Table Name</label>
                                                 <div class="col-sm-6">
@@ -235,8 +234,91 @@
                             </form>
                             <hr class="divider">
 
-                            <!--sector allocation Source-->
+                             <!--sector allocation source con una tabla-->
 
+                             <table class="table table-striped">
+                                <thead><tr><th>Dimension</th><th>Value</th><th>Description</th></tr></thead>
+                                <tbody>
+                                <tr><td>Financial Element</td><td>
+                                    <div class="form-group" style="position: static;">
+                                                <div class="col-sm-8">
+                                                    <select id="folder" name="tableName" class="btn btn-default btn-sm" >
+                                                    <option value="1">3080910</option>
+                                                    <option value="2">3080911</option>
+                                                    <option value="2">ALL</option>
+                                                    </select>
+                                                </div>
+                                             <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-search"></button>
+                                        </div>
+                                    
+                                </td><td>Financial Element For Leaf. 3080910: Gasto Corporativo 80910</td></tr>
+                                <tr><td>Organizational Unit</td><td>..</td><td>..</td></tr>
+                                <tr><td>General Ledger Account</td><td>..</td><td>..</td></tr>
+                                <tr><td>Product</td><td>..</td><td>..</td></tr>
+                                <tr><td>Banking</td><td>..</td><td>..</td></tr>
+                                <tr><td>Currency</td><td>..</td><td>..</td></tr>
+                            </table>
+
+                            <!--prueba boton-->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">Dimensions <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    
+                                        <li><a href="#">Banking</a></li>
+                                        <li><a href="#">Financial Element</a></li>
+                                        <li><a href="#">Organizational Unit</a></li>
+                                        <li><a href="#">Product</a></li>
+                                </ul>
+                            </div>
+                            <!--tabla-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading ">
+                                        <h6>
+                                            Allocation Source
+                                        </h6>
+                                        </div>
+                                        <table class="table table-fixed">
+                                        <thead>
+                                            <tr>
+                                            <th class="col-xs-2">Dimension</th><th class="col-xs-4">Value</th><th class="col-xs-6">Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-xs-2">Financial Element</td>
+                                                <td class="col-xs-4">
+                                                    <select id="folder" name="tableName" class="btn btn-default btn-xs col-xs-4" >
+                                                            <option value="1">3080910</option>
+                                                            <option value="2">3080911</option>
+                                                            <option value="3">ALL</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-search"></button>
+                                                </td>
+                                                <td class="col-xs-4">Financial Element For Leaf. 3080910</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-2">Financial Element</td>
+                                                <td class="col-xs-4">
+                                                    <select id="folder" name="tableName" class="btn btn-default btn-xs col-xs-4" >
+                                                            <option value="1">3080910</option>
+                                                            <option value="2">3080911</option>
+                                                            <option value="3">ALL</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-search"></button>
+                                                </td>
+                                                <td class="col-xs-6">Financial Element For Leaf. 3080910</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--sector allocation Source-->
+                            <h6 class="text-primary">Allocation Source</h6>
                              <form class="form-horizontal">
                                 <div class="row" id="rowSource">
                                     <div class="col-md-6" style="display: block;">

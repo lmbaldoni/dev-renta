@@ -8,7 +8,7 @@
 
     .wizard .nav-tabs {
         position: relative;
-        margin: 40px auto;
+        margin: 20px auto;
         margin-bottom: 0;
         border-bottom-color: #e0e0e0;
     }
@@ -101,7 +101,7 @@ span.round-tab:hover {
 .wizard .nav-tabs > li a {
     width: 70px;
     height: 70px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 100%;
     padding: 0;
 }
@@ -127,18 +127,20 @@ span.round-tab:hover {
     padding:10px;
     margin-bottom:10px;
 }
-.step2 {
+.step22 {
     border :1px solid #eee;
     border-radius:5px;
     padding:5px;
     margin-bottom:5px;
 }
-
+.step22 .row {
+    margin-bottom:5px;
+}
 
 .step33 {
     border:1px solid #ccc;
     border-radius:5px;
-    padding-left:10px;
+    padding-left:50px;
     margin-bottom:10px;
 }
 .dropselectsec {
@@ -270,4 +272,22 @@ span.round-tab:hover {
         position: absolute;
         left: 35%;
     }
+}
+
+
+/*Disenio de la tabla de allocation source*/
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 135px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
 }
