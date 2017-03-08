@@ -293,6 +293,9 @@ span.round-tab:hover {
 }
 
 /*diseio de la tabla final deallocation source*/
+.table-striped thead {
+  width: 97%;
+}
 .table-striped tbody {
   height: 55px;
   overflow-y: auto;
