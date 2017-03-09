@@ -58,109 +58,124 @@
                     <div class="tab-pane active" role="tabpanel" id="step1">
                         <!--configuracion pagina initial-->
                         <div class="step1">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <label for="exampleInputEmail1">Rule Name</label>
-                                    <input type="email" class="form-control input-sm" id="exampleInputEmail1" maxlength="20" placeholder="Rule Name">
+                             <h6 class="panel-title">Allocation Rule Definition</h6>
+                                <div class="panel panel-default">
+                                        <!--<div class="panel-heading panel-heading-xs">
+                                        </div>-->
+                                        <div class="panel-body panel-body-xs">
+                                            <form class="form-horizontal">
+                                                <div class="row">
+                                                    <div class="col-sm-6" style="display: block;">
+                                                        <div class="form-group" style="position: static;">
+                                                            <label for="input-id-3" class="control-label col-sm-4">Rule Name</label>
+                                                            <div class="col-sm-6">    
+                                                                <input type="text" class="form-control input-sm" id="input-id-3" placeholder="Rule Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="position: static;">
+                                                                <label for="input-id-3" class="control-label col-sm-4">Rule Description</label>
+                                                                    <div class="col-sm-8  pull-right">
+                                                                        <input type="text" class="form-control input-sm" id="input-id-4" placeholder="Rule Description">
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6" style="display: block;">
+                                                        <label class="col-sm-3 control-label" for="folder">Folder Name</label>
+                                                                <div class="col-sm-4">
+                                                                    <select id="folder" name="folder" class="form-control">
+                                                                    <option value="1">Carga</option>
+                                                                    <option value="2">Procesamiento</option>
+                                                                    </select>
+                                                                </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                 </div>
-                                <div class="col-xs-8">
-                                    <label for="exampleInputEmail1">Description name</label>
-                                    <input type="email" class="form-control input-sm" id="exampleInputEmail1" placeholder="Description name">
-                                </div>
-                             </div>
-                      
-                        <div class="row">
-                           
-                            <div class="btn-group col-xs-2">
-                                <button type="button" class="form-control btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
-                                    Folder Name <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a>Main</a></li>
-                                    <li><a>Test</a></li>
-                                </ul>
-                            </div>
-                       
-                             
-                        </div>
-                        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                        <thead>
-                        <tr>
-                            <th>Allocation Type</th>
-                            <th>Description</th>
-                        </tr>
-                        </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
-                                        Constant
-                                    </td>
-                                    <td>
-                                        Allocates a constant value to a destination.
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td>
-                                        <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
-                                        Static Driver
-                                    </td>
-                                    <td>
-                                        Performs simple factor calculations.
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td>
-                                        <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
-                                        Leaf
-                                    </td>
-                                    <td>
-                                        Performs mathematical operations between two groups of data in the ledger table where the two sets differ by the value in a single selected dimension. The source and the By Leaf rows match exactly except for the value in a single dimension.
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td>
-                                        <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
-                                        Field
-                                    </td>
-                                    <td>
-                                        Performs mathematical operations across a row between two or more columns in Instrument or Transaction tables.
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td>
-                                        <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
-                                        Dynamic Driver
-                                    </td>
-                                    <td>
-                                        Distributes a balance amount specified by the initial data source condition to a set of specified target rows on a percent or percent-to-total basis.
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td>
-                                        <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
-                                        Static Driver Table
-                                    </td>
-                                    <td>
-                                        Uses the dimensionality of the source rows to join with data in a table or set of values. These rules perform either a mathematical operation with the returned value or a distribution and dimensional reclassification of the results.
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td>
-                                         <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
-                                         Lookup Driver Table
-                                    </td>
-                                    <td>
-                                        Processes source data by adding, multiplying, subtracting, or dividing by one or more statistics or lookup values stored in a user-defined lookup table.
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                            
-                                </div>
+                                 <h6 class="panel-title">Allocation Type</h6>
+                                  <div class="panel panel-default">
+                                        <!--<div class="panel-heading panel-heading-xs">
+                                        </div>-->
+                                        <div class="panel-body panel-body-xs">
+                                            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                            <tr>
+                                                <th class="col-sm-1">Allocation Type</th>
+                                                <th class="col-sm-6">Description</th>
+                                            </tr>
+                                            </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+                                                            Constant
+                                                        </td>
+                                                        <td>
+                                                            Allocates a constant value to a destination.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
+                                                            Static Driver
+                                                        </td>
+                                                        <td>
+                                                            Performs simple factor calculations.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
+                                                            Leaf
+                                                        </td>
+                                                        <td>
+                                                            Performs mathematical operations between two groups of data in the ledger table where the two sets differ by the value in a single selected dimension. The source and the By Leaf rows match exactly except for the value in a single dimension.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
+                                                            Field
+                                                        </td>
+                                                        <td>
+                                                            Performs mathematical operations across a row between two or more columns in Instrument or Transaction tables.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
+                                                            Dynamic Driver
+                                                        </td>
+                                                        <td>
+                                                            Distributes a balance amount specified by the initial data source condition to a set of specified target rows on a percent or percent-to-total basis.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
+                                                            Static Driver Table
+                                                        </td>
+                                                        <td>
+                                                            Uses the dimensionality of the source rows to join with data in a table or set of values. These rules perform either a mathematical operation with the returned value or a distribution and dimensional reclassification of the results.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" >
+                                                            Lookup Driver Table
+                                                        </td>
+                                                        <td>
+                                                            Processes source data by adding, multiplying, subtracting, or dividing by one or more statistics or lookup values stored in a user-defined lookup table.
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 <ul class="list-inline pull-right">
                                     <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
                                 </ul>
+                    </div>
                     </div>
                     <!--configuracion SOURCE-->
                                      
@@ -732,6 +747,61 @@
                                                 </td><td>MXN</td></tr>
                                                 </tbody>
                                             </table>
+                                        </div>
+                                  </div>
+
+                                   <h6 class="panel-title">Other Filters</h6>
+                                  <div class="panel panel-default">
+                                        <!--<div class="panel-heading panel-heading-xs">
+                                        </div>-->
+                                        <div class="panel-body panel-body-xs">
+                                            <form class="form-horizontal">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-xs-2">
+                                                    <p align="left">Filter Type</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-xs-3">
+                                                        <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No Filter
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Data Filter
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Group Filter
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Attribute Filter
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row" id="rowSource">
+                                                    <div class="col-md-6" style="display: block;">
+                                                        
+                                                            <label class="col-sm-4 control-label" for="folder">Folder Name</label>
+                                                                <div class="col-sm-6">
+                                                                    <select id="folder" name="tableName" class="form-control" >
+                                                                    <option value="1">Carga</option>
+                                                                    <option value="2">Procesamiento</option>
+                                                                    </select>
+                                                                </div>
+                                                            
+                                                        
+                                                    </div>
+                                                    <div class="col-md-6" style="display: block;">
+                                                        
+                                                            <label class="col-sm-4 control-label" for="folder">filter name</label>
+                                                                <div class="col-sm-6">
+                                                                    <select id="folder" name="tableName" class="form-control" >
+                                                                    <option value="1">100010</option>
+                                                                    <option value="2">100011</option>
+                                                                    </select>
+                                                                </div>
+                                                            
+                                                        
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                   </div>
                         </div>
