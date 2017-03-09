@@ -137,9 +137,7 @@ span.round-tab:hover {
 .wizard h3 {
     margin-top: 0;
 }
-.step1 .row {
-    margin-bottom:10px;
-}
+
 .step1 {
     border :1px solid #eee;
     border-radius:5px;
