@@ -1,5 +1,19 @@
 @import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
 
+/*Ingresados por mi*/
+.panel .panel-heading {
+    height: 20px;
+    padding:0;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.panel .panel-body {
+    padding: 3px;
+}
+
+
+
 .wizard {
     margin: 10px auto;
     background: #fff;
@@ -150,6 +164,8 @@ span.round-tab:hover {
     padding:10px;
     margin-bottom:10px;
 }
+
+
 
 .dropselectsec {
     width: 68%;
