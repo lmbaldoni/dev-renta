@@ -16,13 +16,20 @@
 .panel .panel-body .box .row .control-label{
     padding: 2 2px 2 2px;
     padding-left: 15px;
-    padding-top: 5px;
+    padding-top: 1px;
 }
 
 .panel .panel-body .box .row {
     padding: 2 2px 2 2px;
     padding-left: 48px;
     padding-top: 2px;
+}
+
+.panel {
+    margin-top: 3px; 
+    margin-bottom: 3px; 
+    padding-top: 3px; 
+    padding-bottom:3px;
 }
 
 table th, table td{
@@ -34,23 +41,66 @@ table th, table td{
 }
 
 .step1 {
-    border :1px solid #eee;
+     border :1px solid #eee;
     border-radius:5px;
     padding: 0 1px 0 1px;
-    margin-bottom:10px;
+    margin-bottom:5px;
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
+.step1 .panel {
+    padding: 0;
+     padding-top: 0px;
+}
+
 .step44 {
-    border :1px solid #eee;
+   border :1px solid #eee;
     border-radius:5px;
     padding: 0 1px 0 1px;
-    margin-bottom:10px;
+    margin-bottom:5px;
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.step44 .panel {
+    padding: 0;
+     padding-top: 0px;
+}
+
+.step22 {
+     border :1px solid #eee;
+    border-radius:5px;
+    padding: 0 1px 0 1px;
+    margin-bottom:5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.step22 .panel {
+    padding: 0;
+     padding-top: 0px;
+}
+
+.form-control{
+    padding: 0;
+    height: 22px;
+    border-radius:3px;
+    padding-left: 5px;
+}
+
+.btn-xs {
+    height: 22px;
+    width: 22px;    
+}
+
+.btn-sm{
+    height: 22px;
+    padding: 2px;
+    
 }
 
 /*hasta aca*/
@@ -175,15 +225,7 @@ span.round-tab:hover {
 }
 
 
-.step22 {
-    border :1px solid #eee;
-    border-radius:5px;
-    padding:5px;
-    margin-bottom:5px;
-}
-.step22 .row {
-    margin-bottom:5px;
-}
+
 
 .step33 {
     border:1px solid #ccc;

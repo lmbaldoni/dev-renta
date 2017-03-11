@@ -55,7 +55,7 @@
 
             <form role="form">
                 <div class="tab-content">
-                    <div class="tab-pane active" role="tabpanel" id="step1">
+                    <div class="tab-pane" role="tabpanel" id="step1">
                         <!--configuracion pagina initial-->
                         <div class="step1">
                                 <div class="panel panel-primary">
@@ -176,236 +176,246 @@
                                         </div>
                                 </div>
                                     <ul class="list-inline pull-right">
-                                        <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                                        <li><button type="button" class="btn btn-primary next-step">Next</button></li>
                                     </ul>
                     </div>
                     </div>
                     <!--configuracion SOURCE-->
                                      
-                    <div class="tab-pane" role="tabpanel" id="step2">
+                    <div class="tab-pane active" role="tabpanel" id="step2">
                         <div class="step22">
-                        <h6 class="text-primary">Allocation Rule Definition</h6>
-                            <!--Sector del Allocation Rule Definition-->
-                            <form class="form-horizontal">
-                                <div class="row">
-                                    <div class="col-sm-6" style="display: block;">
-                                        <div class="form-group" style="position: static;">
-                                            <label for="input-id-3" class="control-label col-sm-4">Rule Name</label>
-                                            <div class="col-sm-6">    
-                                                <input type="text" class="form-control input-sm" id="input-id-3" placeholder="Rule Name">
-                                            </div>
+                                
+                                <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                            Allocation Rule Definition
                                         </div>
-                                        <div class="form-group" style="position: static;">
-                                                <label for="input-id-3" class="control-label col-sm-4">Rule Description</label>
-                                                    <div class="col-sm-8  pull-right">
-                                                        <input type="text" class="form-control input-sm" id="input-id-4" placeholder="Rule Description">
+                                        <div class="panel-body">
+                                                    <div class="col-sm-6 box" style="display: block;">
+                                                            <div class="row">
+                                                                <label class="control-label col-sm-3">Rule Name</label>
+                                                                <div class="col-sm-6">    
+                                                                    <input type="text" class="form-control" id="input-id-3" placeholder="Rule Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <label class="control-label col-sm-3">Rule Description</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="input-id-4" placeholder="Rule Description">
+                                                                    </div>
+                                                            </div>
+                                            
                                                     </div>
+                                                    <div class="col-sm-6 box" style="display: block;">
+                                                        <div class="row">
+                                                            <label class="col-sm-3 control-label" for="folder">Folder Name</label>
+                                                                    <div class="col-sm-6">
+                                                                        <select id="folder" name="folder" class="form-control btn-default">
+                                                                        <option value="1">Carga</option>
+                                                                        <option value="2">Procesamiento</option>
+                                                                        </select>
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                            
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6" style="display: block;">
-                                        <label class="col-sm-3 control-label" for="folder">Folder Name</label>
-                                                <div class="col-sm-4">
-                                                    <select id="folder" name="folder" class="form-control">
-                                                    <option value="1">Carga</option>
-                                                    <option value="2">Procesamiento</option>
-                                                    </select>
-                                                </div>
-                                    </div>
                                 </div>
-                            </form>
-                            
-                            <hr class="divider">
-                            <h6 class="text-primary">For</h6>
-                            <!--sector del for-->
-                            <form class="form-horizontal">
-                                <div class="row">
-                                    <div class="col-md-6" style="display: block;">
-                                        <div class="form-group" style="position: static;">
-                                            <label class="col-sm-4 control-label" for="folder">Table Name</label>
-                                                <div class="col-sm-6">
-                                                    <select id="folder" name="tableName" class="form-control">
-                                                    <option value="1">LEDGER_STAT</option>
-                                                    <option value="2">FSI_D_CASA</option>
-                                                    </select>
+                                  <div class="panel panel-primary">
+                                        <div class="panel-heading panel-heading-xs">
+                                            For
+                                        </div>
+                                        <div class="panel-body panel-body-xs">
+                                           
+                                                    <div class="col-sm-6 box" style="display: block;">
+                                                            <div class="row">
+                                                        
+                                                            <label class="col-sm-3" for="folder">Table Name</label>
+                                                                <div class="col-sm-6">
+                                                                    <select id="folder" name="tableName" class="form-control btn-default col-sm-4">
+                                                                    <option value="1">LEDGER_STAT</option>
+                                                                    <option value="2">FSI_D_CASA</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                             <div class="row">
+                                                            <label class="col-sm-3" for="folder">Column Name</label>
+                                                                <div class="col-sm-6">
+                                                                    <select id="folder" name="ColumnName" class="form-control btn-default col-sm-4">
+                                                                    <option value="1">TRANSFER RATE</option>
+                                                                    <option value="2">AMOUNT</option>
+                                                                    </select>
+                                                                </div>
+                                                             </div>
+                                                    
+                                                    </div>
+                                                    <div class="col-sm-6 box" style="display: block;">
+                                                            <div class="row">
+                                                                <label class="col-sm-3" for="folder">Column/Expression</label>
+                                                                <div class="btn-group col-sm-6">
+                                                                    <button type="button" class="btn btn-default btn-sm">Column Name</button>
+                                                                    <button type="button" class="btn btn-default btn-sm">Expression</button>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                        
                                                 </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-4 control-label" for="folder">Column Name</label>
-                                                <div class="col-sm-6">
-                                                    <select id="folder" name="ColumnName" class="form-control">
-                                                    <option value="1">TRANSFER RATE</option>
-                                                    <option value="2">AMOUNT</option>
-                                                    </select>
                                                 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6" style="display: block;">
-                                        <div class="form-vertical col-sm-6">
-                                            <label for="input-id-4" class="control-label">Column/Expression</label>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-default">Column Name</button>
-                                                <button type="button" class="btn btn-default">Expression</button>
-                                            </div>
-                                        </div>
-                                        <form class="form-vertical col-sm-6"> 
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-default">Is Leaf</button>
-                                                <button type="button" class="btn btn-default">Is Node</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </form>
-                            <hr class="divider">
+                                            
 
-                             <!--sector allocation source con una tabla-->
-                             
-                             <table class="table">
-                                <thead><tr><th class="col-sm-2">Dimension</th><th class="col-sm-4">Value</th><th class="col-sm-6">Description</th></tr></thead>
-                                <tbody>
-                                <tr><td>Financial Element</td><td>
-                                    
-                                                
-                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
-                                                    <option value="1">3080910</option>
-                                                    <option value="2">3080911</option>
-                                                    <option value="3">ALL</option>
-                                                    </select>
-                                                
-                                             <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
-                                     
-                                    
-                                </td><td>Financial Element For Leaf. 3080910: Gasto Corporativo 80910</td></tr>
-                                <tr><td>Organizational Unit</td><td>
-                                    
-                                                
-                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
-                                                    <option value="1">ALL</option>
-                                                    <option value="2">3080911</option>
-                                                    <option value="2">3080910</option>
-                                                    </select>
-                                                
-                                             <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
-                                     
-                                    
-                                </td><td>ALL</td></tr>
-                                <tr><td>General Ledger Account</td><td>
-                                    
-                                                
-                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
-                                                    <option value="1">ALL</option>
-                                                    <option value="2">3080911</option>
-                                                    <option value="2">3080911</option>
-                                                    </select>
-                                                
-                                             <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
-                                     
-                                    
-                                </td><td>ALL</td></tr>
-                                <tr><td>Product</td><td>
-                                    
-                                                
-                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
-                                                    <option value="1">ALL</option>
-                                                    <option value="2">3080911</option>
-                                                    <option value="2">3080912</option>
-                                                    </select>
-                                                
-                                             <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
-                                     
-                                    
-                                </td><td>ALL</td></tr>
-                                <tr><td>Customer</td><td>
-                                    
-                                                
-                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
-                                                    <option value="1">ALL</option>
-                                                    <option value="2">3080911</option>
-                                                    <option value="2">3080912</option>
-                                                    </select>
-                                                
-                                             <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
-                                     
-                                    
-                                </td><td>ALL</td></tr>
-                                <tr><td>Currency</td><td>
-                                    
-                                                
-                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
-                                                    <option value="1">MXN</option>
-                                                    <option value="2">USD</option>
-                                                    <option value="2">DNZ</option>
-                                                    </select>
-                                                
-                                             <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
-                                     
-                                    
-                                </td><td>mxn</td></tr>
-                                </tbody>
-                            </table>
-                             
-                            <hr class="divider">
-                            <!--sector other filters-->
-                            <h6 class="text-primary">Other Filters</h6>
-                             <form class="form-horizontal">
-                                <div class="row">
-                                    <div class="col-md-1 col-xs-2">
-                                    <p align="left">Filter Type</p>
-                                    </div>
-                                    <div class="col-md-6 col-xs-4">
-                                        <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No Filter
-                                        </label>
-                                        <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Data Filter
-                                        </label>
-                                        <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Group Filter
-                                        </label>
-                                        <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Attribute Filter
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row" id="rowSource">
-                                    <div class="col-md-6" style="display: block;">
-                                        
-                                            <label class="col-sm-4 control-label" for="folder">Folder Name</label>
-                                                <div class="col-sm-6">
-                                                    <select id="folder" name="tableName" class="form-control" >
-                                                    <option value="1">Carga</option>
-                                                    <option value="2">Procesamiento</option>
-                                                    </select>
-                                                </div>
-                                             
-                                        
-                                    </div>
-                                    <div class="col-md-6" style="display: block;">
-                                        
-                                            <label class="col-sm-4 control-label" for="folder">Filter Name</label>
-                                                <div class="col-sm-6">
-                                                    <select id="folder" name="tableName" class="form-control" >
-                                                    <option value="1">100010</option>
-                                                    <option value="2">100011</option>
-                                                    </select>
-                                                </div>
-                                             
-                                        
-                                    </div>
-                                </div>
-                            </form>
+                                 
 
-                       </div>
+                                  <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                           Allocation Source
+                                        </div>
+                                        <div class="panel-body">
+                                             <table class="table">
+                                                <thead><tr><th class="col-sm-2">Dimension</th><th class="col-sm-4">Value</th><th class="col-sm-6">Description</th></tr></thead>
+                                                <tbody class="row top-buffer">
+                                                <tr><td>Financial Element</td><td>
+                                                                    
+                                                                        <div class="input-group  col-sm-8">
+                                                                            <select id="folder" name="ColumnName" class="form-control btn-default">
+                                                                                <option value="1">3080910</option>
+                                                                                <option value="2">3080911</option>
+                                                                                <option value="2">ALL</option>
+                                                                            </select>
+                                                                        <span class="input-group-btn">
+                                                                            <button class="form-control btn-xs btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                                        </span>
+                                                                        </div>
+                                                                   
+                                                </td><td>Financial Element For Leaf. 3080910: Gasto Corporativo 80910</td></tr>
+                                                <tr><td>Organizational Unit</td><td>
+                                                                   
+                                                                     <div class="input-group  col-sm-8">
+                                                                            <select id="folder" name="ColumnName" class="form-control btn-default">
+                                                                                <option value="1">ALL</option>
+                                                                                <option value="2">3080911</option>
+                                                                                <option value="2">3080912</option>
+                                                                            </select>
+                                                                        <span class="input-group-btn">
+                                                                            <button class="form-control btn-xs btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                                        </span>
+                                                                        </div>
+                                                </td><td>ALL</td></tr>
+                                                <tr><td>General Ledger Account</td><td>
+                                                                    <div class="input-group  col-sm-8">
+                                                                            <select id="folder" name="ColumnName" class="form-control btn-default">
+                                                                                <option value="1">ALL</option>
+                                                                                <option value="2">3080911</option>
+                                                                                <option value="2">3080912</option>
+                                                                            </select>
+                                                                        <span class="input-group-btn">
+                                                                            <button class="form-control btn-xs btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                                        </span>
+                                                                        </div>
+                                                </td><td>ALL</td></tr>
+                                                <tr><td>Product</td><td>
+                                                                    <div class="input-group  col-sm-8">
+                                                                            <select id="folder" name="ColumnName" class="form-control btn-default">
+                                                                                <option value="1">ALL</option>
+                                                                                <option value="2">3080911</option>
+                                                                                <option value="2">3080912</option>
+                                                                            </select>
+                                                                        <span class="input-group-btn">
+                                                                            <button class="form-control btn-xs btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                                        </span>
+                                                                        </div>
+                                                </td><td>ALL</td></tr>
+                                                <tr><td>Customer</td><td>
+                                                                   <div class="input-group  col-sm-8">
+                                                                            <select id="folder" name="ColumnName" class="form-control btn-default">
+                                                                                <option value="1">ALL</option>
+                                                                                <option value="2">3080911</option>
+                                                                                <option value="2">3080912</option>
+                                                                            </select>
+                                                                        <span class="input-group-btn">
+                                                                            <button class="form-control btn-xs btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                                        </span>
+                                                                        </div>
+                                                </td><td>ALL</td></tr>
+                                                <tr><td>Currency</td><td>
+                                                                    <div class="input-group  col-sm-8">
+                                                                            <select id="folder" name="ColumnName" class="form-control btn-default">
+                                                                                <option value="1">ALL</option>
+                                                                                <option value="2">3080911</option>
+                                                                                <option value="2">3080912</option>
+                                                                            </select>
+                                                                        <span class="input-group-btn">
+                                                                            <button class="form-control btn-xs btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                                        </span>
+                                                                        </div>
+                                                </td><td>MXN</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                  </div>
+
+                                  <div class="panel panel-primary">
+                                        <div class="panel-heading panel-heading-xs">
+                                            Other Filters
+                                        </div>
+                                        <div class="panel-body panel-body-xs">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <label class="control-label" for="folder">Filter Type</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class="radio-inline">
+                                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> No Filter
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Data Filter
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Group Filter
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">Attribute Filter
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                     <div class="row">
+                                                        <label class="col-sm-3 control-label" for="folder">Folder Name</label>
+                                                                    <div class="col-sm-4">
+                                                                        <select id="folder" name="folder" class="form-control btn-default">
+                                                                        <option value="1">Carga</option>
+                                                                        <option value="2">Procesamiento</option>
+                                                                        </select>
+                                                                    </div>
+
+                                                        
+                                                         <label class="col-sm-2 control-label" for="folder">Filter Name</label>
+                                                        <div class="col-sm-3">
+                                                            <select id="folder" name="tableName" class="form-control" >
+                                                            <option value="1">FILTRO Financial Element</option>
+                                                            <option value="2">FILTRO Organizational Unit</option>
+                                                            </select>
+                                                        </div>   
+                                                        
+                                                    </div>
+                                            
+                                            
+                                                
+                                            
+                                        </div>
+                                        </div>
+                                  
+                                        <ul class="list-inline pull-right">
+                                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
+                                        </ul>
+                        </div>
                     </div>
                     <!--configuracion OPERATOR-->
                     <div class="tab-pane" role="tabpanel" id="step3">
                         <div class="step33">
-                       
+                                
                         </div>
                         <ul class="list-inline pull-right">
                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                         </ul>
                     </div>
                     <!--configuracion DRIVER-->
@@ -460,7 +470,7 @@
                                                         
                                                             <label class="col-sm-3 control-label" for="folder">Table Name</label>
                                                                 <div class="col-sm-6">
-                                                                    <select id="folder" name="tableName" class="btn btn-default btn-sm col-sm-10">
+                                                                    <select id="folder" name="tableName" class="btn btn-default btn-xs col-sm-10">
                                                                     <option value="1">LEDGER_STAT</option>
                                                                     <option value="2">FSI_D_CASA</option>
                                                                     </select>
@@ -469,7 +479,7 @@
                                                              <div class="row">
                                                             <label class="col-sm-3 control-label" for="folder">Column Name</label>
                                                                 <div class="col-sm-6">
-                                                                    <select id="folder" name="ColumnName" class="btn btn-default btn-sm col-sm-10">
+                                                                    <select id="folder" name="ColumnName" class="btn btn-default btn-xs col-sm-10">
                                                                     <option value="1">TRANSFER RATE</option>
                                                                     <option value="2">AMOUNT</option>
                                                                     </select>
@@ -502,73 +512,46 @@
                                                 <thead><tr><th class="col-sm-2">Dimension</th><th class="col-sm-4">Value</th><th class="col-sm-6">Description</th></tr></thead>
                                                 <tbody class="row top-buffer">
                                                 <tr><td>Financial Element</td><td>
-                                                    
-                                                                
                                                                     <select id="folder" name="tableName" class="btn-default btn-xs col-sm-8" >
                                                                     <option value="1">3080910</option>
                                                                     <option value="2">3080911</option>
                                                                     <option value="3">ALL</option>
                                                                     </select>
-                                                                
                                                             <button type="button" class="btn btn-xs btn-primary glyphicon glyphicon-search"></button>
-                                                    
-                                                    
                                                 </td><td>Financial Element For Leaf. 3080910: Gasto Corporativo 80910</td></tr>
                                                 <tr><td>Organizational Unit</td><td>
-                                                    
-                                                                
                                                                     <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
                                                                     <option value="1">ALL</option>
                                                                     <option value="2">3080911</option>
                                                                     <option value="2">3080910</option>
                                                                     </select>
-                                                                
                                                             <button type="button" class="btn btn-xs btn-primary glyphicon glyphicon-search"></button>
-                                                    
-                                                    
                                                 </td><td>ALL</td></tr>
                                                 <tr><td>General Ledger Account</td><td>
-                                                    
-                                                                
                                                                     <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
                                                                     <option value="1">ALL</option>
                                                                     <option value="2">3080911</option>
                                                                     <option value="2">3080911</option>
                                                                     </select>
-                                                                
                                                             <button type="button" class="btn btn-xs btn-primary glyphicon glyphicon-search"></button>
-                                                    
-                                                    
                                                 </td><td>ALL</td></tr>
                                                 <tr><td>Product</td><td>
-                                                    
-                                                                
                                                                     <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
                                                                     <option value="1">ALL</option>
                                                                     <option value="2">3080911</option>
                                                                     <option value="2">3080912</option>
                                                                     </select>
-                                                                
                                                             <button type="button" class="btn btn-xs btn-primary glyphicon glyphicon-search"></button>
-                                                    
-                                                    
                                                 </td><td>ALL</td></tr>
                                                 <tr><td>Customer</td><td>
-                                                    
-                                                                
                                                                     <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
                                                                     <option value="1">ALL</option>
                                                                     <option value="2">3080911</option>
                                                                     <option value="2">3080912</option>
                                                                     </select>
-                                                                
                                                             <button type="button" class="btn btn-xs btn-primary glyphicon glyphicon-search"></button>
-                                                    
-                                                    
                                                 </td><td>ALL</td></tr>
                                                 <tr><td>Currency</td><td>
-                                                    
-                                                                
                                                                     <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
                                                                     <option value="1">MXN</option>
                                                                     <option value="2">USD</option>
@@ -576,8 +559,6 @@
                                                                     </select>
                                                                 
                                                             <button type="button" class="btn btn-xs btn-primary glyphicon glyphicon-search"></button>
-                                                    
-                                                    
                                                 </td><td>MXN</td></tr>
                                                 </tbody>
                                             </table>
@@ -640,8 +621,7 @@
                                   </div>
                                         <ul class="list-inline pull-right">
                                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                                         </ul>
                         </div>
                     </div>
@@ -649,7 +629,10 @@
                     <div class="tab-pane" role="tabpanel" id="complete">
                         <div class="step55">
                             <h5>Completed</h5>
-                            
+                             <ul class="list-inline pull-right">
+                                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save</button></li>
+                                        </ul>
                           
                         </div>
                     </div>
