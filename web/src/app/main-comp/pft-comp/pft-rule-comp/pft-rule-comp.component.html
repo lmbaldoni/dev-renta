@@ -438,7 +438,7 @@
                                                         <div class="row">
                                                             <label class="col-sm-3 control-label" for="folder">Folder Name</label>
                                                                     <div class="col-sm-4">
-                                                                        <select id="folder" name="folder" class="form-control">
+                                                                        <select id="folder" name="folder" class="btn btn-default btn-sm col-sm-10">
                                                                         <option value="1">Carga</option>
                                                                         <option value="2">Procesamiento</option>
                                                                         </select>
@@ -455,31 +455,35 @@
                                         </div>
                                         <div class="panel-body panel-body-xs">
                                            
-                                                    <div class="row col-md-6">
+                                                    <div class="col-sm-6 box" style="display: block;">
+                                                            <div class="row">
                                                         
-                                                            <label class="col-sm-4 control-label" for="folder">Table Name</label>
+                                                            <label class="col-sm-3 control-label" for="folder">Table Name</label>
                                                                 <div class="col-sm-6">
-                                                                    <select id="folder" name="tableName" class="form-control">
+                                                                    <select id="folder" name="tableName" class="btn btn-default btn-sm col-sm-10">
                                                                     <option value="1">LEDGER_STAT</option>
                                                                     <option value="2">FSI_D_CASA</option>
                                                                     </select>
                                                                 </div>
-                                                        
-                                                            <label class="col-sm-4 control-label" for="folder">Column Name</label>
+                                                            </div>
+                                                             <div class="row">
+                                                            <label class="col-sm-3 control-label" for="folder">Column Name</label>
                                                                 <div class="col-sm-6">
-                                                                    <select id="folder" name="ColumnName" class="form-control">
+                                                                    <select id="folder" name="ColumnName" class="btn btn-default btn-sm col-sm-10">
                                                                     <option value="1">TRANSFER RATE</option>
                                                                     <option value="2">AMOUNT</option>
                                                                     </select>
                                                                 </div>
-                                                        
+                                                             </div>
                                                     
                                                     </div>
-                                                    <div class="row col-md-6">
-                                                            <label for="input-id-4" class="control-label">Column/Expression</label>
-                                                            <div class="btn-group">
-                                                                <button type="button" class="btn btn-default">Column Name</button>
-                                                                <button type="button" class="btn btn-default">Expression</button>
+                                                    <div class="col-md-6 box" style="display: block;">
+                                                            <div class="row">
+                                                                <label class="col-sm-3 control-label" for="folder">Column/Expression</label>
+                                                                <div class="btn-group col-sm-6">
+                                                                    <button type="button" class="btn btn-default btn-sm">Column Name</button>
+                                                                    <button type="button" class="btn btn-default btn-sm">Expression</button>
+                                                                </div>
                                                             </div>
                                                     </div>
                                                         
@@ -500,13 +504,13 @@
                                                 <tr><td>Financial Element</td><td>
                                                     
                                                                 
-                                                                    <select id="folder" name="tableName" class="btn2 btn-default btn-xs col-sm-8" >
+                                                                    <select id="folder" name="tableName" class="btn-default btn-sm col-sm-8" >
                                                                     <option value="1">3080910</option>
                                                                     <option value="2">3080911</option>
                                                                     <option value="3">ALL</option>
                                                                     </select>
                                                                 
-                                                            <button type="button" class="btn3 btn-primary glyphicon glyphicon-search"></button>
+                                                            <button type="button" class="btn btn-sm btn-primary glyphicon glyphicon-search"></button>
                                                     
                                                     
                                                 </td><td>Financial Element For Leaf. 3080910: Gasto Corporativo 80910</td></tr>
