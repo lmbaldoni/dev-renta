@@ -48,6 +48,10 @@ table th, table td{
     padding: 0;
 }
 
+/*.btn-group .btn:hover, .btn-group .btn:active, .btn-group .btn:focus, .btn-group .btn:active{
+    background-color: #428bca !important;
+}*/
+
 .step1 {
      border :1px solid #eee;
     border-radius:5px;
@@ -91,6 +95,21 @@ table th, table td{
 .step22 .panel {
     padding: 0;
      padding-top: 0px;
+}
+
+.step33 {
+    border :1px solid #eee;
+    border-radius:5px;
+    padding: 0 1px 0 1px;
+    margin-bottom:5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.step33 .panel {
+    padding: 0;
+    padding-top: 0px;
 }
 
 .form-control{
@@ -236,12 +255,6 @@ span.round-tab:hover {
 
 
 
-.step33 {
-    border:1px solid #ccc;
-    border-radius:5px;
-    padding-left:50px;
-    margin-bottom:10px;
-}
 
 
 
