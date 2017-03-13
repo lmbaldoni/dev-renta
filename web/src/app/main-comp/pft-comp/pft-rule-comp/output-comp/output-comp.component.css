@@ -63,6 +63,12 @@
     padding-bottom:3px;
 }
 
+.nav .nav-tabs {
+    margin-top: 1px; 
+    margin-bottom: 1px; 
+    padding-top: 1px; 
+    padding-bottom:1px;
+}
                                                 
 .panel .table{
     margin-top: 3px; 
