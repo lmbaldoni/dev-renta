@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OutputCompComponent } from './output-comp/output-comp.component';
 
 @Component({
   selector: 'app-pft-rule-comp',

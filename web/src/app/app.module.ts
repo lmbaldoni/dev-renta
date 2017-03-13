@@ -17,6 +17,11 @@ import { HierarchiesCompComponent } from './main-comp/data-management-comp/dimen
 import { LoginComponent } from './login/login.component';
 import { PftCompComponent } from './main-comp/pft-comp/pft-comp.component';
 import { PftRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/pft-rule-comp.component';
+import { OutputCompComponent } from './main-comp/pft-comp/pft-rule-comp/output-comp/output-comp.component';
+import { SourceCompComponent } from './main-comp/pft-comp/pft-rule-comp/source-comp/source-comp.component';
+import { DriverCompComponent } from './main-comp/pft-comp/pft-rule-comp/driver-comp/driver-comp.component';
+import { OperatorCompComponent } from './main-comp/pft-comp/pft-rule-comp/operator-comp/operator-comp.component';
+import { InitialRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/initial-rule-comp/initial-rule-comp.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { PftRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/pft-rul
     HierarchiesCompComponent,
     LoginComponent,
     PftCompComponent,
-    PftRuleCompComponent
+    PftRuleCompComponent,
+    OutputCompComponent,
+    SourceCompComponent,
+    DriverCompComponent,
+    OperatorCompComponent,
+    InitialRuleCompComponent
   ],
   imports: [
     BrowserModule,
