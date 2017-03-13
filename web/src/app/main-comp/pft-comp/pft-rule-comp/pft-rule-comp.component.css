@@ -201,6 +201,7 @@ span.round-tab {
     left: 0;
     text-align: center;
     font-size: 25px;
+    cursor: pointer;
 }
 span.round-tab i{
     color:#555555;
@@ -215,8 +216,8 @@ span.round-tab i{
 }
 
 span.round-tab:hover {
-    color: #333;
-    border: 2px solid #333;
+    color: #428bca;
+    border: 2px solid #428bca;
 }
 
 .wizard .nav-tabs > li {
@@ -434,12 +435,12 @@ span.round-tab:hover {
   width: 100%;
 }
 
-.btn2 {
+/*.btn2 {
     cursor: default;
     background-color: #FFF;
     border-radius: 4px;
     text-align: left;
-}
+}*/
 
 .caret {
     position: absolute;
