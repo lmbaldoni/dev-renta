@@ -9,7 +9,16 @@ import { PftCompComponent } from './pft-comp/pft-comp.component';
 })
 export class MainCompComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   
+
+   }
+
+ dataManagementClicked: boolean = false;
+
+   setDataManagementClicked(clicked: boolean) {
+    this.dataManagementClicked = clicked;
+}
 
   ngOnInit() {
   }
