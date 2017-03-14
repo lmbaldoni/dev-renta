@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DimensionsCompComponent } from './dimensions-comp/dimensions-comp.component';
 
 @Component({
@@ -9,6 +9,8 @@ import { DimensionsCompComponent } from './dimensions-comp/dimensions-comp.compo
 export class DataManagementCompComponent implements OnInit {
 
   constructor() { }
+
+  
 
   ngOnInit() {
   }

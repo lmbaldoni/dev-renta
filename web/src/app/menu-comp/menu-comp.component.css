@@ -3,3 +3,39 @@ body{margin-top:50px;}
 .panel-body { padding:0px; }
 .panel-body table tr td { padding-left: 15px }
 .panel-body .table {margin-bottom: 0px; }
+
+.btn-group-vertical > button{
+    margin-bottom:0px;
+    border-radius:0px !important;
+}
+
+.table {
+    margin-bottom:0px;
+    border-radius:0px !important;
+}
+
+.btn {
+    background-color: white; /* Green */
+    border: none;
+    color: #428bca;
+    padding: 10px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: transparent; /* Green */
+    border: none;
+    color: #428bca;
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.btn:focus {
+  outline: none;
+  font-weight: bold;
+}

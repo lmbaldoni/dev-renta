@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataManagementCompComponent } from './data-management-comp/data-management-comp.component';
 import { PftCompComponent } from './pft-comp/pft-comp.component';
 
@@ -14,11 +14,13 @@ export class MainCompComponent implements OnInit {
 
    }
 
- dataManagementClicked: boolean = false;
+   @Input() dataManagementClicked: boolean;
 
-   setDataManagementClicked(clicked: boolean) {
+ /*dataManagementClicked: boolean = false;*/
+
+ /*  setDataManagementClicked(clicked: boolean) {
     this.dataManagementClicked = clicked;
-}
+}*/
 
   ngOnInit() {
   }
