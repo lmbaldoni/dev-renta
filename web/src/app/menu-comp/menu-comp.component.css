@@ -39,6 +39,7 @@ body{margin-top:50px;}
 .btn:focus {
   outline: none;
   font-weight: bold;
+  padding-right: 0px;
 }
 
 .table tr{
