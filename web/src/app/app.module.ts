@@ -22,6 +22,7 @@ import { SourceCompComponent } from './main-comp/pft-comp/pft-rule-comp/source-c
 import { DriverCompComponent } from './main-comp/pft-comp/pft-rule-comp/driver-comp/driver-comp.component';
 import { OperatorCompComponent } from './main-comp/pft-comp/pft-rule-comp/operator-comp/operator-comp.component';
 import { InitialRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/initial-rule-comp/initial-rule-comp.component';
+import { FiltersCompComponent } from './main-comp/data-management-comp/filters-comp/filters-comp.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { InitialRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/ini
     SourceCompComponent,
     DriverCompComponent,
     OperatorCompComponent,
-    InitialRuleCompComponent
+    InitialRuleCompComponent,
+    FiltersCompComponent
   ],
   imports: [
     BrowserModule,

@@ -19,10 +19,10 @@
                                     </a>
                                     <div class="collapse" id="toggleData" style="height: 0px;">
                                         <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class="glyphicon glyphicon-file text-primary"></span><a>Members</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-paperclip text-primary"></span><a>Attributes</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-tasks text-primary"></span><a>Hierarchies</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-filter text-primary"></span><a>Filters</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setMembersClicked(true)"><span class="glyphicon glyphicon-file text-primary"></span><a>Members</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setAttributesClicked(true)"><span class=" glyphicon glyphicon-paperclip text-primary"></span><a>Attributes</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setHierarchiesClicked(true)"><span class=" glyphicon glyphicon-tasks text-primary"></span><a>Hierarchies</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setFiltersClicked(true)"><span class=" glyphicon glyphicon-filter text-primary"></span><a>Filters</a></button>
                                         </div>
                                     </div>
                                     </td>
@@ -147,5 +147,14 @@
                
             </div>
         </div>
+
+        <!--cuerpo-->
+        <div class="col-sm-9" id="main">
+                <app-members-comp *ngIf="membersClicked"></app-members-comp>
+                <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
+                <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
+                <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
+        </div>
+    
     </div>
 </div>
