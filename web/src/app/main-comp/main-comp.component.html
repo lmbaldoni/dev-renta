@@ -166,7 +166,7 @@
                 <app-import-comp *ngIf="importClicked"></app-import-comp>
                 <app-export-comp *ngIf="exportClicked"></app-export-comp>
                  <!--Pantallas PFT-->
-                <app-pft-rule-comp *ngIf="allocationClicked"></app-pft-rule-comp>
+                <app-pft-rule-comp *ngIf="allocationClicked" (closerule)="closepft($event)"></app-pft-rule-comp>
                 <app-export-comp *ngIf="allocationModelClicked"></app-export-comp>
                 <app-export-comp *ngIf="allocationHistoryClicked"></app-export-comp>
         </div>

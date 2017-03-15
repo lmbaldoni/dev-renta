@@ -139,6 +139,7 @@ table th, table td{
 
     .wizard > div.wizard-inner {
         position: relative;
+        padding-bottom: 0px;
     }
 
 .connecting-line {

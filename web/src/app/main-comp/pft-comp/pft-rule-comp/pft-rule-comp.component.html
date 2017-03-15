@@ -53,13 +53,13 @@
                 </ul>
             </div>
 
-            <form role="form">
+            
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="step1">
                         <!--configuracion pagina initial-->
                         <app-initial-rule-comp></app-initial-rule-comp>
                         <ul class="list-inline pull-right">
-                                        <li><button type="button" class="btn btn-default prev-step">Cancelar</button></li>
+                                        <li><button type="button" (click)="lanzarclose()" class="btn btn-default prev-step">Cancelar</button></li>
                                         <li><button type="button" class="btn btn-primary next-step">Next</button></li>
                                     </ul>
                      </div>
@@ -67,7 +67,7 @@
                     <div class="tab-pane" role="tabpanel" id="step2">
                         <app-source-comp></app-source-comp>
                         <ul class="list-inline pull-right">
-                                            <li><button type="button" class="btn btn-default prev-step">Cancelar</button></li>
+                                            <li><button type="button" (click)="lanzarclose()" class="btn btn-default prev-step">Cancelar</button></li>
                                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                                         </ul>
@@ -76,7 +76,7 @@
                     <div class="tab-pane" role="tabpanel" id="step3">
                         <app-operator-comp></app-operator-comp>
                          <ul class="list-inline pull-right">
-                                            <li><button type="button" class="btn btn-default prev-step">Cancelar</button></li>
+                                            <li><button type="button" (click)="lanzarclose()" class="btn btn-default prev-step">Cancelar</button></li>
                                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                                         </ul>
@@ -85,7 +85,7 @@
                     <div class="tab-pane" role="tabpanel" id="step4">
                         <app-driver-comp></app-driver-comp>
                          <ul class="list-inline pull-right">
-                                            <li><button type="button" class="btn btn-default prev-step">Cancelar</button></li>
+                                            <li><button type="button" (click)="lanzarclose()" class="btn btn-default prev-step">Cancelar</button></li>
                                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                                         </ul>
@@ -94,14 +94,14 @@
                     <div class="tab-pane" role="tabpanel" id="complete">
                         <app-output-comp></app-output-comp>
                          <ul class="list-inline pull-right">
-                                            <li><button type="button" class="btn btn-default prev-step">Cancelar</button></li>
+                                            <li><button type="button" (click)="lanzarclose()" class="btn btn-default prev-step">Cancelar</button></li>
                                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Save</button></li>
                                         </ul>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-            </form>
+            
         </div>
     </section>
    </div>

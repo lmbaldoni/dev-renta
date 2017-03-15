@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataManagementCompComponent } from './data-management-comp/data-management-comp.component';
-import { PftCompComponent } from './pft-comp/pft-comp.component';
+import { PftRuleCompComponent } from './pft-comp/pft-rule-comp/pft-rule-comp.component';
 
 @Component({
   selector: 'app-main-comp',
@@ -13,6 +13,20 @@ export class MainCompComponent implements OnInit {
    
 
    }
+
+
+   closepft(event):void{
+        event.hiderule;
+        this.setAllDataManagement();
+      this.setAllOperations();
+      this.setAllMigration();
+      this.allocationModelClicked = false;
+      this.allocationHistoryClicked = false;
+      this.headerClicked = true;
+      this.menuClicked = true;
+      /*mostrar*/
+      this.allocationClicked = false;
+    }
 
   /*hide show header and menu*/
 headerClicked = true;
