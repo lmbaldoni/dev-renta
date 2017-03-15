@@ -1,6 +1,9 @@
+<div id="header" *ngIf="headerClicked">
+    <app-header-comp></app-header-comp>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3" *ngIf="menuClicked">
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -48,8 +51,8 @@
                                     </a>
                                    <div class="collapse" id="toggleMigra" style="height: 0px;">
                                         <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class="glyphicon glyphicon-import text-primary"></span><a>Import</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class="glyphicon glyphicon-export text-primary"></span><a>Export</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setImportClicked(true)"><span class="glyphicon glyphicon-import text-primary"></span><a>Import</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setExportClicked(true)"><span class="glyphicon glyphicon-export text-primary"></span><a>Export</a></button>
                                         </div>
                                     </div>
                                     </td>
@@ -76,9 +79,9 @@
                                     </a>
                                     <div class="collapse" id="togglePFT" style="height: 0px;">
                                         <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class="glyphicon glyphicon-modal-window text-primary"></span><a>Allocation Specification</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-duplicate text-primary"></span><a>Allocation Model</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-list-alt text-primary"></span><a>Allocation History</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setAllocationClicked(true)"><span class="glyphicon glyphicon-modal-window text-primary"></span><a>Allocation Specification</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setAllocationModelClicked(true)"><span class=" glyphicon glyphicon-duplicate text-primary"></span><a>Allocation Model</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setAllocationHistoryClicked(true)"><span class=" glyphicon glyphicon-list-alt text-primary"></span><a>Allocation History</a></button>
                                                 
                                         </div>
                                     </div>
@@ -137,7 +140,7 @@
                  <div class="panel panel-success">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <span class="glyphicon glyphicon-user"  href="#"></span>Application Preferences
+                            <span class="glyphicon glyphicon-user"  href="#"></span><a>Application Preferences</a>
                         </h4>
                     </div>
                     
@@ -150,10 +153,22 @@
 
         <!--cuerpo-->
         <div class="col-sm-9" id="main">
+                <!--Pantallas Data Managements-->
                 <app-members-comp *ngIf="membersClicked"></app-members-comp>
                 <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
                 <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
                 <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
+                <!--Pantallas Operations-->
+                <app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>
+                <app-batch-maintenance-comp *ngIf="batchManteClicked"></app-batch-maintenance-comp>
+                <app-batch-monitor-comp *ngIf="batchMoniClicked"></app-batch-monitor-comp>
+                <!--Pantallas Migration-->
+                <app-import-comp *ngIf="importClicked"></app-import-comp>
+                <app-export-comp *ngIf="exportClicked"></app-export-comp>
+                 <!--Pantallas PFT-->
+                <app-pft-rule-comp *ngIf="allocationClicked"></app-pft-rule-comp>
+                <app-export-comp *ngIf="allocationModelClicked"></app-export-comp>
+                <app-export-comp *ngIf="allocationHistoryClicked"></app-export-comp>
         </div>
     
     </div>
