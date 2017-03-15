@@ -4,6 +4,18 @@ body{margin-top:50px;}
 .panel-body table tr td { padding-left: 15px }
 .panel-body .table {margin-bottom: 0px; }
 
+.container{
+    padding-left: 0px 
+}
+
+.containermain{
+    padding: 0px 
+}
+
+.row{
+    padding:0px;
+}
+
 .btn-group-vertical > button{
     margin-bottom:0px;
     border-radius:0px !important;

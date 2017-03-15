@@ -7,3 +7,80 @@
 .contenedor{
     background-color: white;
 }
+
+body{margin-top:50px;}
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+
+.container{
+    padding-left: 0px 
+}
+
+.containermain{
+    padding: 0px 
+}
+
+.row{
+    padding:0px;
+}
+
+.btn-group-vertical > button{
+    margin-bottom:0px;
+    border-radius:0px !important;
+}
+
+.table {
+    margin-bottom:0px;
+    border-radius:0px !important;
+}
+
+.btn {
+    background-color: white; /* Green */
+    border: none;
+    color: #428bca;
+    padding: 10px 40px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: transparent; /* Green */
+    border: none;
+    color: #428bca;
+    padding: 10px 40px;
+    padding-right: 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.btn:focus {
+  outline: none;
+  font-weight: bold;
+  padding-right: 0px;
+}
+
+.table tr{
+    padding-right: 0px;
+}
+
+.table td{
+    padding-right: 0px;
+}
+
+.table{
+    cursor: pointer;
+}
+
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+    padding-right: 0px;
+}

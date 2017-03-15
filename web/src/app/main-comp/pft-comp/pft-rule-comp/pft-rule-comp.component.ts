@@ -5,6 +5,8 @@ import { OperatorCompComponent } from './operator-comp/operator-comp.component';
 import { DriverCompComponent } from './driver-comp/driver-comp.component';
 import { SourceCompComponent } from './source-comp/source-comp.component';
 
+
+
 @Component({
   selector: 'app-pft-rule-comp',
   templateUrl: './pft-rule-comp.component.html',
