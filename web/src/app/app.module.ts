@@ -23,6 +23,14 @@ import { DriverCompComponent } from './main-comp/pft-comp/pft-rule-comp/driver-c
 import { OperatorCompComponent } from './main-comp/pft-comp/pft-rule-comp/operator-comp/operator-comp.component';
 import { InitialRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/initial-rule-comp/initial-rule-comp.component';
 import { FiltersCompComponent } from './main-comp/data-management-comp/filters-comp/filters-comp.component';
+import { OperationsCompComponent } from './main-comp/operations-comp/operations-comp.component';
+import { BatchMaintenanceCompComponent } from './main-comp/operations-comp/batch-maintenance-comp/batch-maintenance-comp.component';
+import { BatchExecutionCompComponent } from './main-comp/operations-comp/batch-execution-comp/batch-execution-comp.component';
+import { BatchMonitorCompComponent } from './main-comp/operations-comp/batch-monitor-comp/batch-monitor-comp.component';
+import { MigrationCompComponent } from './main-comp/migration-comp/migration-comp.component';
+import { ImportCompComponent } from './main-comp/migration-comp/import-comp/import-comp.component';
+import { ExportCompComponent } from './main-comp/migration-comp/export-comp/export-comp.component';
+import { ReportsCompComponent } from './main-comp/reports-comp/reports-comp.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +52,15 @@ import { FiltersCompComponent } from './main-comp/data-management-comp/filters-c
     DriverCompComponent,
     OperatorCompComponent,
     InitialRuleCompComponent,
-    FiltersCompComponent
+    FiltersCompComponent,
+    OperationsCompComponent,
+    BatchMaintenanceCompComponent,
+    BatchExecutionCompComponent,
+    BatchMonitorCompComponent,
+    MigrationCompComponent,
+    ImportCompComponent,
+    ExportCompComponent,
+    ReportsCompComponent
   ],
   imports: [
     BrowserModule,

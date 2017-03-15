@@ -39,3 +39,7 @@ body{margin-top:50px;}
   outline: none;
   font-weight: bold;
 }
+
+.table td {
+    cursor: pointer;
+}
