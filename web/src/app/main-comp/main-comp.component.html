@@ -57,6 +57,20 @@
                                     </div>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                    <a data-toggle="collapse" data-target="#toggleSecu" data-parent="#toggleSecu" class="panel-heading">
+                                    <span class="glyphicon glyphicon-lock text-primary"></span><a>Security</a> 
+                                    </a>
+                                   <div class="collapse" id="toggleSecu" style="height: 0px;">
+                                        <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-default" (click)="setImportClicked(true)"><span class="glyphicon glyphicon-user text-primary"></span><a>User</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setExportClicked(true)"><span class="glyphicon glyphicon-user text-primary"></span><a>Group</a></button>
+                                                <button type="button" class="btn btn-default" (click)="setExportClicked(true)"><span class="glyphicon glyphicon-user text-primary"></span><a>Role</a></button>
+                                        </div>
+                                    </div>
+                                    </td>
+                                </tr>
                                 
                             </table>
                         </div>

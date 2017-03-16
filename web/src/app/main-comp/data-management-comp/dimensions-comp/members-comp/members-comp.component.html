@@ -9,15 +9,17 @@
         
             <div class="form-group">
                 <div class="btn-group col-sm-3">
-                        <button type="button" class="btn btn-primary dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dimensions <span class="caret"></span>
-                        </button> 
-                        <ul class="dropdown-menu  col-sm-3">
-                            <li><a href="#">Banking</a></li>
-                            <li><a href="#">Financial Element</a></li>
-                            <li><a href="#">Organizational Unit</a></li>
-                            <li><a href="#">Product</a></li>
-                        </ul>
+                        <div class="row">
+                            <label class="col-sm-3 control-label" for="folder">Dimensions</label>
+                                    <div class="col-sm-3">
+                                        <select id="folder" name="folder" class="form-control btn-default">
+                                        <option value="1">Banking</option>
+                                        <option value="2">Financial Element</option>
+                                        <option value="3">Organizational Unit</option>
+                                        <option value="4">Product</option>
+                                        </select>
+                                    </div>
+                        </div>
                     </div>
                     
                     <div class="form-group col-sm-4 pull-right">
