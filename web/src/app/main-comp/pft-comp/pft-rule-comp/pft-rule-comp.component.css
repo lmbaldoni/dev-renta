@@ -71,58 +71,6 @@ table th, table td{
     background-color: #428bca !important;
 }*/
 
-.step1 {
-     border :1px solid #eee;
-    border-radius:5px;
-    padding: 0 1px 0 1px;
-    margin-bottom:5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.step1 .panel {
-    padding: 0;
-     padding-top: 0px;
-}
-
-
-
-.step22 {
-     border :1px solid #eee;
-    border-radius:5px;
-    padding: 0 1px 0 1px;
-    margin-bottom:5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.step22 .panel {
-    padding: 0;
-     padding-top: 0px;
-}
-
-
-
-.step55 {
-    border :1px solid #eee;
-    border-radius:5px;
-    padding: 0 1px 0 1px;
-    margin-bottom:5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.step55 .panel {
-    padding: 0;
-    padding-top: 0px;
-}
-
-
-
-/*hasta aca*/
 
 .wizard {
     margin: 10px auto;
@@ -139,7 +87,6 @@ table th, table td{
 
     .wizard > div.wizard-inner {
         position: relative;
-        padding-bottom: 0px;
     }
 
 .connecting-line {
@@ -152,6 +99,7 @@ table th, table td{
     right: 0;
     top: 50%;
     z-index: 1;
+    margin-bottom: 0;
 }
 
 .wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
@@ -166,9 +114,9 @@ table th, table td{
 }
 
 span.round-tab {
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     display: inline-block;
     border-radius: 100px;
     background: #fff;
@@ -181,7 +129,7 @@ span.round-tab {
     cursor: pointer;
 }
 span.round-tab i{
-    color:#555555;
+    color:gray;
 }
 .wizard li.active span.round-tab {
     background: #fff;
@@ -225,8 +173,8 @@ span.round-tab:hover {
 }
 
 .wizard .nav-tabs > li a {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 10px auto;
     border-radius: 100%;
     padding: 0;
@@ -238,13 +186,12 @@ span.round-tab:hover {
 
 .wizard .tab-pane {
     position: relative;
-    padding-top: 50px;
+    padding-top: 0px;
 }
 
 .wizard h3 {
     margin-top: 0;
 }
-
 
 
 
