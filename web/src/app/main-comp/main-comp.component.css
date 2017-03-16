@@ -2,14 +2,15 @@
   color: white;
   background-color: white;
   border-color: cornflowerblue;
-  font-size: 15px;
+  font-size: 13px;
 }
-.contenedor{
+.container{
     background-color: white;
+    /*width: 90%;*/
 }
 
 body{margin-top:50px;}
-.glyphicon { margin-right:10px; }
+.glyphicon { margin-right:5px; }
 .panel-body { padding:0px; }
 .panel-body table tr td { padding-left: 15px }
 .panel-body .table {margin-bottom: 0px; }
@@ -44,7 +45,7 @@ body{margin-top:50px;}
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .btn:hover {
@@ -55,7 +56,7 @@ body{margin-top:50px;}
     padding-right: 0px;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .btn:focus {
