@@ -18,7 +18,9 @@
     
 }
 
-
+.form-group {
+    padding-right: 50px;
+}
 
 .panel .panel-body .box .row .control-label{
     padding: 2 2px 2 2px;
