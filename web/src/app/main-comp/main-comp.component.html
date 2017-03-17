@@ -3,7 +3,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3" *ngIf="menuClicked">
+        <div class="col-xs-6 menuMain" *ngIf="menuClicked">
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -166,7 +166,7 @@
         </div>
 
         <!--cuerpo-->
-        <div class="containermain col-sm-9" id="main">
+        <div class="containermain col-xs-6" id="main">
                 <!--Pantallas Data Managements-->
                 <div class="panel panel-default" id="searchMember" #searchMember >
                 <!-- Default panel contents -->
@@ -191,6 +191,7 @@
                 <app-export-comp *ngIf="allocationModelClicked"></app-export-comp>
                 <app-export-comp *ngIf="allocationHistoryClicked"></app-export-comp>
         </div>
-    
+        </div>
     </div>
+
 </div>
