@@ -168,17 +168,24 @@
         <!--cuerpo-->
         <div class="containermain col-sm-9" id="main">
                 <!--Pantallas Data Managements-->
-                <app-members-comp *ngIf="membersClicked"></app-members-comp>
-                <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
-                <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
-                <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
-                <!--Pantallas Operations-->
-                <app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>
-                <app-batch-maintenance-comp *ngIf="batchManteClicked"></app-batch-maintenance-comp>
-                <app-batch-monitor-comp *ngIf="batchMoniClicked"></app-batch-monitor-comp>
-                <!--Pantallas Migration-->
-                <app-import-comp *ngIf="importClicked"></app-import-comp>
-                <app-export-comp *ngIf="exportClicked"></app-export-comp>
+                <div class="panel panel-default" id="searchMember" #searchMember >
+                <!-- Default panel contents -->
+                <div class="panel-heading">Search Member
+                </div>
+
+                <div class="panel-body"> 
+                    <app-members-comp *ngIf="membersClicked"></app-members-comp>
+                    <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
+                    <app-hierarchies-comp *ngIf="!hierarchiesClicked"></app-hierarchies-comp>
+                    <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
+                    <!--Pantallas Operations-->
+                    <app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>
+                    <app-batch-maintenance-comp *ngIf="batchManteClicked"></app-batch-maintenance-comp>
+                    <app-batch-monitor-comp *ngIf="batchMoniClicked"></app-batch-monitor-comp>
+                    <!--Pantallas Migration-->
+                    <app-import-comp *ngIf="importClicked"></app-import-comp>
+                    <app-export-comp *ngIf="exportClicked"></app-export-comp>
+                </div>
                  <!--Pantallas PFT-->
                 <app-pft-rule-comp *ngIf="allocationClicked" (closerule)="closepft($event)"></app-pft-rule-comp>
                 <app-export-comp *ngIf="allocationModelClicked"></app-export-comp>

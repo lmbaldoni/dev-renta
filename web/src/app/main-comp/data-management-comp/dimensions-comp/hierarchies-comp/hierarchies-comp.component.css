@@ -1,0 +1,94 @@
+.panel .panel-heading {
+    height: 20px;
+    padding:0;
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: success;
+}
+
+.panel .panel-primary{
+    background-color: cornflowerblue;
+}
+
+.panel .panel-body {
+    padding: 3px;
+    font-size: 13px;
+    
+}
+
+
+
+.panel .panel-body .box .row .control-label{
+    padding: 2 2px 2 2px;
+    padding-left: 15px;
+    padding-top: 1px;
+}
+
+.panel .panel-body .box .row {
+    padding: 2 2px 2 2px;
+    padding-left: 48px;
+    padding-top: 2px;
+}
+
+.memberPanel{
+    padding: 5px;
+}
+
+.panel {
+    margin-top: 3px; 
+    margin-bottom: 3px; 
+    /*padding-top: 3px; */
+    padding-bottom:3px;
+    
+}
+
+                                                
+.panel .table{
+    margin-top: 3px; 
+    margin-bottom: 3px; 
+    padding-top: 3px; 
+    padding-bottom:3px;
+}
+
+table th, table td{
+        padding: 1px;
+    }
+
+.tab-tab-panecontent .tab-pane{
+    padding: 0;
+}
+
+.form-control{
+    padding: 0;
+    height: 22px;
+    border-radius:3px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.btn-xs {
+    height: 22px;
+    width: 22px;    
+}
+
+.btn-sm{
+    height: 22px;
+    padding: 2px;
+    
+}
+
+.step33 {
+    border :1px solid #eee;
+    border-radius:5px;
+    padding: 0 1px 0 1px;
+    margin-bottom:5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.step33 .panel {
+    padding: 0;
+    padding-top: 0px;
+}
