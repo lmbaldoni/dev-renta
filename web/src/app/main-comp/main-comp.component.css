@@ -40,7 +40,7 @@ body{margin-top:50px;}
 .btn {
     background-color: white; /* Green */
     border: none;
-    color: #428bca;
+    /*color: #428bca;*/
     padding: 10px 40px;
     text-align: left;
     text-decoration: none;
@@ -51,7 +51,7 @@ body{margin-top:50px;}
 .btn:hover {
     background-color: transparent; /* Green */
     border: none;
-    color: #428bca;
+    /*color: #428bca;*/
     padding: 10px 40px;
     padding-right: 0px;
     text-decoration: none;

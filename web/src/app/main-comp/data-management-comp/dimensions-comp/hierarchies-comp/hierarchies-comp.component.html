@@ -1,6 +1,6 @@
 <div class="memberPanel">
     
-                                <div class="panel panel-primary">
+                                <div class="panel panel-success">
                                         <div class="panel-heading">
                                             Dimension
                                         </div>
@@ -23,6 +23,10 @@
                                 <div class="panel panel-success">
                                         <div class="panel-heading panel-heading-xs">
                                             Search
+                                            <div class="btn-group pull-right">
+                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-search" (click)="SearchMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-refresh " (click)="RefreshMember()" ></button>
+                                            </div>
                                         </div>
                                         <div class="panel-body panel-body-xs">
                                                     <div class="col-sm-6 box" style="display: block;">
