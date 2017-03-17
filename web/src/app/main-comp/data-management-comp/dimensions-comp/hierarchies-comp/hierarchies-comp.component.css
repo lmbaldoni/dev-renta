@@ -1,10 +1,11 @@
 .panel .panel-heading {
-    height: 20px;
+    height: 25px;
     padding:0;
     font-size: 13px;
     padding-left: 10px;
     font-weight: bold;
     background-color: success;
+    /*padding-top: 2px;*/
 }
 
 .panel .panel-primary{
