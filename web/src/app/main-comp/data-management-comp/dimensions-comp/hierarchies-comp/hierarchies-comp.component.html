@@ -26,7 +26,7 @@
                                             <div class="form-group pull-right">
                                                 <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-search" (click)="SearchMember()" ></button>
                                                 <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-refresh " (click)="RefreshMember()" ></button>
-                                                
+
                                             </div>
                                         </div>
                                         <div class="panel-body panel-body-xs">
@@ -94,19 +94,30 @@
                                         <div class="panel panel-success">
                                         <div class="panel-heading panel-heading-xs">
                                             Dimension Members
+                                            <div class="form-group pull-right">
+                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
+                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-zoom-in" (click)="SearchMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-trash" (click)="RemoveMember()" ></button>
+                                            </div>
                                         </div>
                                         <div class="panel-body panel-body-xs">
-                                                    <div class="col-sm-6 box" style="display: block;">
-                                                        <div class="row">
-                                                            <label class="col-sm-3 control-label" for="folder">Arithmetic Oper</label>
-                                                                    <div class="col-sm-6">
-                                                                        <select id="folder" name="folder" class="form-control btn-default">
-                                                                        <option value="1">*</option>
-                                                                        <option value="2">/</option>
-                                                                        </select>
-                                                                    </div>
-                                                        </div>
-                                                    </div>
+                                                    <table  id="tableMembers" 
+                                                            class="table table-striped table-bordered" 
+                                                            cellspacing="0" 
+                                                            width="100%"  
+                                                            data-pagination="true"
+                                                            data-url="../main-comp/data/listMembers.json">
+                                                        <thead>
+                                                        <tr>
+                                                            <th data-field="select" data-checkbox="true"></th>
+                                                            <th data-field="alphaCode" class="col-sm-2">Alphanumeric Code</th>
+                                                            <th data-field="numericCode" class="col-sm-2">Numeric Code</th>
+                                                            <th data-field="name"class="col-sm-2">Name</th>
+                                                            <th data-field="isLeaf" class="col-sm-2">Is Leaf</th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
                                             </div>
                                         </div>
                         
