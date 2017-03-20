@@ -11,6 +11,23 @@
 .menuMain{
     width: 22%;
 }
+/*.color-one{
+    background-color: grey;
+    color: white;
+}
+*/
+/*.color-two{
+ background-color: #79aec8;
+    color: #417690;
+}*/
+.color-prefe{
+     background-color: #337ab7;
+    color: white;
+
+}
+/*.panel{
+
+}*/
 
 body{margin-top:50px;}
 .glyphicon { margin-right:5px; }

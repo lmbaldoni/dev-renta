@@ -1,10 +1,10 @@
 <div class="memberPanel">
     
-                                <div class="panel panel-success">
-                                        <div class="panel-heading">
+                                <div class="panel panel-default">
+                                        <div class="panel-heading color-one">
                                             Dimension
                                         </div>
-                                        <div class="panel-body">
+                                        <div class="panel-body color-cuerpo">
                                                  <div class="col-sm-6 box" style="display: block;">
                                                                 <div class="row">
                                                                     <label class="col-sm-5 control-label" for="folder">Dimension</label>
@@ -20,31 +20,31 @@
                                                     </div>
                                         </div>
                                 </div>
-                                <div class="panel panel-success">
-                                        <div class="panel-heading panel-heading-xs">
+                                <div class="panel panel-default">
+                                        <div class="panel-heading color-one">
                                             Search
                                             <div class="form-group pull-right">
-                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-search" (click)="SearchMember()" ></button>
-                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-refresh " (click)="RefreshMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm color-search glyphicon glyphicon-search" (click)="SearchMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm color-reset glyphicon glyphicon-refresh " (click)="RefreshMember()" ></button>
 
                                             </div>
                                         </div>
-                                        <div class="panel-body panel-body-xs">
+                                        <div class="panel-body panel-body-xs color-cuerpo">
                                                     <div class="col-sm-6 box" style="display: block;">
                                                           <div class="row">
-                                                                 <label class="control-label col-sm-5">Alphanumeric Code</label>
+                                                                 <label class="control-label color-campo col-sm-5">Alphanumeric Code</label>
                                                                   <div class="col-sm-6">    
                                                                       <input type="text" class="form-control" id="input-id-3" placeholder="Alphanumeric Code">
                                                                   </div>
                                                               </div>
                                                           <div class="row">
-                                                                 <label class="control-label col-sm-5">Name</label>
+                                                                 <label class="control-label color-campo col-sm-5">Name</label>
                                                                   <div class="col-sm-6">    
                                                                       <input type="text" class="form-control" id="input-id-3" placeholder="Name">
                                                                   </div>
                                                               </div>
                                                             <div class="row">
-                                                                 <label class="control-label col-sm-5">Enabled</label>
+                                                                 <label class="control-label color-campo col-sm-5">Enabled</label>
                                                                     <div class="col-sm-6">
                                                                         <input checked data-toggle="toggle" type="checkbox"> 
                                                                     </div>
@@ -63,19 +63,19 @@
                                                     </div>
                                                     <div class="col-sm-6 box" style="display: block;">
                                                               <div class="row">
-                                                                  <label class="control-label col-sm-5">Numeric Code</label>
+                                                                  <label class="control-label color-campo col-sm-5">Numeric Code</label>
                                                                       <div class="col-sm-6">
                                                                           <input type="text" class="form-control" id="input-id-4" placeholder="Numeric Code">
                                                                       </div>
                                                               </div>
                                                               <div class="row">
-                                                                 <label class="control-label col-sm-5">Description</label>
+                                                                 <label class="control-label color-campo col-sm-5">Description</label>
                                                                   <div class="col-sm-6">    
                                                                       <input type="text" class="form-control" id="input-id-3" placeholder="Description">
                                                                   </div>
                                                               </div>
                                                               <div class="row">
-                                                                    <label class="control-label col-sm-5">Member Type</label>
+                                                                    <label class="control-label color-campo col-sm-5">Member Type</label>
                                                                     <div class="btn-group col-sm-6">
                                                                         <button type="button" class="btn btn-default btn-sm">Is Leaf</button>
                                                                         <button type="button" class="btn btn-default btn-sm">Is Node</button>
@@ -91,17 +91,17 @@
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="panel panel-success">
-                                        <div class="panel-heading panel-heading-xs">
+                                        <div class="panel panel-default">
+                                        <div class="panel-heading color-one">
                                             Dimension Members
                                             <div class="form-group pull-right">
-                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
-                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-zoom-in" (click)="SearchMember()" ></button>
-                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
-                                                <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-trash" (click)="RemoveMember()" ></button>
+                                                <button type="button" class="btn btn-default color-plus btn-sm glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
+                                                <button type="button" class="btn btn-default color-view btn-sm glyphicon glyphicon-zoom-in" (click)="SearchMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm color-edit glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-sm color-delete glyphicon glyphicon-trash" (click)="RemoveMember()" ></button>
                                             </div>
                                         </div>
-                                        <div class="panel-body panel-body-xs">
+                                        <div class="panel-body panel-body-xs color-cuerpo">
                                                     <table  id="tableMembers" 
                                                             class="table table-striped table-bordered" 
                                                             cellspacing="0" 

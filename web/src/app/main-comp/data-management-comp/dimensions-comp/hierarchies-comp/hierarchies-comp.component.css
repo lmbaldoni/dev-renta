@@ -18,6 +18,53 @@
     
 }
 
+.color-campo{
+    color: black;
+    font-weight: normal;
+}
+.color-one{
+    background-color: #337ab7;
+    
+    color: white;
+    font-weight: normal;
+}
+
+.color-cuerpo{
+     background-color: white;
+     
+     font-weight: normal;
+    
+}
+
+.color-plus {
+    /*color: green;*/
+    color: dodgerblue;
+}
+
+.color-search {
+    color: dodgerblue;
+}
+
+.color-view {
+    /*color: orange;*/
+    color: dodgerblue;
+}
+
+.color-edit {
+    /*color: yellowgreen;*/
+    color: dodgerblue;
+}
+
+.color-delete {
+    /*color: red;*/
+    color: dodgerblue;
+}
+
+.color-reset {
+    /*color: green;*/
+    color: dodgerblue;
+}
+
 .form-group {
     padding-right: 50px;
 }
