@@ -168,7 +168,7 @@
         <!--cuerpo-->
         <div class="containermain col-xs-6" id="main">
                 <!--Pantallas Data Managements-->
-                <div class="panel panel-default color-two" id="searchMember" #searchMember >
+                <div class="panel panel-default color-two"  *ngIf="panelMainClicked" id="searchMember" #searchMember >
                 <!-- Default panel contents -->
                 <div class="panel-heading  color-one"><span><strong>Members</strong></span>
                 </div>
@@ -176,7 +176,7 @@
                 <div class="panel-body"> 
                     <app-members-comp *ngIf="membersClicked"></app-members-comp>
                     <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
-                    <app-hierarchies-comp *ngIf="!hierarchiesClicked"></app-hierarchies-comp>
+                    <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
                     <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
                     <!--Pantallas Operations-->
                     <app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>
@@ -186,11 +186,11 @@
                     <app-import-comp *ngIf="importClicked"></app-import-comp>
                     <app-export-comp *ngIf="exportClicked"></app-export-comp>
                 </div>
+        </div>
                  <!--Pantallas PFT-->
                 <app-pft-rule-comp *ngIf="allocationClicked" (closerule)="closepft($event)"></app-pft-rule-comp>
                 <app-export-comp *ngIf="allocationModelClicked"></app-export-comp>
                 <app-export-comp *ngIf="allocationHistoryClicked"></app-export-comp>
-        </div>
         </div>
     </div>
 

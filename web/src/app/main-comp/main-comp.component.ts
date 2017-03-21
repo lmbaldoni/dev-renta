@@ -26,11 +26,13 @@ export class MainCompComponent implements OnInit {
       this.menuClicked = true;
       /*mostrar*/
       this.allocationClicked = false;
+      this.panelMainClicked = false;
     }
 
   /*hide show header and menu*/
 headerClicked = true;
 menuClicked = true;
+panelMainClicked = false;
 
 /*hide show DATA MANAGEMENT*/
 
@@ -44,9 +46,11 @@ menuClicked = true;
     this.attributesClicked = false;
     this.hierarchiesClicked = false;
     this.filtersClicked = false;
+    
   }
 
   setMembersClicked(clicked: boolean) {
+      this.panelMainClicked = clicked;
       this.membersClicked = clicked;
       /*ocultar*/
       this.setAllOperations();
@@ -59,6 +63,7 @@ menuClicked = true;
 
   setAttributesClicked(clicked: boolean) {
       this.attributesClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -70,6 +75,7 @@ menuClicked = true;
 
   setHierarchiesClicked(clicked: boolean) {
       this.hierarchiesClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -80,6 +86,7 @@ menuClicked = true;
 
    setFiltersClicked(clicked: boolean) {
       this.filtersClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -98,10 +105,12 @@ menuClicked = true;
     this.batchManteClicked = false;
     this.batchExeClicked = false;
     this.batchMoniClicked = false;
+    
   }
 
   setBatchManteClicked(clicked: boolean) {
       this.batchManteClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllMigration();
@@ -111,6 +120,7 @@ menuClicked = true;
 
   setBatchExeClicked(clicked: boolean) {
       this.batchExeClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllMigration();
@@ -121,6 +131,7 @@ menuClicked = true;
 
   setBatchMoniClicked(clicked: boolean) {
       this.batchMoniClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllMigration();
@@ -138,10 +149,12 @@ menuClicked = true;
   setAllMigration(){
     this.importClicked = false;
     this.exportClicked = false;
+    
   }
 
   setImportClicked(clicked: boolean) {
       this.importClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllOperations();
@@ -151,6 +164,7 @@ menuClicked = true;
 
   setExportClicked(clicked: boolean) {
       this.exportClicked = clicked;
+      this.panelMainClicked = clicked;
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllOperations();
@@ -181,6 +195,7 @@ menuClicked = true;
       this.allocationHistoryClicked = !clicked;
       this.headerClicked = !clicked;
       this.menuClicked = !clicked;
+      this.panelMainClicked = !clicked;
       /*mostrar*/
       this.allocationClicked = clicked;
       
