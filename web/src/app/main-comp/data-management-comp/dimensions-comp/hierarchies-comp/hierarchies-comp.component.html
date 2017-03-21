@@ -107,8 +107,7 @@
                                                             cellspacing="0" 
                                                             width="100%"  
                                                             data-pagination="true"
-                                                            data-url="../main-comp/data/listMembers.json">
-                                                        <thead>
+                                                            >
                                                         <tr>
                                                             <th data-field="select" data-checkbox="true"></th>
                                                             <th data-field="alphaCode" class="col-sm-2">Alphanumeric Code</th>
@@ -116,8 +115,18 @@
                                                             <th data-field="name"class="col-sm-2">Name</th>
                                                             <th data-field="isLeaf" class="col-sm-2">Is Leaf</th>
                                                         </tr>
-                                                        </thead>
+                                                       
+                                                             <tr template="ngFor let member of members" >
+                                                                <td>{{member}}</td>
+                                                                <td>{{member.id_code}}</td>
+                                                                 <td>{{member.id_code}}</td>
+                                                                  <td>{{member.id_code}}</td>
+                                                                   <td>{{member.id_code}}</td>
+                                                             </tr>
+                                                       
+                                                       
                                                     </table>
+                                                       <p *ngFor="let member of members">{{member}}</p>
                                             </div>
                                         </div>
                         

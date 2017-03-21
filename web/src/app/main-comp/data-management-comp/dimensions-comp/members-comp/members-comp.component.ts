@@ -21,8 +21,8 @@ export class MembersCompComponent implements OnInit {
       response => {
         let data = response.json();
         for (var i = 0; i < data.results.length; i++) {
-          let name = data.results[i].username;
-          this.users.push(name);
+          let id_code = data.results[i].id_code;
+          this.users.push(id_code);
         }
       },
       error => console.error(error)
