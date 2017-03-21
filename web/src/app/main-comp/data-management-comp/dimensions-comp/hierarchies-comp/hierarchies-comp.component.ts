@@ -10,7 +10,7 @@ import { Http } from '@angular/http';
 
 export class HierarchiesCompComponent implements OnInit {
 
-   private members: string[] = [];
+   private members: any[] = [];
 
   constructor(private http: Http) {
      
@@ -20,7 +20,7 @@ export class HierarchiesCompComponent implements OnInit {
       response => {
         let data = response.json();
         for (var i = 0; i < data.results.length; i++) {
-          let id_alfa = data.results[i].id_alfa;
+          let id_alfa = data.results[i];
           this.members.push(id_alfa);
         }
       },

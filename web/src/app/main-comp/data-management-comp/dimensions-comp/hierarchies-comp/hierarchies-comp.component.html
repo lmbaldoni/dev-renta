@@ -109,7 +109,7 @@
                                                             data-pagination="true"
                                                             >
                                                         <tr>
-                                                            <th data-field="select" data-checkbox="true"></th>
+                                                            <th data-field="select" class="col-sm-1" data-checkbox="true"></th>
                                                             <th data-field="alphaCode" class="col-sm-2">Alphanumeric Code</th>
                                                             <th data-field="numericCode" class="col-sm-2">Numeric Code</th>
                                                             <th data-field="name"class="col-sm-2">Name</th>
@@ -117,17 +117,14 @@
                                                         </tr>
                                                        
                                                              <tr template="ngFor let member of members" >
-                                                                <td>{{member}}</td>
+                                                                <td></td>
+                                                                <td>{{member.id_alfa}}</td>
                                                                 <td>{{member.id_code}}</td>
-                                                                 <td>{{member.id_code}}</td>
-                                                                  <td>{{member.id_code}}</td>
-                                                                   <td>{{member.id_code}}</td>
+                                                                <td>{{member.name}}</td>
+                                                                <td>{{member.if_lead}}</td>
                                                              </tr>
-                                                       
-                                                       
-                                                    </table>
-                                                       <p *ngFor="let member of members">{{member}}</p>
-                                            </div>
+                                                     </table>
+                                                </div>
                                         </div>
                         
 </div>
