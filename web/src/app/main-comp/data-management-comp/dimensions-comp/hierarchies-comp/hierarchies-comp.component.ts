@@ -30,8 +30,8 @@ export class HierarchiesCompComponent implements OnInit {
 
    }
 
-  CreateMemderbuttonWasClicked: boolean = false;
-   SearchMemderbuttonWasClicked: boolean = true;
+  CreateMemderbuttonWasClicked: boolean = true;
+   SearchMemderbuttonWasClicked: boolean = false;
 
   setButtonClicked(clicked: boolean) {
       this.CreateMemderbuttonWasClicked = clicked;

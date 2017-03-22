@@ -30,6 +30,21 @@
     font-weight: normal;
 }
 
+.color-medio-one{
+    
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 50%;
+    height: 200px;
+    
+}
+.color-medio-one .form-group{
+    
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
 .color-cuerpo{
      background-color: white;
      padding-top: 0px;
@@ -121,15 +136,18 @@ table th, table td{
 
 .btn-xs {
     height: 22px;
-    width: 22px;    
+    
+      padding: 2px;
+    padding-bottom: 0px;
+     
 }
 
-.btn-sm{
+/*.btn-sm{
     height: 22px;
     padding: 2px;
     padding-bottom: 0px;
     
-}
+}*/
 .boton{
     padding-bottom: 0px;
 }
@@ -147,4 +165,9 @@ table th, table td{
 .step33 .panel {
     padding: 0;
     padding-top: 0px;
+}
+
+.memberPanel .btn-sm{
+    width: 75px;
+    height: 30px;    
 }
