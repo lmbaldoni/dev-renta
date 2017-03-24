@@ -32,6 +32,9 @@ import { ImportCompComponent } from './main-comp/migration-comp/import-comp/impo
 import { ExportCompComponent } from './main-comp/migration-comp/export-comp/export-comp.component';
 import { ReportsCompComponent } from './main-comp/reports-comp/reports-comp.component';
 
+/*Servicios*/
+import { MembersService } from './main-comp/data-management-comp/dimensions-comp/members-comp/members.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +71,7 @@ import { ReportsCompComponent } from './main-comp/reports-comp/reports-comp.comp
     HttpModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [MembersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

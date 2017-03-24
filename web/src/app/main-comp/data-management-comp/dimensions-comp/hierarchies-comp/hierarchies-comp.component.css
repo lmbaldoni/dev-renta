@@ -169,5 +169,7 @@ table th, table td{
 
 .memberPanel .btn-sm{
     width: 75px;
-    height: 30px;    
+    height: 30px;
+    box-shadow: 0px;
+
 }

@@ -174,9 +174,9 @@
                 </div>
 
                 <div class="panel-body"> 
-                    <app-members-comp *ngIf="membersClicked"></app-members-comp>
+                    <app-members-comp *ngIf="!membersClicked"></app-members-comp>
                     <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
-                    <app-hierarchies-comp *ngIf="!hierarchiesClicked"></app-hierarchies-comp>
+                    <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
                     <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
                     <!--Pantallas Operations-->
                     <app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>
