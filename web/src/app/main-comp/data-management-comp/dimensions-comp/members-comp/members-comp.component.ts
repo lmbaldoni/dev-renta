@@ -12,7 +12,7 @@ import { NgForm }    from '@angular/forms';
 })
 export class MembersCompComponent implements OnInit {
 
-  public model = new Member(false,null, '', '', '',false,false,'lucas','lucas');
+  public model = new Member(null,false,null, '', '', '',false,false,'lucas','lucas');
 
   public url =  "http://localhost:8000/"+"members/"; 
      
@@ -31,7 +31,7 @@ export class MembersCompComponent implements OnInit {
 
   private resetmodel() {
 
-    this.model = new Member(false,null, '', '', '',false,false,'lucas','lucas');
+    this.model = new Member(null,false,null, '', '', '',false,false,'lucas','lucas');
 
   } 
 		
@@ -65,12 +65,40 @@ export class MembersCompComponent implements OnInit {
     this.setButtonClicked(false);
 	}
 
-  removeItem(item: Number) {
+ 
+   checkbox(recipient) {
+        recipient.selected = (recipient.selected) ? false : true;
+    }
 
-		this.http.delete(this.url + item).subscribe(
-			response => this.refresh(),
-			error => this.handleError(error)
-		);
+  removeMember() {
+     
+     /*for (var i = 0; i < this.members.length; i++) {
+          let row = this.members.get[i];
+          
+          if(row.checked = true){
+                    this.http.delete(this.url + this.members.findIndex[i]).subscribe(
+                      response => this.refresh(),
+                      error => this.handleError(error)
+                    );
+          }
+
+  
+        }*/
+
+        this.membersDelete = this.members.filter((x) => x.checked)
+        console.log(this.membersDelete);
+
+        /*Member item =  this.model;*/
+
+        for (var i = 0; i < this.membersDelete.length; i++) {
+              let item = this.membersDelete[i] as Member;
+            this.http.delete(this.url + item.id + '/').subscribe(
+                      response => this.refresh(),
+                      error => this.handleError(error)
+                    );
+        }
+
+		
 	}
 
   private handleError(error: any) {

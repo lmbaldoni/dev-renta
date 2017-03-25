@@ -1,6 +1,7 @@
 from django.db import models
 
 class Member(models.Model):
+    id = models.AutoField(primary_key=True)
     id_code = models.IntegerField(default=0)
     id_alfa = models.CharField(max_length=20, blank=True, default='')
     name = models.CharField(max_length=20, blank=True, default='')

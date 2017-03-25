@@ -103,7 +103,7 @@
                                                 <button type="button" class="btn btn-default color-plus btn-xs glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
                                                 <button type="button" class="btn btn-default color-view btn-xs glyphicon glyphicon-zoom-in" (click)="SearchMember()" ></button>
                                                 <button type="button" class="btn btn-default btn-xs color-edit glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
-                                                <button type="button" class="btn btn-default btn-xs color-delete glyphicon glyphicon-trash" (click)="RemoveMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-xs color-delete glyphicon glyphicon-trash" (click)="removeMember()" ></button>
                                             </div>
                                         </div>
                                         <div class="panel-body panel-body-xs color-cuerpo">
@@ -125,18 +125,19 @@
                                                         </tr>
                                                        
                                                              <tr template="ngFor let member of members" >
-                                                                <td class="vcenter"><input type="checkbox" id="blahA" (click)="selectedDelete()"/></td>
+                                                                <td class="vcenter"><input #{{member.id_code}} type="checkbox" [(ngModel)]="member.checked"  (change)="checkbox(member)"/></td>
 
                                                                 <td>{{member.id_alfa}}</td>
                                                                 <td>{{member.id_code}}</td>
                                                                 <td>{{member.name}}</td>
                                                                 <td>{{member.if_lead}}</td>
-                                                                
+                                                                <!--<td>{{member.checked}}</td>-->
+                                                                    
                                                                 
                                                              </tr>
                                                          
                                                      </table>
-                                                            
+                                                        
                                                 </div>
                                         </div>
                                         
