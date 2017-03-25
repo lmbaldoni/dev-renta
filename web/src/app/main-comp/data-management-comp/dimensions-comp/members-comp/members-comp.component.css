@@ -49,7 +49,16 @@
      background-color: white;
      padding-top: 0px;
      font-weight: normal;
+     
     
+}
+
+.sizetable{
+    height: 100px;
+}
+
+.vcenter {
+    vertical-align: middle;
 }
 
 .color-plus {

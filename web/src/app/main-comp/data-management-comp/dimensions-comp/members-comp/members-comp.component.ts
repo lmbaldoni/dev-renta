@@ -12,11 +12,13 @@ import { NgForm }    from '@angular/forms';
 })
 export class MembersCompComponent implements OnInit {
 
-  public model = new Member(null, '', '', '',false,false,'lucas','lucas');
+  public model = new Member(false,null, '', '', '',false,false,'lucas','lucas');
 
-   private members = [];
   public url =  "http://localhost:8000/"+"members/"; 
      
+   public members = [];
+
+   public membersDelete = [];
 
   constructor(private http: Http,private membersService: MembersService) {
   
@@ -26,8 +28,16 @@ export class MembersCompComponent implements OnInit {
   ngOnInit() {
     this.refresh();
   }
+
+  private resetmodel() {
+
+    this.model = new Member(false,null, '', '', '',false,false,'lucas','lucas');
+
+  } 
 		
    private refresh() {
+     
+     this.members = [];
 
     this.http.get(this.url).subscribe(
       response => {
@@ -50,6 +60,21 @@ export class MembersCompComponent implements OnInit {
 		this.http.post(this.url, item).subscribe(
 			response => this.refresh()
 		);
+
+    this.resetmodel();
+    this.setButtonClicked(false);
+	}
+
+  removeItem(item: Number) {
+
+		this.http.delete(this.url + item).subscribe(
+			response => this.refresh(),
+			error => this.handleError(error)
+		);
+	}
+
+  private handleError(error: any) {
+		console.error(error);
 	}
 
      
