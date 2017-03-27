@@ -101,8 +101,8 @@
                                             Dimension Members
                                             <div class="form-group pull-right">
                                                 <button type="button" class="btn btn-default color-plus btn-xs glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
-                                                <button type="button" class="btn btn-default color-view btn-xs glyphicon glyphicon-zoom-in" (click)="SearchMember()" ></button>
-                                                <button type="button" class="btn btn-default btn-xs color-edit glyphicon glyphicon-pencil" (click)="EditMember()" ></button>
+                                                <button type="button" class="btn btn-default color-view btn-xs glyphicon glyphicon-zoom-in" [disabled]="!isValid"  (click)="SearchMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-xs color-edit glyphicon glyphicon-pencil" [disabled]="!isValid"  (click)="EditMember()" ></button>
                                                 <button type="button" class="btn btn-default btn-xs color-delete glyphicon glyphicon-trash" (click)="removeMember()" ></button>
                                             </div>
                                         </div>
@@ -111,10 +111,6 @@
                                                             class="table table-striped table-bordered sizetable" 
                                                             cellspacing="0" 
                                                             width="100%"  
-                                                            data-pagination="true"
-                                                            
-                                                            data-ng-value="members"
-                                                            data-page-list="[5, 10, 20, 50, 100, 200]"
                                                             >
                                                         <tr>
                                                             <th data-field="selected" class="col-sm-1" data-checkbox="true"></th>

@@ -13,4 +13,10 @@ class Member(models.Model):
     modified_date = models.DateTimeField(auto_now_add=True)
     modified_by = models.CharField(max_length=20)
 
+class Attribute(models.Model):
+    id = models.AutoField(primary_key=True)
+    id_code = models.IntegerField(default=0)
+    id_alfa = models.CharField(max_length=20, blank=True, default='')
+    name = models.CharField(max_length=50, blank=True, default='')
+    value = models.CharField(max_length=50, blank=True, default='')
     

@@ -37,7 +37,7 @@ export class MembersCompComponent implements OnInit {
 		
    private refresh() {
      
-     this.members = [];
+     this.members.length = 0;
 
     this.http.get(this.url).subscribe(
       response => {
@@ -84,7 +84,7 @@ export class MembersCompComponent implements OnInit {
 
   
         }*/
-
+        this.membersDelete.length = 0;
         this.membersDelete = this.members.filter((x) => x.checked)
         console.log(this.membersDelete);
 
@@ -97,7 +97,9 @@ export class MembersCompComponent implements OnInit {
                       error => this.handleError(error)
                     );
         }
-
+        
+        /*this.refresh();
+*/
 		
 	}
 

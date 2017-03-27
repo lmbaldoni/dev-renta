@@ -2,10 +2,11 @@ from django.conf.urls import  include, url
 from django.contrib import admin
 admin.autodiscover()
 
-from members.viewsets import MemberViewSet
+from members.viewsets import MemberViewSet,AttributeViewSet
 from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'members', MemberViewSet)
+router.register(r'attributes', AttributeViewSet)
 
 
 urlpatterns = [#'',
