@@ -68,6 +68,15 @@
     margin-bottom: 1px; 
     padding-top: 1px; 
     padding-bottom:1px;
+    padding: 3px;
+ 
+}
+
+.tab-credit{
+   height: 25px;
+   padding: 3px;
+   font-weight: bold;
+   font-size: 13px;
 }
                                                 
 .panel .table{

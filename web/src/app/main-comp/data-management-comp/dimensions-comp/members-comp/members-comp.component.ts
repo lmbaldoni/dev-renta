@@ -116,8 +116,13 @@ export class MembersCompComponent implements OnInit {
    SearchMemderbuttonWasClicked: boolean = true;
 
   setButtonClicked(clicked: boolean) {
+      this.resetmodel();
       this.CreateMemderbuttonWasClicked = clicked;
       this.SearchMemderbuttonWasClicked = !clicked;
+  }
+  
+  RefreshMember(){
+      this.resetmodel();
   }
 
 

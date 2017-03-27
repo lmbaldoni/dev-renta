@@ -68,7 +68,7 @@
                                                               <div class="row">
                                                                   <label class="control-label color-campo col-sm-5">Numeric Code</label>
                                                                       <div class="col-sm-6">
-                                                                          <input type="text" class="form-control" id="input-id-4" placeholder="Numeric Code"
+                                                                          <input type="number" class="form-control" id="input-id-4" placeholder="Numeric Code"
                                                                           [(ngModel)]="model.id_code" name="id_code">
                                                                       </div>
                                                               </div>
@@ -182,7 +182,7 @@
                                                               <div class="row">
                                                                   <label class="control-label color-campo col-sm-5" required>Numeric Code</label>
                                                                       <div class="col-sm-5">
-                                                                          <input type="text" class="form-control" id="input-id-4" placeholder="Numeric Code" required
+                                                                          <input type="number" min="1" max="999999" class="form-control" id="input-id-4" placeholder="Numeric Code" required
                                                                           [(ngModel)]="model.id_code" name="id_code">
                                                                       </div>
                                                               </div>

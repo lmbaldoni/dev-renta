@@ -29,4 +29,8 @@ export class PftRuleCompComponent implements OnInit {
   ngOnInit() {
   }
 
+ /* selectTab(tab: any){
+      this.selectTab(tab);
+  }*/
+
 }
