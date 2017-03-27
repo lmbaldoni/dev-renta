@@ -8,6 +8,9 @@
     /*padding-top: 2px;*/
      overflow: hidden;
 }
+.ckeckBoxAncho{
+    width: 10px;
+}
 
 .panel .panel-primary{
     background-color: cornflowerblue;
@@ -130,6 +133,14 @@
 table th, table td{
         padding: 1px;
     }
+
+ table td:first-child {
+	width: 5px;
+}
+
+.columna{
+    width: 24.5%;
+}
 
 .tab-tab-panecontent .tab-pane{
     padding: 0;

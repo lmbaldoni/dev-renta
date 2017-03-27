@@ -113,15 +113,15 @@
                                                             width="100%"  
                                                             >
                                                         <tr>
-                                                            <th data-field="selected" class="col-sm-1" data-checkbox="true"></th>
-                                                            <th data-field="alphaCode" class="col-sm-2">Alphanumeric Code</th>
-                                                            <th data-field="numericCode" class="col-sm-2">Numeric Code</th>
-                                                            <th data-field="name"class="col-sm-2">Name</th>
-                                                            <th data-field="isLeaf" class="col-sm-2">Is Leaf</th>
+                                                            <th data-field="selected" ><div class="ckeckBoxAncho"></div></th>
+                                                            <th data-field="alphaCode" class="columna">Alphanumeric Code</th>
+                                                            <th data-field="numericCode" class="columna">Numeric Code</th>
+                                                            <th data-field="name" class="columna">Name</th>
+                                                            <th data-field="isLeaf" class="columna">Is Leaf</th>
                                                         </tr>
                                                        
                                                              <tr template="ngFor let member of members" >
-                                                                <td class="vcenter"><input #{{member.id_code}} type="checkbox" [(ngModel)]="member.checked"  (change)="checkbox(member)"/></td>
+                                                                <td > <input #{{member.id_code}} type="checkbox" [(ngModel)]="member.checked"  (change)="checkbox(member)"/></td>
 
                                                                 <td>{{member.id_alfa}}</td>
                                                                 <td>{{member.id_code}}</td>
