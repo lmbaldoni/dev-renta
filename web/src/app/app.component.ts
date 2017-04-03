@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output  } from '@angular/core';
 import { MainCompComponent } from './main-comp/main-comp.component';
 import { DialogsService } from './dialogs.service';
 import {ConfirmDialog} from './confirm-dialog.component';
@@ -27,6 +27,14 @@ export class AppComponent implements OnInit {
       /*this.title = 'llego';*/
       this.showDialog = true;
   }
+
+   @Output() appMemberDialog = new EventEmitter();
+
+  appAddMember(event){
+      this.appMemberDialog.emit();
+  }
+
+    
 
   ngOnInit() {
   }

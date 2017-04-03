@@ -10,3 +10,9 @@ body{margin-top:50px;}
 .header{
     font-size: 15px;
 }
+
+
+.btn-sm{
+        border:1px solid #ccc;
+    
+}

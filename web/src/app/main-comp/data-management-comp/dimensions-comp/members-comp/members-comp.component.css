@@ -208,3 +208,22 @@ table th, table td{
         border:1px solid #ccc;
     
 }
+
+.dropboxDimension:hover, .dropboxDimension:focus, .dropboxDimension:active {
+    background:  white;
+}
+
+.buttonIsLeaf.active::after, .buttonIsLeaf:focus, .buttonIsLeaf:hover .buttonIsLeaf:after{
+    background:  #337ab7;
+    color:  white;
+    
+}
+
+/*.letterIsLeaf:active, .letterIsLeaf:focus, .letterIsLeaf:hover{
+    color:  white;
+    
+}*/
+
+/*.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background-color: #FFF;    
+}*/

@@ -9,7 +9,7 @@
                                                                 <div class="row">
                                                                     <label class="col-sm-5 control-label" for="folder">Dimension</label>
                                                                             <div class="col-sm-6">
-                                                                                <select id="folder" name="folder" class="form-control btn-default">
+                                                                                <select id="folder" name="folder" class="form-control btn-default dropboxDimension">
                                                                                 <option value="1">Banking</option>
                                                                                 <option value="2">Financial Element</option>
                                                                                 <option value="3">Organizational Unit</option>
@@ -24,7 +24,7 @@
                                         <div class="panel-heading color-one">
                                             Search
                                             <div class="form-group pull-right">
-                                                <button type="button" class="boton btn btn-default btn-xs color-search glyphicon glyphicon-search" (click)="SearchMember()" ></button>
+                                                <button type="button" class="boton btn btn-default btn-xs color-search glyphicon glyphicon-search" [disabled]="isValid" (click)="SearchMember()" ></button>
                                                 <button type="button" class="boton btn btn-default btn-xs color-reset glyphicon glyphicon-refresh " (click)="RefreshMember()" ></button>
 
                                             </div>
@@ -82,8 +82,8 @@
                                                               <div class="row">
                                                                     <label class="control-label color-campo col-sm-5">Member Type</label>
                                                                     <div class="btn-group col-sm-6" >
-                                                                        <button type="button" class="btn btn-default btn-xs">Is Leaf</button>
-                                                                        <button type="button" class="btn btn-default btn-xs">Is Node</button>
+                                                                        <button type="button" class="buttonIsLeaf btn btn-default btn-xs">Is Leaf</button>
+                                                                        <button type="button" class="buttonIsLeaf btn btn-default btn-xs">Is Node</button>
                                                                     </div>
                                                                 
                                                               </div>
@@ -153,7 +153,7 @@
                                                                 <div class="col-sm-6 box" style="display: block;">
                                                                     <label class="col-sm-4 control-label" for="folder">Dimension</label>
                                                                             <div class="col-sm-6">
-                                                                                <select id="folder" name="folder" class="form-control btn-default">
+                                                                                <select id="folder" name="folder" class="form-control btn-default dropboxDimension">
                                                                                 <option value="1">Banking</option>
                                                                                 <option value="2">Financial Element</option>
                                                                                 <option value="3">Organizational Unit</option>
@@ -209,8 +209,8 @@
                                                               <div class="row">
                                                                     <label class="control-label color-campo col-sm-5">Member Type</label>
                                                                     <div class="btn-group col-sm-5">
-                                                                        <button type="button" class="btn btn-default btn-xs">Is Leaf</button>
-                                                                        <button type="button" class="btn btn-default btn-xs">Is Node</button>
+                                                                        <button type="button" class="buttonIsLeaf btn btn-default btn-xs">Is Leaf</button>
+                                                                        <button type="button" class="buttonIsLeaf btn btn-default btn-xs">Is Node</button>
                                                                     </div>
                                                                 
                                                               </div>
