@@ -4,10 +4,14 @@
     <app-main-comp (addMainDialog)="openAppDialog($event)"></app-main-comp>
 </div>
 
-<app-dialog [(visible)]="showDialog">
-  <h1>Hello World</h1>
-  <button (click)="showDialog = !showDialog" class="btn">Close</button>
+<app-dialog [(visible)]="showDialog" >
+  <p>Confirm</p>
+  <p>Are you sure you want to do this?</p>
+  <button type="button" (click)="showDialog = !showDialog" class="btn-primary btn-xs">Save</button>
+  <button type="button" (click)="showDialog = !showDialog" class="btn-default btn-xs">Close</button>
 </app-dialog>
+
+
 <!-- <div id="footer" >
     <app-foot-comp></app-foot-comp>
 </div>-->
