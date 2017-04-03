@@ -1,8 +1,13 @@
 
 
 <div id="menu">
-    <app-main-comp></app-main-comp>
+    <app-main-comp (addMainDialog)="openAppDialog($event)"></app-main-comp>
 </div>
+
+<app-dialog [(visible)]="showDialog">
+  <h1>Hello World</h1>
+  <button (click)="showDialog = !showDialog" class="btn">Close</button>
+</app-dialog>
 <!-- <div id="footer" >
     <app-foot-comp></app-foot-comp>
 </div>-->

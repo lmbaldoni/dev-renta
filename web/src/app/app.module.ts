@@ -4,6 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import {MaterialModule} from '@angular/material';
+import {DialogsModule } from './dialogs.module';
+import { DialogComponent } from './dialog.component';
+
+
 import { AppComponent } from './app.component';
 import { HeaderCompComponent } from './header-comp/header-comp.component';
 import { MainCompComponent } from './main-comp/main-comp.component';
@@ -14,7 +19,6 @@ import { DimensionsCompComponent } from './main-comp/data-management-comp/dimens
 import { MembersCompComponent } from './main-comp/data-management-comp/dimensions-comp/members-comp/members-comp.component';
 import { AttributesCompComponent } from './main-comp/data-management-comp/dimensions-comp/attributes-comp/attributes-comp.component';
 import { HierarchiesCompComponent } from './main-comp/data-management-comp/dimensions-comp/hierarchies-comp/hierarchies-comp.component';
-import { LoginComponent } from './login/login.component';
 import { PftCompComponent } from './main-comp/pft-comp/pft-comp.component';
 import { PftRuleCompComponent } from './main-comp/pft-comp/pft-rule-comp/pft-rule-comp.component';
 import { OutputCompComponent } from './main-comp/pft-comp/pft-rule-comp/output-comp/output-comp.component';
@@ -35,6 +39,7 @@ import { ReportsCompComponent } from './main-comp/reports-comp/reports-comp.comp
 /*Servicios*/
 import { MembersService } from './main-comp/data-management-comp/dimensions-comp/members-comp/members.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +52,6 @@ import { MembersService } from './main-comp/data-management-comp/dimensions-comp
     MembersCompComponent,
     AttributesCompComponent,
     HierarchiesCompComponent,
-    LoginComponent,
     PftCompComponent,
     PftRuleCompComponent,
     OutputCompComponent,
@@ -63,13 +67,17 @@ import { MembersService } from './main-comp/data-management-comp/dimensions-comp
     MigrationCompComponent,
     ImportCompComponent,
     ExportCompComponent,
-    ReportsCompComponent
+    ReportsCompComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    MaterialModule.forRoot(),
+    DialogsModule
+    
   ],
   providers: [MembersService],
   bootstrap: [AppComponent]

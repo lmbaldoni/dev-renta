@@ -238,20 +238,22 @@
                                                             <th data-field="value" class="col-sm-2">Value</th>
                                                         </tr>
                                                        
-                                                             <tr template="ngFor let member of members" >
-                                                                <td>{{member.id_alfa}}</td>
-                                                                <td>{{member.id_code}}</td>
+                                                             <tr template="ngFor let attribute of attributes" >
+                                                                <td>{{attribute.name}}</td>
+                                                                <td>{{attribute.value}}</td>
                                                              </tr>
                                                      </table>
                                                 </div>
                                         </div>
                   <div class="col-offset-6 ">
                <ul class="list-inline  centered">
-                                        <li><button type="button" class="btn-sm btn-primary" (click)="addItem()">Save</button></li>
+                                        <li><button type="button" class="btn-sm btn-primary" (click)="addMember()">Save</button></li>
                                         <li><button type="button" class="btn-sm btn-default" (click)="setButtonClicked(false)">Cancelar</button></li>
                                     </ul>                          
+
                   </div>
-                        
+                      
 </div>
+
 
   

@@ -13,5 +13,12 @@ export class Member {
     ){}
 }
 
-
-
+export class attribute{
+    constructor(
+	public id: number,
+    public id_code: number,
+    public id_alfa: string,
+    public name: string,
+    public value: string
+    ){}
+}

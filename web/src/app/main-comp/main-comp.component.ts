@@ -1,6 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output  } from '@angular/core';
 import { DataManagementCompComponent } from './data-management-comp/data-management-comp.component';
 import { PftRuleCompComponent } from './pft-comp/pft-rule-comp/pft-rule-comp.component';
+
+/*import { DialogsService } from './dialogs.service';
+import { ConfirmDialog } from './confirm-dialog.component';*/
+
+
 
 @Component({
   selector: 'app-main-comp',
@@ -14,6 +19,18 @@ export class MainCompComponent implements OnInit {
 
    }
 
+   public result: any;
+
+    @Output() addMainDialog = new EventEmitter();
+
+   openDialog(event):void {
+    this.addMainDialog.emit();
+    
+    /*this.dialogsService
+      .confirm('Confirm Dialog', 'Are you sure you want to do this?')
+      .subscribe(res => this.result = res);*/
+      
+  }
 
    closepft(event):void{
         event.hiderule;

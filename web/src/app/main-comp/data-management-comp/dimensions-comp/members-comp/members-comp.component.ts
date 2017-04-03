@@ -1,32 +1,59 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output  } from '@angular/core';
 import { Http } from '@angular/http';
-import { Member } from './member.model';
+import { Member,attribute } from './member.model';
 import { MembersService } from './members.service';
-import { NgForm }    from '@angular/forms';
+import { NgForm, NgModel } from "@angular/forms";
+
+/*inicio modal*/
+
+/*import {DialogsService} from './dialogs.service';*/
+
+/*fin modal*/
+
 
 @Component({
   selector: 'app-members-comp',
   templateUrl: './members-comp.component.html',
+  
   styleUrls: ['./members-comp.component.css']
-  /*template: `<div *ng-for="let member of membersArray">{{member.id_alfa}}</div>`*/
+  
 })
 export class MembersCompComponent implements OnInit {
 
+  public result: any;
+
   public model = new Member(null,false,null, '', '', '',false,false,'lucas','lucas');
 
+  public modelattr = new attribute(null,null, '', '', '');
+
   public url =  "http://localhost:8000/"+"members/"; 
+  public urlattribute =  "http://localhost:8000/"+"attributes/"; 
      
    public members = [];
+   public attributes = [];
 
    public membersDelete = [];
 
+  @Output() addMemberDialog = new EventEmitter();
+  
   constructor(private http: Http,private membersService: MembersService) {
   
 
    }
+   /*modal inicio*/
+
+
+   addMember(event) {
+     this.addMemberDialog.emit();
+    
+  }
+
+ 
+  /*modal fin*/
    
   ngOnInit() {
     this.refresh();
+    this.refreshattribute();
   }
 
   private resetmodel() {
@@ -53,17 +80,36 @@ export class MembersCompComponent implements OnInit {
 
    }
 
+   private refreshattribute() {
+     
+     this.attributes.length = 0;
+
+    this.http.get(this.urlattribute).subscribe(
+      response => {
+        let data = response.json();
+        for (var i = 0; i < data.results.length; i++) {
+          let id_alfa = data.results[i];
+          this.attributes.push(id_alfa);
+        }
+      },
+      error => console.error(error)
+    );
+
+
+   }v
+
    private addItem() {
+    if(confirm("Are you sure to delete this member?")) {
+        let item =  this.model;
 
-		let item =  this.model;
+        this.http.post(this.url, item).subscribe(
+          response => this.refresh()
+        );
 
-		this.http.post(this.url, item).subscribe(
-			response => this.refresh()
-		);
-
-    this.resetmodel();
-    this.setButtonClicked(false);
-	}
+        this.resetmodel();
+        this.setButtonClicked(false);
+      }
+  }
 
  
    checkbox(recipient) {
