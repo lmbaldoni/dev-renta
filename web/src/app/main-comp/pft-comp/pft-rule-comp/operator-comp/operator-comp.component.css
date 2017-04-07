@@ -78,3 +78,8 @@ table th, table td{
     padding: 0;
     padding-top: 0px;
 }
+
+
+.dropboxDimension:hover, .dropboxDimension:focus, .dropboxDimension:active {
+    background:  white;
+}

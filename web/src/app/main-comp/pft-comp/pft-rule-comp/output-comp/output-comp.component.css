@@ -93,3 +93,7 @@ table th, table td{
 .tab-tab-panecontent .tab-pane{
     padding: 0;
 }
+
+.dropboxDimension:hover, .dropboxDimension:focus, .dropboxDimension:active {
+    background:  white;
+}
