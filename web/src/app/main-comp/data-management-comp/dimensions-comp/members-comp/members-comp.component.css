@@ -110,6 +110,15 @@
     padding-top: 2px;
 }
 
+.createMember{
+    padding-left: 60px;
+    padding-right: 10px;
+}
+
+.listamembers{
+    height: 200px;
+}
+
 .memberPanel{
     padding: 5px;
 }
