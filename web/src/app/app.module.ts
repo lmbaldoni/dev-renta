@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {MaterialModule} from '@angular/material';
-import {DialogsModule } from './dialogs.module';
-import { DialogComponent } from './dialog.component';
+import {DialogsModule } from './main-comp/data-management-comp/dimensions-comp/members-comp/dialogs.module';
+import { DialogComponent } from './main-comp/data-management-comp/dimensions-comp/members-comp/dialog.component';
 
 
 import { AppComponent } from './app.component';

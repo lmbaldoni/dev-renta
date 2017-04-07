@@ -3,6 +3,8 @@ import { Http } from '@angular/http';
 import { Member,attribute } from './member.model';
 import { MembersService } from './members.service';
 import { NgForm, NgModel } from "@angular/forms";
+import { DialogsService } from './dialogs.service';
+import {ConfirmDialog} from './confirm-dialog.component';
 
 /*inicio modal*/
 
@@ -34,20 +36,29 @@ export class MembersCompComponent implements OnInit {
 
    public membersDelete = [];
 
+   showDialog = false;
+   showDeleteDialog = false;
+
   @Output() addMemberDialog = new EventEmitter();
   
-  constructor(private http: Http,private membersService: MembersService) {
+  constructor(private http: Http,private membersService: MembersService,private dialogsService: DialogsService) {
   
 
    }
    /*modal inicio*/
 
 
-   addMember(event) {
-     this.addMemberDialog.emit();
+   addMember(/*event*/) {
+     /*this.addMemberDialog.emit();*/
+     this.showDialog = true;
     
   }
 
+  
+   public apptomemberDialog() {
+    
+      this.addItem();
+  }
  
   /*modal fin*/
    
@@ -99,7 +110,7 @@ export class MembersCompComponent implements OnInit {
    }v
 
    private addItem() {
-    if(confirm("Are you sure to delete this member?")) {
+    
         let item =  this.model;
 
         this.http.post(this.url, item).subscribe(
@@ -108,7 +119,7 @@ export class MembersCompComponent implements OnInit {
 
         this.resetmodel();
         this.setButtonClicked(false);
-      }
+      this.showDialog = false;
   }
 
  
@@ -116,6 +127,10 @@ export class MembersCompComponent implements OnInit {
         recipient.selected = (recipient.selected) ? false : true;
     }
 
+  removeMemberDialog(){
+    this.showDeleteDialog = true;
+  }
+  
   removeMember() {
      
      /*for (var i = 0; i < this.members.length; i++) {
@@ -146,7 +161,7 @@ export class MembersCompComponent implements OnInit {
         
         /*this.refresh();
 */
-		
+		this.showDeleteDialog = false;
 	}
 
   private handleError(error: any) {

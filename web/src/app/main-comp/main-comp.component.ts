@@ -32,6 +32,15 @@ export class MainCompComponent implements OnInit {
       
   }
 
+@Output() appToMemberDialog = new EventEmitter();
+
+  appToMember(event):void {
+    this.appToMemberDialog.emit();
+    
+   
+      
+  }
+
    closepft(event):void{
         event.hiderule;
         this.setAllDataManagement();

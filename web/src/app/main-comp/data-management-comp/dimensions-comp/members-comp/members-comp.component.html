@@ -103,7 +103,7 @@
                                                 <button type="button" class="btn btn-default color-plus btn-xs glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
                                                 <button type="button" class="btn btn-default color-view btn-xs glyphicon glyphicon-zoom-in" [disabled]="!isValid"  (click)="SearchMember()" ></button>
                                                 <button type="button" class="btn btn-default btn-xs color-edit glyphicon glyphicon-pencil" [disabled]="!isValid"  (click)="EditMember()" ></button>
-                                                <button type="button" class="btn btn-default btn-xs color-delete glyphicon glyphicon-trash" (click)="removeMember()" ></button>
+                                                <button type="button" class="btn btn-default btn-xs color-delete glyphicon glyphicon-trash" (click)="removeMemberDialog()" ></button>
                                             </div>
                                         </div>
                                         <div class="panel-body panel-body-xs color-cuerpo">
@@ -248,7 +248,7 @@
                   <div class="col-offset-6 ">
                <ul class="list-inline  centered">
                                         <li><button type="button" class="btn-sm btn-primary" (click)="addMember()">Save</button></li>
-                                        <li><button type="button" class="btn-sm btn-default" (click)="setButtonClicked(false)">Cancelar</button></li>
+                                        <li><button type="button" class="btn-sm btn-default" (click)="setButtonClicked(false)">Cancel</button></li>
                                     </ul>                          
 
                   </div>
@@ -256,4 +256,17 @@
 </div>
 
 
+<app-dialog [(visible)]="showDialog" >
+  <p>Confirm</p>
+  <p>Are you sure you want to do this?</p>
+  <button type="button" (click)="addItem()" class="btn-primary btn-sm">Ok</button>
+  <button type="button" (click)="showDialog = !showDialog" class="btn-default btn-sm">Cancel</button>
+</app-dialog>
+
   
+<app-dialog [(visible)]="showDeleteDialog" >
+  <p>Confirm</p>
+  <p>Are you sure you want to delete this?</p>
+  <button type="button" (click)="removeMember()" class="btn-primary btn-sm">Ok</button>
+  <button type="button" (click)="showDeleteDialog = !showDeleteDialog" class="btn-default btn-sm">Cancel</button>
+</app-dialog>

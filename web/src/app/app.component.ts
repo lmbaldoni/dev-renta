@@ -1,12 +1,13 @@
 import { Component, OnInit, EventEmitter, Input, Output  } from '@angular/core';
 import { MainCompComponent } from './main-comp/main-comp.component';
-import { DialogsService } from './dialogs.service';
-import {ConfirmDialog} from './confirm-dialog.component';
+/*import { DialogsService } from './dialogs.service';
+import {ConfirmDialog} from './confirm-dialog.component';*/
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+  
   })
 export class AppComponent implements OnInit {
    
@@ -15,7 +16,7 @@ export class AppComponent implements OnInit {
   title = 'app works!';
   public result: any;
 
-  constructor(private dialogsService: DialogsService) {
+  constructor(/*private dialogsService: DialogsService*/) {
   
 
    }
@@ -28,13 +29,16 @@ export class AppComponent implements OnInit {
       this.showDialog = true;
   }
 
-   @Output() appMemberDialog = new EventEmitter();
+   @Output() appToMainDialog = new EventEmitter();
 
-  appAddMember(event){
-      this.appMemberDialog.emit();
+  /*appToMainMember(event){
+      this.appToMainDialog.emit();
+  }*/
+
+    appAddMember(event) {
+      this.appToMainDialog.emit();
+      
   }
-
-    
 
   ngOnInit() {
   }

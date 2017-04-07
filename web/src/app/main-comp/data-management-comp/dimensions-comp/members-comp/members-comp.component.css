@@ -206,8 +206,10 @@ table th, table td{
 
 .btn-sm{
         border:1px solid #ccc;
-    
+            width: 62px;
 }
+
+
 
 .dropboxDimension:hover, .dropboxDimension:focus, .dropboxDimension:active {
     background:  white;

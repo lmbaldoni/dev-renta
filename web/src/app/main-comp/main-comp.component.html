@@ -174,7 +174,7 @@
                 </div>
 
                 <div class="panel-body"> 
-                    <app-members-comp *ngIf="membersClicked" (addMemberDialog)="openDialog($event)"></app-members-comp>
+                    <app-members-comp *ngIf="membersClicked" (addMemberDialog)="openDialog($event)" (appToMainDialog)="appToMember($event)"></app-members-comp>
                     <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
                     <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
                     <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
