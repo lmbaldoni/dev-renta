@@ -1,5 +1,5 @@
 from .models import Member,Attribute
-from .serializers import MemberSerializer,AttributeSerializer
+from .serializers import MemberSerializer,AttributeSerializer,DimensionSerializer
 from rest_framework import viewsets
 
 class MemberViewSet(viewsets.ModelViewSet):
