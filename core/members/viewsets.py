@@ -1,4 +1,4 @@
-from .models import Member,Attribute
+from .models import Member,Attribute,Dimension
 from .serializers import MemberSerializer,AttributeSerializer,DimensionSerializer
 from rest_framework import viewsets
 
