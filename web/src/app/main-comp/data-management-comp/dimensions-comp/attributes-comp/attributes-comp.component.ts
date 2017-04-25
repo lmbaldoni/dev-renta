@@ -16,6 +16,7 @@ export class AttributesCompComponent implements OnInit {
       this.CreateMemderbuttonWasClicked = clicked;
       this.SearchMemderbuttonWasClicked = !clicked;
   }
+  public members = [];
 
   ngOnInit() {
   }

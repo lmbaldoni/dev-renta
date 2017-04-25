@@ -20,6 +20,7 @@ export class MainCompComponent implements OnInit {
    }
 
    public result: any;
+   public title: string;
 
     @Output() addMainDialog = new EventEmitter();
 
@@ -78,6 +79,7 @@ panelMainClicked = false;
   setMembersClicked(clicked: boolean) {
       this.panelMainClicked = clicked;
       this.membersClicked = clicked;
+      this.title = 'Members';
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -90,6 +92,7 @@ panelMainClicked = false;
   setAttributesClicked(clicked: boolean) {
       this.attributesClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Attributes';
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -102,6 +105,7 @@ panelMainClicked = false;
   setHierarchiesClicked(clicked: boolean) {
       this.hierarchiesClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Hierarchies';
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -113,6 +117,7 @@ panelMainClicked = false;
    setFiltersClicked(clicked: boolean) {
       this.filtersClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Filters';
       /*ocultar*/
       this.setAllOperations();
       this.setAllMigration();
@@ -137,6 +142,7 @@ panelMainClicked = false;
   setBatchManteClicked(clicked: boolean) {
       this.batchManteClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Batch Maintenance';
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllMigration();
@@ -147,6 +153,7 @@ panelMainClicked = false;
   setBatchExeClicked(clicked: boolean) {
       this.batchExeClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Batch Execution';
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllMigration();
@@ -158,6 +165,7 @@ panelMainClicked = false;
   setBatchMoniClicked(clicked: boolean) {
       this.batchMoniClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Batch Monitor';
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllMigration();
@@ -181,6 +189,7 @@ panelMainClicked = false;
   setImportClicked(clicked: boolean) {
       this.importClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Import';
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllOperations();
@@ -191,6 +200,7 @@ panelMainClicked = false;
   setExportClicked(clicked: boolean) {
       this.exportClicked = clicked;
       this.panelMainClicked = clicked;
+      this.title = 'Export';
       /*ocultar*/
       this.setAllDataManagement();
       this.setAllOperations();
