@@ -19,4 +19,19 @@ class Attribute(models.Model):
     id_alfa = models.CharField(max_length=20, blank=True, default='')
     name = models.CharField(max_length=50, blank=True, default='')
     value = models.CharField(max_length=50, blank=True, default='')
-    
+
+class Dimension(models.Model):
+    dimension_name = models.CharField(max_length=100)
+    member_b_table_name = models.CharField(max_length=30)
+    member_tl_table_name = models.CharField(max_length=30)
+    member_col = models.CharField(max_length=30)
+    member_display_code_col = models.CharField(max_length=30)
+    member_name_col = models.CharField(max_length=30)
+    member_description_col = models.CharField(max_length=30)
+    hierarchy_table_name = models.CharField(max_length=30)
+    attribute_table_name = models.CharField(max_length=30)
+    member_code_column = models.CharField(max_length=30)
+ 
+class Meta:
+        managed = False
+        db_table = 'dimension'

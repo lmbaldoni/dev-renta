@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Member,Attribute
+from .models import Member,Attribute,Dimension
 
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,3 +25,16 @@ class AttributeSerializer(serializers.ModelSerializer):
                     'id_alfa',
                     'name',
                     'value',)
+
+class DimensionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Dimension
+        fields = (  'dimension_nameid',
+                    'member_b_table_name',
+                    'member_tl_table_name',
+                    'member_col',
+                    'member_display_code_col',
+                    'member_name_col',
+                    'hierarchy_table_name',
+                    'attribute_table_name',
+                    'member_code_column',)
