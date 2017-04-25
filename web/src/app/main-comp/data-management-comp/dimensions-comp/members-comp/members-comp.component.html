@@ -101,7 +101,7 @@
                                             Dimension Members
                                             <div class="form-group pull-right">
                                                 <button type="button" class="btn btn-default color-plus btn-xs glyphicon glyphicon-plus" (click)="setButtonClicked(true)" ></button>
-                                                <button type="button" class="btn btn-default color-view btn-xs glyphicon glyphicon-zoom-in" [disabled]="!isValid"  (click)="SearchMember()" ></button>
+                                                <button type="button" class="btn btn-default color-view btn-xs glyphicon glyphicon-zoom-in" [disabled]="isValid"  (click)="SearchMember()" ></button>
                                                 <button type="button" class="btn btn-default btn-xs color-edit glyphicon glyphicon-pencil" [disabled]="!isValid"  (click)="EditMember()" ></button>
                                                 <button type="button" class="btn btn-default btn-xs color-delete glyphicon glyphicon-trash" (click)="removeMemberDialog()" ></button>
                                             </div>
