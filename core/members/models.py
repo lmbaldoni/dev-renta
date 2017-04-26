@@ -13,7 +13,6 @@ class Member(models.Model):
     modified_date = models.DateTimeField(auto_now_add=True)
     modified_by = models.CharField(max_length=20)
     class Meta:
-        managed = False
         db_table = 'DIM_ORG_UNIT_B'
 
 class Attribute(models.Model):
@@ -23,7 +22,6 @@ class Attribute(models.Model):
     name = models.CharField(max_length=50, blank=True, default='')
     value = models.CharField(max_length=50, blank=True, default='')
     class Meta:
-        managed = False
         db_table = 'DIM_ORG_UNIT_ATTR'
 
 class Dimension(models.Model):
@@ -38,5 +36,4 @@ class Dimension(models.Model):
     attribute_table_name = models.CharField(max_length=30)
     member_code_column = models.CharField(max_length=30)
     class Meta:
-        managed = False
         db_table = 'DIMENSIONS'    
