@@ -29,7 +29,7 @@ class AttributeSerializer(serializers.ModelSerializer):
 class DimensionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Dimension
-        fields = (  'dimension_nameid',
+        fields = (  'dimension_name',
                     'member_b_table_name',
                     'member_tl_table_name',
                     'member_col',
