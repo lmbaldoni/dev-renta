@@ -14,6 +14,7 @@ class Member(models.Model):
     modified_by = models.CharField(max_length=20)
 
 class Meta:
+        managed = False
         db_table = 'DIM_ORG_UNIT_B'
 
 class Attribute(models.Model):
@@ -24,6 +25,7 @@ class Attribute(models.Model):
     value = models.CharField(max_length=50, blank=True, default='')
 
 class Meta:
+        managed = False
         db_table = 'DIM_ORG_UNIT_ATTR'
 
 class Dimension(models.Model):
