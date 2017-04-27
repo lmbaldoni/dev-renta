@@ -30,9 +30,11 @@ export class MembersCompComponent implements OnInit {
 
   public url =  "http://localhost:8000/"+"members/"; 
   public urlattribute =  "http://localhost:8000/"+"attributes/"; 
+  public urldimensions =  "http://localhost:8000/"+"dimensions/"; 
      
    public members = [];
    public attributes = [];
+   public dimensions = [];
 
    public membersDelete = [];
 
@@ -65,6 +67,7 @@ export class MembersCompComponent implements OnInit {
   ngOnInit() {
     this.refresh();
     this.refreshattribute();
+    this.refreshDimensions();
   }
 
   private resetmodel() {
@@ -91,6 +94,24 @@ export class MembersCompComponent implements OnInit {
 
    }
 
+   private refreshDimensions() {
+     
+     this.dimensions.length = 0;
+
+    this.http.get(this.urldimensions).subscribe(
+      response => {
+        let data = response.json();
+        for (var i = 0; i < data.results.length; i++) {
+          let id_alfa = data.results[i];
+          this.dimensions.push(id_alfa);
+        }
+      },
+      error => console.error(error)
+    );
+
+
+   }
+
    private refreshattribute() {
      
      this.attributes.length = 0;
@@ -107,7 +128,7 @@ export class MembersCompComponent implements OnInit {
     );
 
 
-   }v
+   }
 
    private addItem() {
     

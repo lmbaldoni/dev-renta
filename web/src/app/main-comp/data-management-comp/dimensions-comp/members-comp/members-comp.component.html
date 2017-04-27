@@ -10,10 +10,12 @@
                                                                     <label class="col-sm-5 control-label" for="folder">Dimension</label>
                                                                             <div class="col-sm-6">
                                                                                 <select id="folder" name="folder" class="form-control btn-default dropboxDimension">
-                                                                                <option value="1">Banking</option>
-                                                                                <option value="2">Financial Element</option>
-                                                                                <option value="3">Organizational Unit</option>
-                                                                                <option value="4">Product</option>
+                                                                                    
+
+                                                                                    <tr template="ngFor let dimension of dimensions" >
+                                                                                        <td>{{member.id_alfa}}</td>
+                                                                                    </tr>
+
                                                                                 </select>
                                                                             </div>
                                                                 </div>
