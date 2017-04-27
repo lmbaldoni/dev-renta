@@ -9,7 +9,8 @@ export class Member {
     public enabled: boolean = false,
     public if_leaf: boolean = false,
     public create_by: string,
-    public modified_by: string
+    public modified_by: string,
+    public table: string
     ){}
 }
 

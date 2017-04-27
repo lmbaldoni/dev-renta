@@ -9,7 +9,9 @@
                                                                 <div class="row">
                                                                     <label class="col-sm-5 control-label" for="folder">Dimension</label>
                                                                             <div class="col-sm-6">
-                                                                                <select id="folder" name="folder" class="form-control btn-default dropboxDimension">
+                                                                                <select id="folder" name="folder" class="form-control btn-default dropboxDimension"
+                                                                                [(ngModel)]="model.table" 
+                                                                                >
                                                                                     <option template="ngFor let dimension of dimensions" [selected]="dimension.dimension_name == 'Financial Element'">{{dimension.dimension_name}}</option>
                                                                                     
                                                                                 
