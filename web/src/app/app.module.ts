@@ -36,6 +36,8 @@ import { ImportCompComponent } from './main-comp/migration-comp/import-comp/impo
 import { ExportCompComponent } from './main-comp/migration-comp/export-comp/export-comp.component';
 import { ReportsCompComponent } from './main-comp/reports-comp/reports-comp.component';
 
+
+
 /*Servicios*/
 import { MembersService } from './main-comp/data-management-comp/dimensions-comp/members-comp/members.service';
 
@@ -76,9 +78,14 @@ import { MembersService } from './main-comp/data-management-comp/dimensions-comp
     HttpModule,
     NgbModule.forRoot(),
     MaterialModule.forRoot(),
-    DialogsModule
-    
-  ],
+    DialogsModule,
+    BrowserModule,
+    DashboardModule,
+    SidebarModule,
+    NavbarModule,
+    FooterModule,
+    RouterModule.forRoot([])
+    ],
   providers: [MembersService],
   bootstrap: [AppComponent]
 })
