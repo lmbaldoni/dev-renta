@@ -1,175 +1,20 @@
-<div id="header" *ngIf="headerClicked">
-    <app-header-comp></app-header-comp>
+<div class="logo">
+    <a href="https://www.creative-tim.com" class="simple-text">
+        <div class="logo-img">
+            <img src="/assets/img/angular2-logo-red.png"/>
+        </div>
+        Creative Tim
+    </a>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3" *ngIf="menuClicked">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-th-list">
-                            </span>Infrastructure</a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                    <a data-toggle="collapse" data-target="#toggleData" data-parent="#toggleData" class="panel-heading">
-                                    <span class="glyphicon glyphicon-unchecked text-primary"></span><a>Data Management</a> 
-                                    </a>
-                                    <div class="collapse" id="toggleData" style="height: 0px;">
-                                        <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setMembersClicked(true)"><span class="glyphicon glyphicon-file text-primary"></span><a>Members</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setAttributesClicked(true)"><span class=" glyphicon glyphicon-paperclip text-primary"></span><a>Attributes</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setHierarchiesClicked(true)"><span class=" glyphicon glyphicon-tasks text-primary"></span><a>Hierarchies</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setFiltersClicked(true)"><span class=" glyphicon glyphicon-filter text-primary"></span><a>Filters</a></button>
-                                        </div>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                      <td>
-                                    <a data-toggle="collapse" data-target="#toggleOper" data-parent="#toggleOper" class="panel-heading" id="Operations">
-                                    <span class="glyphicon glyphicon-cog text-primary"></span><a>Operations</a> 
-                                    </a>
-                                    <div class="collapse" id="toggleOper" style="height: 0px;">
-                                        <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setBatchManteClicked(true)"><span class="glyphicon glyphicon-oil text-primary"></span><a>Batch Maintenance</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setBatchExeClicked(true)"><span class=" glyphicon glyphicon-play text-primary"></span><a>Batch Execution</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setBatchMoniClicked(true)"><span class=" glyphicon glyphicon-check text-primary"></span><a>Batch Monitor</a></button>
-                                        </div>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <a data-toggle="collapse" data-target="#toggleMigra" data-parent="#toggleMigra" class="panel-heading">
-                                    <span class="glyphicon glyphicon-transfer text-primary"></span><a>Migration</a> 
-                                    </a>
-                                   <div class="collapse" id="toggleMigra" style="height: 0px;">
-                                        <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setImportClicked(true)"><span class="glyphicon glyphicon-import text-primary"></span><a>Import</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setExportClicked(true)"><span class="glyphicon glyphicon-export text-primary"></span><a>Export</a></button>
-                                        </div>
-                                    </div>
-                                    </td>
-                                </tr>
-                                
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th-large">
-                            </span>Modules</a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                    <a data-toggle="collapse" data-target="#togglePFT" data-parent="#togglePFT" class="panel-heading">
-                                    <span class="glyphicon glyphicon-usd text-primary"></span><a>Profitability Management</a> 
-                                    </a>
-                                    <div class="collapse" id="togglePFT" style="height: 0px;">
-                                        <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setAllocationClicked(true)"><span class="glyphicon glyphicon-modal-window text-primary"></span><a>Allocation Details</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setAllocationModelClicked(true)"><span class=" glyphicon glyphicon-duplicate text-primary"></span><a>Allocation Model</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setAllocationHistoryClicked(true)"><span class=" glyphicon glyphicon-list-alt text-primary"></span><a>Allocation History</a></button>
-                                                
-                                        </div>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <a data-toggle="collapse" data-target="#toggleFTP" data-parent="#toggleFTP" class="panel-heading">
-                                    <span class="glyphicon glyphicon-stats text-primary"></span><a>Funds Transfer Pricing</a> 
-                                    </a>
-                                    <div class="collapse" id="toggleFTP" style="height: 0px;">
-                                        <div class="btn-group-vertical pull-left" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class="glyphicon glyphicon-blackboard text-primary"></span><a>Transfer Rules</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-indent-left text-primary"></span><a>Standard Process</a></button>
-                                                <button type="button" class="btn btn-default" (click)="setButtonClicked(true)"><span class=" glyphicon glyphicon-list-alt text-primary"></span><a>Rules History</a></button>
-                                                
-                                        </div>
-                                    </div>
-                                    </td>
-                                </tr>
-                                </table>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-list-alt">
-                            </span>Reports</a>
-                        </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-usd"></span><a>Sales</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-user"></span><a>Customers</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-tasks"></span><a>Products</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                
-                 <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <span class="glyphicon glyphicon-user"  href="#"></span><a>Application Preferences</a>
-                        </h4>
-                    </div>
-                    
-                </div>
-
-
-               
-            </div>
-        </div>
-
-        <!--cuerpo-->
-        <div class="containermain col-sm-9" id="main">
-                <!--Pantallas Data Managements-->
-                <app-members-comp *ngIf="membersClicked"></app-members-comp>
-                <app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>
-                <app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>
-                <app-filters-comp *ngIf="filtersClicked"></app-filters-comp>
-                <!--Pantallas Operations-->
-                <app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>
-                <app-batch-maintenance-comp *ngIf="batchManteClicked"></app-batch-maintenance-comp>
-                <app-batch-monitor-comp *ngIf="batchMoniClicked"></app-batch-monitor-comp>
-                <!--Pantallas Migration-->
-                <app-import-comp *ngIf="importClicked"></app-import-comp>
-                <app-export-comp *ngIf="exportClicked"></app-export-comp>
-                 <!--Pantallas PFT-->
-                <app-pft-rule-comp *ngIf="allocationClicked"></app-pft-rule-comp>
-                <app-export-comp *ngIf="allocationModelClicked"></app-export-comp>
-                <app-export-comp *ngIf="allocationHistoryClicked"></app-export-comp>
-        </div>
-    
+<div class="sidebar-wrapper">
+    <div class="nav-container">
+        <ul class="nav">
+            <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+                <a  [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
