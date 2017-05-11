@@ -3,22 +3,10 @@ import { MainCompComponent } from './main-comp/main-comp.component';
 /*import { DialogsService } from './dialogs.service';
 import {ConfirmDialog} from './confirm-dialog.component';*/
 
-import {
-    RouteConfig,
-    ROUTER_DIRECTIVES,
-    ROUTER_PROVIDERS,
-    LocationStrategy,
-    HashLocationStrategy
-} from '@angular/router';
-
-
-
 @Component({
   selector: 'app-root',
-  moduleId: module.id,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-    directives: [ROUTER_DIRECTIVES]
+  styleUrls: ['./app.component.css']
   
   })
 export class AppComponent implements OnInit {
@@ -53,7 +41,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-  
   }
 
   
