@@ -79,7 +79,12 @@ import { MembersService } from './main-comp/data-management-comp/dimensions-comp
     NgbModule.forRoot(),
     MaterialModule.forRoot(),
     DialogsModule,
-    BrowserModule
+    BrowserModule,
+    DashboardModule,
+    SidebarModule,
+    NavbarModule,
+    FooterModule,
+    RouterModule.forRoot([])
     ],
   providers: [MembersService],
   bootstrap: [AppComponent]
