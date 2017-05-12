@@ -1,10 +1,10 @@
-import { FrontPage } from './app.po';
+import { CliStablePage } from './app.po';
 
-describe('front App', () => {
-  let page: FrontPage;
+describe('cli-stable App', () => {
+  let page: CliStablePage;
 
   beforeEach(() => {
-    page = new FrontPage();
+    page = new CliStablePage();
   });
 
   it('should display message saying app works', () => {
