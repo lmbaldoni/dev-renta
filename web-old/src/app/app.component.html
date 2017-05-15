@@ -1,0 +1,50 @@
+
+
+<!--<div id="menu">
+    <app-main-comp (addMainDialog)="openAppDialog($event)"></app-main-comp>
+</div>-->
+
+
+
+<div class="wrapper">
+    <div class="menu" data-color='red' data-image="">
+        <app-menu-comp></app-menu-comp>
+        <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg)"></div>
+    </div>
+    <div class="main-panel">
+        <navbar-cmp></navbar-cmp>
+        <dashboard-cmp></dashboard-cmp>
+        <div *ngIf="isMaps('/maps')">
+            <footer-cmp></footer-cmp>
+        </div>
+    </div>
+</div>
+
+
+<!--<app-dialog [(visible)]="showDialog" >
+  <p>Confirm</p>
+  <p>Are you sure you want to do this?</p>
+  <button type="button" (click)="appAddMember()" class="btn-primary btn-sm">Ok</button>
+  <button type="button" (click)="showDialog = !showDialog" class="btn-default btn-sm">Cancel</button>
+</app-dialog>-->
+
+
+<!-- <div id="footer" >
+    <app-foot-comp></app-foot-comp>
+</div>-->
+
+                <!--<app-members-comp></app-members-comp>-->
+                <!--<app-attributes-comp *ngIf="attributesClicked"></app-attributes-comp>-->
+                <!--<app-hierarchies-comp *ngIf="hierarchiesClicked"></app-hierarchies-comp>-->
+                <!--<app-filters-comp *ngIf="filtersClicked"></app-filters-comp>-->
+                <!--Pantallas Operations-->
+                <!--<app-batch-execution-comp *ngIf="batchExeClicked"></app-batch-execution-comp>-->
+                <!--<app-batch-maintenance-comp *ngIf="batchManteClicked"></app-batch-maintenance-comp>-->
+                <!--<app-batch-monitor-comp *ngIf="batchMoniClicked"></app-batch-monitor-comp>-->
+                <!--Pantallas Migration-->
+                <!--<app-import-comp *ngIf="importClicked"></app-import-comp>-->
+                <!--<app-export-comp *ngIf="exportClicked"></app-export-comp>-->
+                 <!--Pantallas PFT-->
+                <!--<app-pft-rule-comp></app-pft-rule-comp>-->
+                <!--<app-export-comp *ngIf="allocationModelClicked"></app-export-comp>-->
+                <!--<app-export-comp *ngIf="allocationHistoryClicked"></app-export-comp>-->

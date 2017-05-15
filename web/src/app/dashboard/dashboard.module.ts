@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { MODULE_COMPONENTS, MODULE_ROUTES } from './dashboard.routes';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
+import { DashboardComponent } from './dashboard.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 @NgModule({
-    imports: [
-        RouterModule.forChild(MODULE_ROUTES)
-    ],
-    declarations: [ MODULE_COMPONENTS ]
+  imports: [
+    DashboardRoutingModule,
+    ChartsModule,
+    BsDropdownModule
+  ],
+  declarations: [ DashboardComponent ]
 })
-
-export class DashboardModule{}
+export class DashboardModule { }
