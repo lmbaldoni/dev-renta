@@ -27,7 +27,7 @@
     </li>-->
     <li class="nav-item dropdown" dropdown (onToggle)="toggled($event)">
       <a href class="nav-link dropdown-toggle" dropdownToggle (click)="false">
-        <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+        <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="lmbaldoni@gmail.com">
         <span class="d-md-down-none">admin</span>
       </a>
       <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
@@ -73,19 +73,25 @@
           <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-list"></i> Infraestructura</a>
           <ul class="nav-dropdown-items">
             <li class="nav-item nav-dropdown" routerLinkActive="active" appNavDropdown>
-              <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-list"></i> Infraestructura</a>
+              <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-list"></i> Dimensiones</a>
               <ul class="nav-dropdown-items">
                   <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/icons/simple-line-icons']"><i class="icon-star"></i> Simple Line Icons</a>
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-doc"></i> Miembros</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-paper-clip"></i> Atributos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="sitemap"></i> Jerarquías</a>
                   </li>
               </ul>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" [routerLink]="['/icons/font-awesome']"><i class="icon-star"></i> Font Awesome</a>
+              <a class="nav-link" [routerLink]="['/icons/font-awesome']"><i class="icon-star"></i> Font Awesome</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" [routerLink]="['/icons/simple-line-icons']"><i class="icon-star"></i> Simple Line Icons</a>
+              <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-star"></i> Simple Line Icons</a>
             </li>
           </ul>
         </li>
@@ -133,7 +139,7 @@
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/widgets']"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" [routerLink]="['/charts']"><i class="icon-pie-chart"></i> Charts</a>
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/charts']"><i class="icon-chart"></i> Charts</a>
         </li>
         <li class="divider"></li>
         <li class="nav-title">
@@ -171,7 +177,7 @@
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
           <!--<a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
           <a class="btn btn-secondary" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>-->
-          <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;As Of Date:<strong> 31/05/2017</strong></a>
+          <a class="btn btn-secondary" href="#"><i class="icon-calendar"></i> &nbsp;As Of Date:<strong> 31/05/2017</strong></a>
         </div>
       </li>
     </ol>
