@@ -27,8 +27,8 @@
     </li>-->
     <li class="nav-item dropdown" dropdown (onToggle)="toggled($event)">
       <a href class="nav-link dropdown-toggle" dropdownToggle (click)="false">
-        <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="lmbaldoni@gmail.com">
-        <span class="d-md-down-none">admin</span>
+        <!--<img src="assets/img/avatars/6.jpg" class="img-avatar" alt="lmbaldoni@gmail.com">-->
+        <span class="d-md-down-none icon-user"> Lucas</span>
       </a>
       <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
 
@@ -73,7 +73,7 @@
           <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-list"></i> Infraestructura</a>
           <ul class="nav-dropdown-items">
             <li class="nav-item nav-dropdown" routerLinkActive="active" appNavDropdown>
-              <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-list"></i> Dimensiones</a>
+              <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-film"></i> Dimensiones</a>
               <ul class="nav-dropdown-items">
                   <li class="nav-item">
                     <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-doc"></i> Miembros</a>
@@ -82,7 +82,28 @@
                     <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-paper-clip"></i> Atributos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="sitemap"></i> Jerarquías</a>
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-vector"></i> Jerarquías</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-directions"></i> Filtros</a>
+                  </li>
+              </ul>
+            </li>
+
+            <li class="nav-item nav-dropdown" routerLinkActive="active" appNavDropdown>
+              <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-film"></i> Dimensiones</a>
+              <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-doc"></i> Miembros</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-paper-clip"></i> Atributos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-vector"></i> Jerarquías</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-directions"></i> Filtros</a>
                   </li>
               </ul>
             </li>
