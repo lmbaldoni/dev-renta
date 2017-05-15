@@ -21,6 +21,7 @@ import { TabsComponent } from './tabs.component';
 
 // Components Routing
 import { ComponentsRoutingModule } from './components-routing.module';
+import { MembersCmpComponent } from './members-cmp/members-cmp.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { ComponentsRoutingModule } from './components-routing.module';
     SocialButtonsComponent,
     SwitchesComponent,
     TablesComponent,
-    TabsComponent
+    TabsComponent,
+    MembersCmpComponent
   ]
 })
 export class ComponentsModule { }
