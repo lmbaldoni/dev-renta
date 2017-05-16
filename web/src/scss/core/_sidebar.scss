@@ -182,6 +182,9 @@
           .nav-link {
             color: $sidebar-nav-dropdown-color;
             border-left: 0 !important;
+             i {
+            color: $sidebar-nav-dropdown-icon-color;
+          }
           }
 
           > .nav-link.nav-dropdown-toggle::before {
