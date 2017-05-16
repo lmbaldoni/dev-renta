@@ -113,7 +113,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item nav-dropdown"  appNavDropdown>
+        <li class="nav-item nav-dropdown" appNavDropdown>
           <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-puzzle"></i> Components</a>
           <ul class="nav-dropdown-items">
             <li class="nav-item">
@@ -153,17 +153,17 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="false">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/widgets']"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="false">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/charts']"><i class="icon-chart"></i> Charts</a>
         </li>
         <li class="divider"></li>
-        <li class="nav-title">
+        <!--<li class="nav-title" >
           Extras
-        </li>
-        <li class="nav-item nav-dropdown" appNavDropdown>
+        </li>-->
+        <li class="nav-item nav-dropdown" *ngIf="false" appNavDropdown>
           <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-star"></i> Pages</a>
           <ul class="nav-dropdown-items">
             <li class="nav-item">
