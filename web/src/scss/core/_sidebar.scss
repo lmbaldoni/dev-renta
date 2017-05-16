@@ -184,7 +184,13 @@
             border-left: 0 !important;
              i {
             color: $sidebar-nav-dropdown-icon-color;
-          }
+            }
+             &:hover {
+                color: $sidebar-nav-dropdown-hover-color !important;
+                i {
+                  color: $sidebar-nav-dropdown-hover-color;
+                }
+             }
           }
 
           > .nav-link.nav-dropdown-toggle::before {

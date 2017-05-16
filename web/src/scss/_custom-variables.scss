@@ -105,9 +105,10 @@ $sidebar-nav-link-active-icon-color: $brand-primary;
 $sidebar-nav-link-active-borders:   0;
 
 $sidebar-nav-dropdown-color:        rgba(255,255,255,1);
-$sidebar-nav-dropdown-bg:           rgba(35,183,229,.3);
+$sidebar-nav-dropdown-bg:           rgba(35,183,229,.5);
 $sidebar-nav-dropdown-borders:      0;
-$sidebar-nav-dropdown-icon-color:   $brand-primary;
+$sidebar-nav-dropdown-icon-color:   rgba(255,255,255,1);
+$sidebar-nav-dropdown-hover-color:  $gray-dark;
 
 // Top Navigation
 
