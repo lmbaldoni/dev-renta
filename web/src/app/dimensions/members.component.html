@@ -1,231 +1,905 @@
 <div class="animated fadeIn">
   <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-edit"></i>Miembros
+          <!--<div class="card-actions">
+            <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+            <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+            <a href="#" class="btn-close"><i class="icon-close"></i></a>
+          </div>-->
+        </div>
+       
+         <div class="row">
+        <div class="col-md-6">
+          <div class="card-block">
+              
+                <div class="form-group row">
+                  <label class="col-md-4 form-control-label" for="select">Dimensión</label>
+                  <div class="col-md-6">
+                    <select id="select" name="select" class="form-control form-control-sm">
+                      <option value="0">Please select</option>
+                      <option value="1">Option #1</option>
+                      <option value="2">Option #2</option>
+                      <option value="3">Option #3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-4 form-control-label" for="input-small">Código Alfanumerico</label>
+                  <div class="col-sm-6">
+                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-4 form-control-label" for="input-small">Código Numerico</label>
+                  <div class="col-sm-6">
+                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Numerico">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-md-4 form-control-label" for="textarea-input">Descripción</label>
+                  <div class="col-md-6">
+                    <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="Descripción"></textarea>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Buscar</button>
+                  <button class="btn btn-default" type="button">Limpiar</button>
+                </div>
+             
+             </div>
+        </div>
+             <div class="col-md-6">
+                  <div class="card-block">
+                    <div class="form-group row">
+                      <label class="col-sm-4 form-control-label" for="input-small">Name</label>
+                      <div class="col-sm-6">
+                        <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Name">
+                      </div>
+                    </div>
+                     <div class="form-group row">
+                      <label class="col-sm-4 form-control-label" for="input-small">Habilitado</label>
+                      <div class="col-sm-6">
+                        <label class="switch switch-default switch-pill switch-primary">
+                          <input type="checkbox" class="switch-input" checked>
+                          <span class="switch-label"></span>
+                          <span class="switch-handle"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-4 form-control-label" for="input-small">Es hoja</label>
+                      <div class="col-sm-6">
+                        <label class="switch switch-default switch-pill switch-primary">
+                          <input type="checkbox" class="switch-input" checked>
+                          <span class="switch-label"></span>
+                          <span class="switch-handle"></span>
+                        </label>
+                      </div>
+                    </div>
+                    
+                  </div>
+             </div>
+         </div> 
+      </div>
+    </div> <!--/.col-->
+  </div><!--/.row-->
+  <div class="row">
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <strong>Options</strong>
+          <strong>Basic Form</strong> Elements
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-link">Link</button>
+          <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label">Static</label>
+              <div class="col-md-9">
+                <p class="form-control-static">Username</p>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="text-input">Text Input</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text">
+                <span class="help-block">This is a help text</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="email-input">Email Input</label>
+              <div class="col-md-9">
+                <input type="email" id="email-input" name="email-input" class="form-control" placeholder="Enter Email">
+                <span class="help-block">Please enter your email</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="password-input">Password</label>
+              <div class="col-md-9">
+                <input type="password" id="password-input" name="password-input" class="form-control" placeholder="Password">
+                <span class="help-block">Please enter a complex password</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="disabled-input">Disabled Input</label>
+              <div class="col-md-9">
+                <input type="text" id="disabled-input" name="disabled-input" class="form-control" placeholder="Disabled" disabled>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="textarea-input">Textarea</label>
+              <div class="col-md-9">
+                <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.."></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="select">Select</label>
+              <div class="col-md-9">
+                <select id="select" name="select" class="form-control">
+                  <option value="0">Please select</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="select">Select Large</label>
+              <div class="col-md-9">
+                <select id="select" name="select" class="form-control form-control-lg">
+                  <option value="0">Please select</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="select">Select Small</label>
+              <div class="col-md-9">
+                <select id="select" name="select" class="form-control form-control-sm">
+                  <option value="0">Please select</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="select">Disabled Select</label>
+              <div class="col-md-9">
+                <select id="disabledSelect" class="form-control" disabled>
+                  <option value="0">Please select</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="multiple-select">Multiple select</label>
+              <div class="col-md-9">
+                <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                  <option value="4">Option #4</option>
+                  <option value="5">Option #5</option>
+                  <option value="6">Option #6</option>
+                  <option value="7">Option #7</option>
+                  <option value="8">Option #8</option>
+                  <option value="9">Option #9</option>
+                  <option value="10">Option #10</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label">Radios</label>
+              <div class="col-md-9">
+                <div class="radio">
+                  <label for="radio1">
+                    <input type="radio" id="radio1" name="radios" value="option1"> Option 1
+                  </label>
+                </div>
+                <div class="radio">
+                  <label for="radio2">
+                    <input type="radio" id="radio2" name="radios" value="option2"> Option 2
+                  </label>
+                </div>
+                <div class="radio">
+                  <label for="radio3">
+                    <input type="radio" id="radio3" name="radios" value="option3"> Option 3
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label">Inline Radios</label>
+              <div class="col-md-9">
+                <label class="radio-inline" for="inline-radio1">
+                  <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> One
+                </label>
+                <label class="radio-inline" for="inline-radio2">
+                  <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Two
+                </label>
+                <label class="radio-inline" for="inline-radio3">
+                  <input type="radio" id="inline-radio3" name="inline-radios" value="option3"> Three
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label">Checkboxes</label>
+              <div class="col-md-9">
+                <div class="checkbox">
+                  <label for="checkbox1">
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="option1"> Option 1
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="option2"> Option 2
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkbox3">
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="option3"> Option 3
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label">Inline Checkboxes</label>
+              <div class="col-md-9">
+                <label class="checkbox-inline" for="inline-checkbox1">
+                  <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1">One
+                </label>
+                <label class="checkbox-inline" for="inline-checkbox2">
+                  <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2">Two
+                </label>
+                <label class="checkbox-inline" for="inline-checkbox3">
+                  <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3">Three
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="file-input">File input</label>
+              <div class="col-md-9">
+                <input type="file" id="file-input" name="file-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="file-multiple-input">Multiple File input</label>
+              <div class="col-md-9">
+                <input type="file" id="file-multiple-input" name="file-multiple-input" multiple>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <strong>With Icons</strong>
+          <strong>Inline</strong> Form
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-primary"><i class="fa fa-star"></i>&nbsp; Primary</button>
-          <button type="button" class="btn btn-secondary"><i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</button>
-          <button type="button" class="btn btn-success"><i class="fa fa-magic"></i>&nbsp; Success</button>
-          <button type="button" class="btn btn-warning"><i class="fa fa-map-marker"></i>&nbsp; Warning</button>
-          <button type="button" class="btn btn-danger"><i class="fa fa-rss"></i>&nbsp; Danger</button>
-          <button type="button" class="btn btn-link"><i class="fa fa-link"></i>&nbsp; Link</button>
+          <form action="" method="post" class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="if-email">Email</label>
+              <input type="email" id="if-email" name="if-email" class="form-control" placeholder="Enter Email..">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="if-password">Password</label>
+              <input type="password" id="if-password" name="if-password" class="form-control" placeholder="Enter Password..">
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <strong>Size Large</strong>
-          <small>Add this class
-            <code>.btn-lg</code>
-          </small>
-        </div>
-        <div class="card-block">
-          <button type="button" class="btn btn-primary btn-lg">Primary</button>
-          <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-          <button type="button" class="btn btn-success btn-lg">Success</button>
-          <button type="button" class="btn btn-info btn-lg">Info</button>
-          <button type="button" class="btn btn-warning btn-lg">Warning</button>
-          <button type="button" class="btn btn-danger btn-lg">Danger</button>
-          <button type="button" class="btn btn-link btn-lg">Link</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <strong>Size Small</strong>
-          <small>Add this class
-            <code>.btn-sm</code>
-          </small>
-        </div>
-        <div class="card-block">
-          <button type="button" class="btn btn-primary btn-sm">Primary</button>
-          <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
-          <button type="button" class="btn btn-success btn-sm">Success</button>
-          <button type="button" class="btn btn-info btn-sm">Info</button>
-          <button type="button" class="btn btn-warning btn-sm">Warning</button>
-          <button type="button" class="btn btn-danger btn-sm">Danger</button>
-          <button type="button" class="btn btn-link btn-sm">Link</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <strong>Disabled state</strong>
-          <small>Add this
-            <code>disabled="disabled"</code>
-          </small>
-        </div>
-        <div class="card-block">
-          <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
-          <button type="button" class="btn btn-secondary" disabled="disabled">Secondary</button>
-          <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-          <button type="button" class="btn btn-info" disabled="disabled">Info</button>
-          <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
-          <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
-          <button type="button" class="btn btn-link" disabled="disabled">Link</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <strong>Active state</strong>
-          <small>Add this class
-            <code>.active</code>
-          </small>
-        </div>
-        <div class="card-block">
-          <button type="button" class="btn btn-primary active">Primary</button>
-          <button type="button" class="btn btn-secondary active">Secondary</button>
-          <button type="button" class="btn btn-success active">Success</button>
-          <button type="button" class="btn btn-info active">Info</button>
-          <button type="button" class="btn btn-warning active">Warning</button>
-          <button type="button" class="btn btn-danger active">Danger</button>
-          <button type="button" class="btn btn-link active">Link</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <strong>Block Level Buttons</strong>
-          <small>Add this class
-            <code>.btn-block</code>
-          </small>
-        </div>
-        <div class="card-block">
-          <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-info btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-warning btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-link btn-lg btn-block">Block level button</button>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
     </div>
-    <!--/.col-->
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <strong>Options</strong>
+          <strong>Horizontal</strong> Form
         </div>
         <div class="card-block">
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-          <button type="button" class="btn btn-outline-primary">Primary</button>
-          <!-- Secondary, outline button -->
-          <button type="button" class="btn btn-outline-secondary">Secondary</button>
-          <!-- Indicates a successful or positive action -->
-          <button type="button" class="btn btn-outline-success">Success</button>
-          <!-- Indicates caution should be taken with this action -->
-          <button type="button" class="btn btn-outline-warning">Warning</button>
-          <!-- Indicates a dangerous or potentially negative action -->
-          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="hf-email">Email</label>
+              <div class="col-md-9">
+                <input type="email" id="hf-email" name="hf-email" class="form-control" placeholder="Enter Email..">
+                <span class="help-block">Please enter your email</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 form-control-label" for="hf-password">Password</label>
+              <div class="col-md-9">
+                <input type="password" id="hf-password" name="hf-password" class="form-control" placeholder="Enter Password..">
+                <span class="help-block">Please enter your password</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <strong>With Icons</strong>
+          <strong>Normal</strong> Form
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-star"></i>&nbsp; Primary</button>
-          <button type="button" class="btn btn-outline-secondary"><i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</button>
-          <button type="button" class="btn btn-outline-success"><i class="fa fa-magic"></i>&nbsp; Success</button>
-          <button type="button" class="btn btn-outline-warning"><i class="fa fa-map-marker"></i>&nbsp; Warning</button>
-          <button type="button" class="btn btn-outline-danger"><i class="fa fa-rss"></i>&nbsp; Danger</button>
+          <form action="" method="post">
+            <div class="form-group">
+              <label for="nf-email">Email</label>
+              <input type="email" id="nf-email" name="nf-email" class="form-control" placeholder="Enter Email..">
+              <span class="help-block">Please enter your email</span>
+            </div>
+            <div class="form-group">
+              <label for="nf-password">Password</label>
+              <input type="password" id="nf-password" name="nf-password" class="form-control" placeholder="Enter Password..">
+              <span class="help-block">Please enter your password</span>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <strong>Size Large</strong>
-          <small>Add this class
-            <code>.btn-lg</code>
-          </small>
+          Input
+          <strong>Grid</strong>
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg">Secondary</button>
-          <button type="button" class="btn btn-outline-success btn-lg">Success</button>
-          <button type="button" class="btn btn-outline-info btn-lg">Info</button>
-          <button type="button" class="btn btn-outline-warning btn-lg">Warning</button>
-          <button type="button" class="btn btn-outline-danger btn-lg">Danger</button>
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder=".col-sm-3">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder=".col-sm-4">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-5">
+                <input type="text" class="form-control" placeholder=".col-sm-5">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder=".col-sm-6">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-7">
+                <input type="text" class="form-control" placeholder=".col-sm-7">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder=".col-sm-8">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder=".col-sm-9">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder=".col-sm-10">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-11">
+                <input type="text" class="form-control" placeholder=".col-sm-11">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder=".col-sm-12">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-user"></i> Login</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <strong>Size Small</strong>
-          <small>Add this class
-            <code>.btn-sm</code>
-          </small>
+          Input
+          <strong>Sizes</strong>
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
-          <button type="button" class="btn btn-outline-success btn-sm">Success</button>
-          <button type="button" class="btn btn-outline-info btn-sm">Info</button>
-          <button type="button" class="btn btn-outline-warning btn-sm">Warning</button>
-          <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <label class="col-sm-5 form-control-label" for="input-small">Small Input</label>
+              <div class="col-sm-6">
+                <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder=".form-control-sm">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-5 form-control-label" for="input-normal">Normal Input</label>
+              <div class="col-sm-6">
+                <input type="text" id="input-normal" name="input-normal" class="form-control" placeholder="Normal">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-5 form-control-label" for="input-large">Large Input</label>
+              <div class="col-sm-6">
+                <input type="text" id="input-large" name="input-large" class="form-control form-control-lg" placeholder=".form-control-lg">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
-          <strong>Disabled state</strong>
-          <small>Add this
-            <code>disabled="disabled"</code>
-          </small>
+          <strong>Validation states</strong> Form
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-outline-primary" disabled="disabled">Primary</button>
-          <button type="button" class="btn btn-outline-secondary" disabled="disabled">Secondary</button>
-          <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-          <button type="button" class="btn btn-outline-info" disabled="disabled">Info</button>
-          <button type="button" class="btn btn-outline-warning" disabled="disabled">Warning</button>
-          <button type="button" class="btn btn-outline-danger" disabled="disabled">Danger</button>
+          <div class="form-group has-success">
+            <label class="form-form-control-label" for="inputSuccess1">Input with success</label>
+            <input type="text" class="form-control" id="inputSuccess1">
+          </div>
+          <div class="form-group has-warning">
+            <label class="form-form-control-label" for="inputWarning1">Input with warning</label>
+            <input type="text" class="form-control" id="inputWarning1">
+          </div>
+          <div class="form-group has-danger">
+            <label class="form-form-control-label" for="inputError1">Input with error</label>
+            <input type="text" class="form-control" id="inputError1">
+          </div>
         </div>
       </div>
+    </div><!--/.col-->
+    <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
-          <strong>Active state</strong>
-          <small>Add this class
-            <code>.active</code>
-          </small>
+          <strong>Validation states</strong> with optional icons
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-outline-primary active">Primary</button>
-          <button type="button" class="btn btn-outline-secondary active">Secondary</button>
-          <button type="button" class="btn btn-outline-success active">Success</button>
-          <button type="button" class="btn btn-outline-info active">Info</button>
-          <button type="button" class="btn btn-outline-warning active">Warning</button>
-          <button type="button" class="btn btn-outline-danger active">Danger</button>
+          <div class="form-group has-success">
+            <label class="form-form-control-label" for="inputSuccess2">Input with success</label>
+            <input type="text" class="form-control form-control-success" id="inputSuccess2">
+          </div>
+          <div class="form-group has-warning">
+            <label class="form-form-control-label" for="inputWarning2">Input with warning</label>
+            <input type="text" class="form-control form-control-warning" id="inputWarning2">
+          </div>
+          <div class="form-group has-danger has-feedback">
+            <label class="form-form-control-label" for="inputError2">Input with error</label>
+            <input type="text" class="form-control form-control-danger" id="inputError2">
+          </div>
         </div>
       </div>
+    </div><!--/.col-->
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
       <div class="card">
         <div class="card-header">
-          <strong>Block Level Buttons</strong>
-          <small>Add this class
-            <code>.btn-block</code>
-          </small>
+          <strong>Icon/Text</strong> Groups
         </div>
         <div class="card-block">
-          <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-outline-primary btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-outline-success btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-outline-info btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-outline-warning btn-lg btn-block">Block level button</button>
-          <button type="button" class="btn btn-outline-danger btn-lg btn-block">Block level button</button>
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input type="text" id="input1-group1" name="input1-group1" class="form-control" placeholder="Username">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <input type="email" id="input2-group1" name="input2-group1" class="form-control" placeholder="Email">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+                  <input type="text" id="input3-group1" name="input3-group1" class="form-control" placeholder="..">
+                  <span class="input-group-addon">.00</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          <strong>Buttons</strong> Groups
+        </div>
+        <div class="card-block">
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                  </span>
+                  <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Username">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <input type="email" id="input2-group2" name="input2-group2" class="form-control" placeholder="Email">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
+                  </span>
+                  <input type="text" id="input3-group2" name="input3-group2" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          <strong>Dropdowns</strong> Groups
+        </div>
+        <div class="card-block">
+
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <div class="input-group-btn" dropdown>
+                    <button type="button" class="btn btn-primary dropdown-toggle" dropdownToggle>Action
+                      <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu" *dropdownMenu>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                  <input type="text" id="input1-group3" name="input1-group3" class="form-control" placeholder="Username">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <input type="email" id="input2-group3" name="input2-group3" class="form-control" placeholder="Email">
+                  <div class="input-group-btn" dropdown>
+                    <button type="button" class="btn btn-primary dropdown-toggle" dropdownToggle>Action
+                      <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu" *dropdownMenu>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <div class="input-group-btn" dropdown>
+                    <button type="button" class="btn btn-primary">Action</button>
+                    <button type="button" dropdownToggle class="btn btn-primary dropdown-toggle dropdown-toggle-split">
+                      <span class="caret"></span>
+                      <span class="sr-only">Split button!</span>
+                    </button>
+                    <div class="dropdown-menu" *dropdownMenu>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                  <input type="text" id="input3-group3" name="input3-group3" class="form-control" placeholder="..">
+                  <div class="input-group-btn" dropdown>
+                    <button type="button" class="btn btn-primary dropdown-toggle" dropdownToggle>Action
+                      <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu" *dropdownMenu>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Use the grid for big devices!
+          <small>
+            <code>.col-lg-*</code>
+            <code>.col-md-*</code>
+            <code>.col-sm-*</code>
+          </small>
+        </div>
+        <div class="card-block">
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-md-8">
+                <input type="text" class="form-control" placeholder=".col-md-8">
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder=".col-md-4">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-7">
+                <input type="text" class="form-control" placeholder=".col-md-7">
+              </div>
+              <div class="col-md-5">
+                <input type="text" class="form-control" placeholder=".col-md-5">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder=".col-md-6">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder=".col-md-6">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-5">
+                <input type="text" class="form-control" placeholder=".col-md-5">
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" placeholder=".col-md-7">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder=".col-md-4">
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" placeholder=".col-md-8">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary">Action</button>
+          <button type="button" class="btn btn-sm btn-danger">Action</button>
+          <button type="button" class="btn btn-sm btn-warning">Action</button>
+          <button type="button" class="btn btn-sm btn-info">Action</button>
+          <button type="button" class="btn btn-sm btn-success">Action</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Input Grid for small devices!
+          <small>
+            <code>.col-*</code>
+          </small>
+        </div>
+        <div class="card-block">
+          <form action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-4">
+                <input type="text" class="form-control" placeholder=".col-4">
+              </div>
+              <div class="col-8">
+                <input type="text" class="form-control" placeholder=".col-8">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-5">
+                <input type="text" class="form-control" placeholder=".col-5">
+              </div>
+              <div class="col-7">
+                <input type="text" class="form-control" placeholder=".col-7">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder=".col-6">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder=".col-6">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-7">
+                <input type="text" class="form-control" placeholder=".col-5">
+              </div>
+              <div class="col-5">
+                <input type="text" class="form-control" placeholder=".col-5">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-8">
+                <input type="text" class="form-control" placeholder=".col-8">
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" placeholder=".col-4">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary">Action</button>
+          <button type="button" class="btn btn-sm btn-danger">Action</button>
+          <button type="button" class="btn btn-sm btn-warning">Action</button>
+          <button type="button" class="btn btn-sm btn-info">Action</button>
+          <button type="button" class="btn btn-sm btn-success">Action</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          Example Form
+        </div>
+        <div class="card-block">
+          <form action="" method="post">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Username</span>
+                <input type="text" id="username3" name="username3" class="form-control">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Email</span>
+                <input type="email" id="email3" name="email3" class="form-control">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Password</span>
+                <input type="password" id="password3" name="password3" class="form-control">
+                <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+              </div>
+            </div>
+            <div class="form-group form-actions">
+              <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          Example Form
+        </div>
+        <div class="card-block">
+          <form action="" method="post">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" id="username2" name="username2" class="form-control" placeholder="Username">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="email" id="email2" name="email2" class="form-control" placeholder="Email">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="password" id="password2" name="password2" class="form-control" placeholder="Password">
+                <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+              </div>
+            </div>
+            <div class="form-group form-actions">
+              <button type="submit" class="btn btn-sm btn-default">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          Example Form
+        </div>
+        <div class="card-block">
+          <form action="" method="post">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group form-actions">
+              <button type="submit" class="btn btn-sm btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <!--/.row-->
+  
 </div>
