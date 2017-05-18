@@ -2,7 +2,7 @@
 
 $enable-sidebar-nav-rounded: false;
 
-$border-color: $gray-lighter;
+$border-color: #cfdbe2;
 $layout-transition-speed: .25s;
 
 
@@ -35,9 +35,10 @@ $vine: #00bf8f;
 $foursquare: #1073af;
 $vimeo: #aad450;
 
-$color-custom: #23b7e5;
+$color-custom: #f05050;
 
-// Navbar
+
+// Navbar #23b7e5
 
 $navbar-height:                     55px;
 $navbar-bg:                         $color-custom;
@@ -77,7 +78,13 @@ $sidebar-color:                     $brand-primary;
 $sidebar-bg:                        #fff;
 $sidebar-header-bg:                 rgba(0,0,0,.2);
 $sidebar-footer-bg:                 rgba(0,0,0,.2);
-$sidebar-borders:                   none;
+$sidebar-borders:                   (
+  bottom: (
+    size:                       1px,
+    style:                      solid,
+    color:                      $border-color
+  )
+);
 $mobile-sidebar-width:              220px;
 
 // Sidebar Navigation
@@ -98,17 +105,17 @@ $sidebar-nav-link-hover-bg:         transparent;
 $sidebar-nav-link-hover-icon-color: $color-custom !important;
 
 $sidebar-nav-link-hover-borders:    0;
-$sidebar-nav-link-active-color:     $gray-dark;
+$sidebar-nav-link-active-color:      $color-custom;
 $sidebar-nav-link-active-bg:        lighten($sidebar-bg, 15%);
-$sidebar-nav-link-active-icon-color: $brand-primary;
+$sidebar-nav-link-active-icon-color:  $color-custom;
 
 $sidebar-nav-link-active-borders:   0;
 
-$sidebar-nav-dropdown-color:        $color-custom;
+$sidebar-nav-dropdown-color:        $gray-dark;
 $sidebar-nav-dropdown-bg:           rgba(255,255,255,1);
 $sidebar-nav-dropdown-borders:      0;
-$sidebar-nav-dropdown-icon-color:   $color-custom;
-$sidebar-nav-dropdown-hover-color:  $gray-dark;
+$sidebar-nav-dropdown-icon-color:   $gray-dark;
+$sidebar-nav-dropdown-hover-color:  $color-custom;
 $sidebar-nav-dropdown-padding-left: 15px;
 
 // Top Navigation
@@ -165,7 +172,7 @@ $aside-menu-nav-padding-x:          1rem;
 // Footer
 
 $footer-height: 50px;
-$footer-bg:     $gray-lightest;
+$footer-bg:     #fafbfc;
 $footer-color:  $body-color;
 $footer-borders: (
   top: (
