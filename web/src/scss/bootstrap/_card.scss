@@ -9,6 +9,10 @@
   background-color: $card-bg;
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
+  .row{
+    padding-bottom: $card-row-bottom;
+    padding-top: $card-row-top;
+  }
 }
 
 .card-block {
@@ -16,6 +20,8 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+  padding-bottom: $card-row-bottom;
+  padding-top: $card-row-top;
 }
 
 .card-title {

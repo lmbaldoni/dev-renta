@@ -138,7 +138,7 @@ $enable-print-styles:       true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: 0.8rem !default;//original 1rem
 $spacers: (
   0: 0,
   1: ($spacer * .25),
@@ -674,8 +674,8 @@ $state-danger-border-color:      darken($state-danger-bg, 5%) !default;
 
 // Cards
 
-$card-spacer-y:            .75rem !default;
-$card-spacer-x:            1.25rem !default;
+$card-spacer-y:            .45rem !default;//original .75rem
+$card-spacer-x:            1rem !default;//original 1.25rem
 $card-border-width:        1px !default;
 $card-border-radius:       $border-radius !default;
 $card-border-color:        rgba($black,.125) !default;
@@ -685,7 +685,7 @@ $card-bg:                  $white !default;
 
 $card-link-hover-color:    $white !default;
 
-$card-img-overlay-padding: 1.25rem !default;
+$card-img-overlay-padding: 1.25rem !default;//original 1.25rem
 
 $card-deck-margin:          ($grid-gutter-width-base / 2) !default;
 
