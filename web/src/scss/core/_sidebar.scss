@@ -172,13 +172,16 @@
           background: $sidebar-nav-dropdown-bg;
           @include borders($sidebar-nav-dropdown-borders);
           @if $enable-sidebar-nav-rounded {
-            border-radius: $border-radius;
+          border-radius: $border-radius;
+           
           }
           > ul, > ol {
             // display: inline;
             max-height: 1000px;
           }
-
+          .nav-item {
+            padding-left: $sidebar-nav-dropdown-padding-left;
+          }
           .nav-link {
             color: $sidebar-nav-dropdown-color;
             border-left: 0 !important;
