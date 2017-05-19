@@ -29,19 +29,19 @@
                 <div class="form-group row">
                   <label class="col-sm-4 form-control-label" for="input-small">Código Alfanumerico</label>
                   <div class="col-sm-6">
-                    <input [(model)]="model.id_alfa" type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico">
+                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="model.id_alfa">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-4 form-control-label" for="input-small">Código Numerico</label>
                   <div class="col-sm-6">
-                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Numerico">
+                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Numerico" [(ngModel)]="model.id_code">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-4 form-control-label" for="textarea-input">Descripción</label>
                   <div class="col-sm-6">
-                    <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción"></textarea>
+                    <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="model.description"></textarea>
                   </div>
                 </div>
                 
@@ -53,7 +53,7 @@
                     <div class="form-group row">
                       <label class="col-sm-4 form-control-label" for="input-small">Name</label>
                       <div class="col-sm-6">
-                        <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Name">
+                        <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Name" [(ngModel)]="model.name">
                       </div>
                     </div>
                      <div class="form-group row">
