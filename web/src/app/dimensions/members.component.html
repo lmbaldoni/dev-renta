@@ -59,7 +59,7 @@
              <div class="col-md-6">
                   <div class="card-block">
                     <div class="form-group row">
-                      <label class="col-sm-4 form-control-label" for="input-small">Name</label>
+                      <label class="col-sm-4 form-control-label" for="input-small">Nombre</label>
                       <div class="col-sm-6">
                         <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Name" [(ngModel)]="model.name">
                       </div>
@@ -93,9 +93,10 @@
          </div> 
           
           <div class="row">
+             <div class="col-md-12">
               <div class="card-block">
                       <div class="form-group pull-right">
-                        <button type="button" class="btn btn-danger btn-sm icon-plus"></button>
+                        <button type="button" class="btn btn-danger btn-sm icon-plus" (click)="setButtonClicked(true)"></button>
                         <button type="button" class="btn btn-danger btn-sm icon-pencil"></button>
                         <button type="button" class="btn btn-danger btn-sm icon-magnifier-add"></button>
                         <button type="button" class="btn btn-danger btn-sm icon-trash"></button>
@@ -165,6 +166,7 @@
                     </ul>
                   </nav>
                 </div>
+             </div>
           </div>
       </div>
     </div> <!--/.col-->
@@ -181,22 +183,26 @@
             <a href="#" class="btn-close"><i class="icon-close"></i></a>
           </div>-->
         </div>
-       
+          <div class="row">
+              <div class="col-md-6">
+                <div class="card-block">
+                  <div class="form-group row">
+                    <label class="col-sm-4 form-control-label" for="select"><strong>Dimensión</strong></label>
+                    <div class="col-sm-6">
+                      <select id="select" name="select" class="form-control form-control-sm">
+                        <option value="0">Please select</option>
+                        <option value="1">Option #1</option>
+                        <option value="2">Option #2</option>
+                        <option value="3">Option #3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
          <div class="row">
         <div class="col-md-6">
           <div class="card-block">
-              
-                <div class="form-group row">
-                  <label class="col-sm-4 form-control-label" for="select">Dimensión</label>
-                  <div class="col-sm-6">
-                    <select id="select" name="select" class="form-control form-control-sm">
-                      <option value="0">Please select</option>
-                      <option value="1">Option #1</option>
-                      <option value="2">Option #2</option>
-                      <option value="3">Option #3</option>
-                    </select>
-                  </div>
-                </div>
                 <div class="form-group row">
                   <label class="col-sm-4 form-control-label" for="input-small">Código Alfanumerico</label>
                   <div class="col-sm-6">
@@ -283,7 +289,7 @@
          </div>
             <div class="form-actions">
               <button type="submit" class="btn btn-danger btn-sm icon-magnifier"></button>
-              <button class="btn btn-danger btn-sm icon-refresh" type="button"></button>
+              <button class="btn btn-danger btn-sm icon-refresh" (click)="setButtonClicked(false)" type="button"></button>
             </div>
       </div>
     </div> <!--/.col-->
