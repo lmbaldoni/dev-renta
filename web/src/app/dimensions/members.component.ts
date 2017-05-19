@@ -10,5 +10,24 @@ export class MembersComponent {
 
   constructor() { }
 
+  CreateMemderbuttonWasClicked: boolean = false;
+  SearchMemderbuttonWasClicked: boolean = true;
+
+  setButtonClicked(clicked: boolean) {
+      this.resetmodel();
+      this.CreateMemderbuttonWasClicked = clicked;
+      this.SearchMemderbuttonWasClicked = !clicked;
+  }
+  
+  RefreshMember(){
+      this.resetmodel();
+  }
+
+  private resetmodel() {
+
+    this.model = new Member(null,false,null, '', '', '',false,false,'lucas','lucas');
+
+  } 
+
 }
 
