@@ -190,10 +190,7 @@
                     <label class="col-sm-4 form-control-label" for="select"><strong>Dimensión</strong></label>
                     <div class="col-sm-6">
                       <select id="select" name="select" class="form-control form-control-sm">
-                        <option value="0">Please select</option>
-                        <option value="1">Option #1</option>
-                        <option value="2">Option #2</option>
-                        <option value="3">Option #3</option>
+                        <option template="ngFor let dimension of dimensions" [selected]="dimension.dimension_name == 'Financial Element'">{{dimension.dimension_name}}</option>
                       </select>
                     </div>
                   </div>

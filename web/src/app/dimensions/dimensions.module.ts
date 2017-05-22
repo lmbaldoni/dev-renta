@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { DimensionsRoutingModule } from './dimensions-routing.module';
 import { MembersComponent } from './members.component';
 import { MembersService } from './members.service';
+import { DimensionsService } from './dimensions.service';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { MembersService } from './members.service';
     HttpModule,
   ],
   declarations: [ MembersComponent ],
-  providers: [ MembersService ],
+  providers: [ MembersService, DimensionsService ],
 })
 export class DimensionsModule { }
