@@ -18,11 +18,17 @@ export class MembersComponent implements OnInit  {
   }
 
   public dimensions = [];
+  public members = [];
 
   ngOnInit() {
-    //this.refreshDimensions();
+    //servicio que recupera las dimensiones
       this.dimensionsService.getDimensions().subscribe(
                     dimensions => this.dimensions = dimensions,
+                    error => console.error(`Error: ${error}`)
+                  );
+    //servicio que recupera las dimensiones
+      this.membersService.getMembers().subscribe(
+                    members => this.members = members,
                     error => console.error(`Error: ${error}`)
                   );
   }

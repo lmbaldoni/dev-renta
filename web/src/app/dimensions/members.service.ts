@@ -14,7 +14,7 @@ export class MembersService {
 
 	getMembers() {
 		return this.http.get(BASE_URL)
-			.map(response => response.json())
+			.map(response => response.json().result)
 			.catch(error => this.handleError(error));
 	}
 
