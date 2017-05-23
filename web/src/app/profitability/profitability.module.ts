@@ -9,12 +9,16 @@ import { RulesComponent } from './rules.component';
 import { RulesService } from './rules.service';
 //import { DimensionsService } from './dimensions.service';
 
+// Tabs Component
+import { TabsModule } from 'ngx-bootstrap/tabs';
+
 @NgModule({
   imports: [
     CommonModule,
     ProfitabilityRoutingModule,
     FormsModule,
     HttpModule,
+    TabsModule,
   ],
   declarations: [ RulesComponent ],
   providers: [ RulesService, //DimensionsService 
