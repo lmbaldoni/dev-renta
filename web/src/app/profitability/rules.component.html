@@ -1,0 +1,198 @@
+<div class="animated fadeIn">
+  <!--pantall buscar miembro-->
+  <div class="row" >
+    <div class="col-lg-12">
+      <div class="card card-accent-secondary">
+        <div class="card-header">
+          <i class="fa icon-magnifier"></i>Buscar Miembros
+          <!--<div class="card-actions">
+            <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+            <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+            <a href="#" class="btn-close"><i class="icon-close"></i></a>
+          </div>-->
+        </div>
+       <div class="row">
+           <div class="col-md-6">
+             <div class="card-block">
+              <div class="form-group row">
+                <label class="col-sm-4 form-control-label" for="select"><strong>Dimensión</strong></label>
+                <div class="col-sm-6">
+                  <select id="select" name="select" class="form-control form-control-sm">
+                    <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                  </select>
+                </div>
+              </div>
+             </div>
+           </div>
+           
+       </div>
+         <div class="row">
+        <div class="col-md-6">
+          <div class="card-block">
+              
+                
+                <div class="form-group row">
+                  <label class="col-sm-4 form-control-label" for="input-small">Código Alfanumerico</label>
+                  <div class="col-sm-6">
+                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="model.id_alfa">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-4 form-control-label" for="input-small">Código Numerico</label>
+                  <div class="col-sm-6">
+                    <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Numerico" [(ngModel)]="model.id_code">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-4 form-control-label" for="textarea-input">Descripción</label>
+                  <div class="col-sm-6">
+                    <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="model.description"></textarea>
+                  </div>
+                </div>
+                
+             
+             </div>
+        </div>
+             <div class="col-md-6">
+                  <div class="card-block">
+                    <div class="form-group row">
+                      <label class="col-sm-4 form-control-label" for="input-small">Nombre</label>
+                      <div class="col-sm-6">
+                        <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Name" [(ngModel)]="model.name">
+                      </div>
+                    </div>
+                     <div class="form-group row">
+                      <label class="col-sm-4 form-control-label" for="input-small">Habilitado</label>
+                      <div class="col-sm-6">
+                        <label class="switch switch-default switch-pill switch-danger">
+                          <input type="checkbox" class="switch-input" checked>
+                          <span class="switch-label"></span>
+                          <span class="switch-handle"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-4 form-control-label" for="input-small">Es hoja</label>
+                      <div class="col-sm-6">
+                        <label class="switch switch-default switch-pill switch-danger">
+                          <input type="checkbox" class="switch-input" checked>
+                          <span class="switch-label"></span>
+                          <span class="switch-handle"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-danger btn-sm icon-magnifier"></button>
+                      <button class="btn btn-danger btn-sm icon-refresh" type="button"></button>
+                    </div>
+                  </div>
+             </div>
+         </div> 
+          
+          <div class="row">
+             <div class="col-md-12">
+              <div class="card-block">
+                      <div class="form-group pull-right">
+                        <button type="button" class="btn btn-danger btn-sm icon-plus" (click)="setButtonClicked(true)"></button>
+                        <button type="button" class="btn btn-danger btn-sm icon-pencil"></button>
+                        <button type="button" class="btn btn-danger btn-sm icon-magnifier-add"></button>
+                        <button type="button" class="btn btn-danger btn-sm icon-trash"></button>
+                    </div>
+                  <table class="table table-bordered table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th>Codigo Alfanumerico</th>
+                        <th>Codigo Numerico</th>
+                        <th>Nombre</th>
+                        <th>EsHoja</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vishnu Serghei</td>
+                        <td>2012/01/01</td>
+                        <td>Member</td>
+                        <td>
+                          Member
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Zbyněk Phoibos</td>
+                        <td>2012/02/01</td>
+                        <td>Staff</td>
+                        <td>
+                         Member
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Einar Randall</td>
+                        <td>2012/02/01</td>
+                        <td>Admin</td>
+                        <td>
+                          Member
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Félix Troels</td>
+                        <td>2012/03/01</td>
+                        <td>Member</td>
+                        <td>
+                          Member
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aulus Agmundr</td>
+                        <td>2012/01/21</td>
+                        <td>Staff</td>
+                        <td>
+                          Member
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table  id="tableMembers" 
+                        class="table table-striped table-bordered sizetable" 
+                        cellspacing="0" 
+                        width="100%"  
+                        
+                        >
+                    <tr>
+                        <th data-field="selected" ><div class="ckeckBoxAncho"></div></th>
+                        <th data-field="alphaCode" class="columna">Alphanumeric Code</th>
+                        <th data-field="numericCode" class="columna">Numeric Code</th>
+                        <th data-field="name" class="columna">Name</th>
+                        <th data-field="isLeaf" class="columna">Is Leaf</th>
+                    </tr>
+                    
+                          <tr template="ngFor let member of members" >
+                            <td > <input #{{member.id_code}} type="checkbox" [(ngModel)]="member.checked"  (change)="checkbox(member)"/></td>
+
+                            <td>{{member.id_alfa}}</td>
+                            <td>{{member.id_code}}</td>
+                            <td>{{member.name}}</td>
+                            <td>{{member.if_lead}}</td>
+                            <!--<td>{{member.checked}}</td>-->
+                                
+                            
+                          </tr>
+                      
+                  </table>
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+             </div>
+          </div>
+      </div>
+    </div> <!--/.col-->
+  </div><!--/.row-->
+</div>

@@ -114,6 +114,31 @@
           </ul>
         </li>
         <li class="nav-item nav-dropdown" appNavDropdown>
+          <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-list"></i> Modulos Financieros</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item nav-dropdown" routerLinkActive="active" appNavDropdown>
+              <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-film"></i> Rentabilidad</a>
+              <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/profitability/rules']"><i class="icon-doc"></i> Regla Dinamica</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-paper-clip"></i> Regla Estatica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-vector"></i> Regla Constante</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-directions"></i> Regla Hijo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/icons/simple-line-icons']"><i class="icon-directions"></i> Historia Ejecución</a>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item nav-dropdown" appNavDropdown>
           <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-puzzle"></i> Components</a>
           <ul class="nav-dropdown-items">
             <li class="nav-item">
