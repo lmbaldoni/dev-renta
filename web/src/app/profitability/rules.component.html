@@ -4,6 +4,191 @@
     <div class="col-lg-12">
       <!-- Nav tabs -->
       <tabset>
+        <!--Inicio de regla-->
+          <tab>
+          <!--Inicio Source-->
+          <ng-template tabHeading><i class="fa fa-file fa-lg"></i></ng-template>
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-block">
+                            
+                              
+                              <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
+                                <div class="col-sm-6">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="model.id_alfa">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="textarea-input">Descripción</label>
+                                <div class="col-sm-6">
+                                  <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="model.description"></textarea>
+                                </div>
+                              </div>
+                              
+                          
+                          </div>
+                      </div>
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                   <div class="form-group row">
+                                    <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
+                                    <div class="col-sm-6">
+                                      <select id="select" name="select" class="form-control form-control-sm">
+                                        <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                        <div class='col-lg-12 '>
+                          <hr>
+                        </div>
+                      <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-block">
+                            
+                              
+                               <div class="form-group row">
+                                  <label class="col-sm-4 form-control-label" for="select">Nombre Tabla</label>
+                                  <div class="col-sm-6">
+                                    <select id="select" name="select" class="form-control form-control-sm">
+                                      <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                    </select>
+                                  </div>
+                                </div>
+                               <div class="form-group row">
+                                  <label class="col-sm-4 form-control-label" for="select">Nombre Columna</label>
+                                  <div class="col-sm-6">
+                                    <select id="select" name="select" class="form-control form-control-sm">
+                                      <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              
+                          
+                          </div>
+                      </div>
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                    <div class="form-group row">
+                                      <label class="col-md-3 form-control-label">Columna/Expresión</label>
+                                      <div class="col-md-9">
+                                        <label class="radio-inline" for="inline-radio1">
+                                          <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> Columna
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Expresión
+                                        </label>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                      <div class='col-lg-12 '>
+                          <hr>
+                        </div>
+                      <div class="row">
+                             <div class="card-block">
+                                  <table class="table table-bordered table-striped table-sm">
+                                    <thead>
+                                      <tr>
+                                        <th>Codigo Alfanumerico</th>
+                                        <th>Codigo Numerico</th>
+                                        <th>Nombre</th>
+                                        <th>EsHoja</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Vishnu Serghei</td>
+                                        <td>2012/01/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                          Member
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Zbyněk Phoibos</td>
+                                        <td>2012/02/01</td>
+                                        <td>Staff</td>
+                                        <td>
+                                        Member
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Einar Randall</td>
+                                        <td>2012/02/01</td>
+                                        <td>Admin</td>
+                                        <td>
+                                          Member
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Félix Troels</td>
+                                        <td>2012/03/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                          Member
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Aulus Agmundr</td>
+                                        <td>2012/01/21</td>
+                                        <td>Staff</td>
+                                        <td>
+                                          Member
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                      </div>
+                      <div class='col-lg-12 '>
+                          <hr>
+                        </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                    <div class="form-group row">
+                                      <label class="col-md-3 form-control-label">Tipo de Filtro</label>
+                                      <div class="col-md-9">
+                                        <label class="radio-inline" for="inline-radio1">
+                                          <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> Sin filtro
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de dato
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de atributo
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Grupo de filtro
+                                        </label>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                      <div class='col-lg-12 '>
+                          <hr>
+                      </div>
+                       <div class="row">
+                          <div class="col-md-12">
+                                <div class="card-block">
+                                  <div class="form-actions">
+                                    <button type="submit" class="btn btn-danger btn-sm icon-magnifier"> Guardar</button>
+                                    <button class="btn btn-danger btn-sm icon-refresh" type="button"> Cancelar</button>
+                                    <button class="btn btn-danger btn-sm icon-refresh" type="button"> Siguiente</button>
+                                  </div>
+                                </div>
+                          </div>
+                       </div>
+         </tab>
+       <!--Fin inicio de regla-->
         <tab>
           <!--Inicio Source-->
           <ng-template tabHeading><i class="fa fa-sign-out fa-lg"></i></ng-template>
@@ -175,29 +360,188 @@
                       <div class='col-lg-12 '>
                           <hr>
                       </div>
-                          <div class="form-actions centered">
-                            <button type="submit" class="btn btn-danger btn-sm icon-magnifier"> Guardar</button>
-                            <button class="btn btn-danger btn-sm icon-refresh" type="button"> Cancelar</button>
-                            <button class="btn btn-danger btn-sm icon-refresh" type="button"> Siguiente</button>
+                       <div class="row">
+                          <div class="col-md-12">
+                                <div class="card-block">
+                                  <div class="form-actions">
+                                    <button type="submit" class="btn btn-danger btn-sm icon-magnifier"> Guardar</button>
+                                    <button class="btn btn-danger btn-sm icon-refresh" type="button"> Cancelar</button>
+                                    <button class="btn btn-danger btn-sm icon-refresh" type="button"> Siguiente</button>
+                                  </div>
+                                </div>
                           </div>
+                       </div>
         </tab>
         <!--Fin Source-->
         <!--Inicio Operacion-->
         <tab>
           <ng-template tabHeading><i class="fa fa-cogs fa-lg"></i></ng-template>
-          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
+                                <div class="col-sm-6">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="model.id_alfa">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="textarea-input">Descripción</label>
+                                <div class="col-sm-6">
+                                  <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="model.description"></textarea>
+                                </div>
+                              </div>
+                              
+                          
+                          </div>
+                      </div>
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                   <div class="form-group row">
+                                    <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
+                                    <div class="col-sm-6">
+                                      <select id="select" name="select" class="form-control form-control-sm">
+                                        <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                        <div class='col-lg-12 '>
+                          <hr>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                    <div class="form-group row">
+                                      <label class="col-md-3 form-control-label">Tipo de Filtro</label>
+                                      <div class="col-md-9">
+                                        <label class="radio-inline" for="inline-radio1">
+                                          <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> Sin filtro
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de dato
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de atributo
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Grupo de filtro
+                                        </label>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                      <div class='col-lg-12 '>
+                          <hr>
+                        </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                    <div class="form-group row">
+                                      <label class="col-md-3 form-control-label">Tipo de Filtro</label>
+                                      <div class="col-md-9">
+                                        <label class="radio-inline" for="inline-radio1">
+                                          <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> Sin filtro
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de dato
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de atributo
+                                        </label>
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Grupo de filtro
+                                        </label>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                          </div>
+                      </div>
         </tab>
         <!--Fin Operacion-->
         <!--Inicio Driver-->
         <tab>
           <ng-template tabHeading><i class="fa fa-filter fa-lg"></i></ng-template>
-          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
+                                <div class="col-sm-6">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="model.id_alfa">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="textarea-input">Descripción</label>
+                                <div class="col-sm-6">
+                                  <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="model.description"></textarea>
+                                </div>
+                              </div>
+                              
+                          
+                          </div>
+                      </div>
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                   <div class="form-group row">
+                                    <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
+                                    <div class="col-sm-6">
+                                      <select id="select" name="select" class="form-control form-control-sm">
+                                        <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                        <div class='col-lg-12 '>
+                          <hr>
+                        </div>
         </tab>
         <!--Fin Driver-->
         <!--Inicio OutPut-->
         <tab>
           <ng-template tabHeading><i class="fa fa-file-code-o fa-lg"></i></ng-template>
-          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
+                                <div class="col-sm-6">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="model.id_alfa">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-sm-4 form-control-label" for="textarea-input">Descripción</label>
+                                <div class="col-sm-6">
+                                  <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="model.description"></textarea>
+                                </div>
+                              </div>
+                              
+                          
+                          </div>
+                      </div>
+                          <div class="col-md-6">
+                                <div class="card-block">
+                                   <div class="form-group row">
+                                    <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
+                                    <div class="col-sm-6">
+                                      <select id="select" name="select" class="form-control form-control-sm">
+                                        <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                        <div class='col-lg-12 '>
+                          <hr>
+                        </div>
         </tab>
         <!--Fin OutPut-->
       </tabset>
