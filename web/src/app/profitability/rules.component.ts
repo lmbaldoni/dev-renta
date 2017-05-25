@@ -1,5 +1,8 @@
 import { Component , OnInit } from '@angular/core';
+
+//Modelos de datos
 import { Rule } from './rules.model';
+import { ObjectB , ObjectTL } from '../model/object.model';
 
 //importar libreria de servicios
 import { Http } from '@angular/http';
@@ -13,7 +16,11 @@ export class RulesComponent implements OnInit  {
 
   public dimensions = [];
   public members = [];
-  public model = new Rule(null,false,null, '', '', '',false,false,'lucas','lucas');
+  public folders = [];
+  
+  public modelRule = new Rule(null,null,null,'','','',null,null,'',null,null,'',null,'');
+  public modelObecjtB = new ObjectB(null,'',null,null,'',null,'','','','','');
+  public modelObecjtTL = new ObjectTL(null,'','','','');
 
   constructor() { 
      
