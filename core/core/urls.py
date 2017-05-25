@@ -3,11 +3,13 @@ from django.contrib import admin
 admin.autodiscover()
 
 from members.viewsets import MemberViewSet,AttributeViewSet,DimensionViewSet
+from common.viewsets import FolderViewSet
 from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'members', MemberViewSet)
 router.register(r'attributes', AttributeViewSet)
 router.register(r'dimensions', DimensionViewSet)
+router.register(r'folders', FolderViewSet)
 
 
 urlpatterns = [#'',

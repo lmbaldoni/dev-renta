@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'members',
-    'batchs'
+    'batchs',
+    'common'
 ]
 
 MIDDLEWARE = [
