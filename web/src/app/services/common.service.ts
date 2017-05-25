@@ -6,18 +6,18 @@ import 'rxjs/Rx';
 const BASE_URL = 'http://localhost:8000/';
 
 @Injectable()
-export class RulesService {
+export class CommonService {
 
 	constructor(private http: Http) { }
 
 	getFolders() {
-		return this.http.get(BASE_URL+'/folders/')
+		return this.http.get('http://localhost:8000/folders/')
 			.map(response => response.json().result)
 			.catch(error => this.handleError(error));
 	}
 
 	getDimensions() {
-		return this.http.get(BASE_URL+'/dimensions/')
+		return this.http.get(BASE_URL+'dimensions/')
 			.map(response => response.json().result)
 			.catch(error => this.handleError(error));
 	}

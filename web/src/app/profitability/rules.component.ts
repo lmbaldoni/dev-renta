@@ -7,7 +7,7 @@ import { ObjectB , ObjectTL , Folder } from '../model/common.model';
 //importar libreria de servicios
 import { Http } from '@angular/http';
 import { RulesService } from './rules.service';
-//import { DimensionsService } from './app/dimensions/dimensions.service';
+import { CommonService } from '../services/common.service';
 
 @Component({
   templateUrl: 'rules.component.html'  
@@ -23,13 +23,18 @@ export class RulesComponent implements OnInit  {
   public modelObecjtTL = new ObjectTL(null,'','','','');
   public modelFolder = new Folder('','','','');
 
-  constructor() { 
+  constructor(private http: Http,private commonService: CommonService) { 
      
   }
 
   
   ngOnInit() {
-   
+  //servicio que recupera las carpetas
+      this.commonService.getFolders().subscribe(
+                    folders => this.folders = folders,
+                    error => console.error(`Error: ${error}`)
+                  ); 
+  
   }
 
 

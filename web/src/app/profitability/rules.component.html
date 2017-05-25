@@ -30,7 +30,7 @@
                                     <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
                                     <div class="col-sm-6">
                                       <select id="select" name="select" class="form-control form-control-sm">
-                                        <option template="ngFor let folder of folders">{{folder.folder_name}}</option>
+                                        <option template="ngFor let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
                                       </select>
                                     </div>
                                   </div>
@@ -134,7 +134,7 @@
                                     <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
                                     <div class="col-sm-6">
                                       <select id="select" name="select" class="form-control form-control-sm"  [(ngModel)]="modelObecjtB.FOLDER_NAME">
-                                        <option template="ngFor let folder of folders" [ngValue]="folder.folder_name"></option>
+                                        <option template="ngFor let folder of folders" [ngValue]="folder.V_SEGMENT_NAME"></option>
                                       </select>
                                     </div>
                                   </div>

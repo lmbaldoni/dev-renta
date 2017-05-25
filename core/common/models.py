@@ -10,5 +10,5 @@ class Folder(models.Model):
     V_SEGMENT_DESC = models.CharField(max_length=100, blank=True, default='')
     
     class Meta:
-        managed = True
+        managed = False
         db_table = 'SEG_FOLDER'

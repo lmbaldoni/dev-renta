@@ -25,13 +25,13 @@ export class RulesService {
 	}
 
 	removeRule(rule: Rule) {
-		return this.http.delete(BASE_URL + rule.id_code)
+		return this.http.delete(BASE_URL + rule.RULE_SYS_ID)
 			.map(response => response.json())
 			.catch(error => this.handleError(error));
 	}
 
 	updateRule(rule: Rule) {
-		return this.http.put(BASE_URL + rule.id_code, rule)
+		return this.http.put(BASE_URL + rule.RULE_SYS_ID, rule)
 			.map(response => response.json())
 			.catch(error => this.handleError(error));
 	}
