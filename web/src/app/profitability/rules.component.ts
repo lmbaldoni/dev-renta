@@ -2,7 +2,7 @@ import { Component , OnInit } from '@angular/core';
 
 //Modelos de datos
 import { Rule } from './rules.model';
-import { ObjectB , ObjectTL } from '../model/object.model';
+import { ObjectB , ObjectTL , Folder } from '../model/common.model';
 
 //importar libreria de servicios
 import { Http } from '@angular/http';
@@ -21,6 +21,7 @@ export class RulesComponent implements OnInit  {
   public modelRule = new Rule(null,null,null,'','','',null,null,'',null,null,'',null,'');
   public modelObecjtB = new ObjectB(null,'',null,null,'',null,'','','','','');
   public modelObecjtTL = new ObjectTL(null,'','','','');
+  public modelFolder = new Folder('','','','');
 
   constructor() { 
      

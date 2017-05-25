@@ -114,9 +114,7 @@
                   <div class="row">
                       <div class="col-md-6">
                         <div class="card-block">
-                            
-                              
-                              <div class="form-group row">
+                            <div class="form-group row">
                                 <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
                                 <div class="col-sm-6">
                                   <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="modelObecjtTL.SHORT_DESC">
@@ -128,17 +126,15 @@
                                   <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control form-control-sm" placeholder="Descripción" [(ngModel)]="modelObecjtTL.LONG_DESC"></textarea>
                                 </div>
                               </div>
-                              
-                          
-                          </div>
+                            </div>
                       </div>
                           <div class="col-md-6">
                                 <div class="card-block">
                                    <div class="form-group row">
                                     <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
                                     <div class="col-sm-6">
-                                      <select id="select" name="select" class="form-control form-control-sm">
-                                        <option template="ngFor let folder of folders">{{folder.folder_name}}</option>
+                                      <select id="select" name="select" class="form-control form-control-sm"  [(ngModel)]="modelObecjtB.FOLDER_NAME">
+                                        <option template="ngFor let folder of folders" [ngValue]="folder.folder_name"></option>
                                       </select>
                                     </div>
                                   </div>

@@ -23,3 +23,12 @@ export class ObjectTL {
     public SOURCE_LANG: string  
     ){}
 }
+
+export class Folder {
+	constructor( //'','','',''
+	public V_DSNID: string,
+	public V_SEGMENT_CODE: string,
+	public V_SEGMENT_NAME: string,
+	public V_SEGMENT_DESC: string 
+    ){}
+}
