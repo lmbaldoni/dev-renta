@@ -13,7 +13,7 @@
                               <div class="form-group row">
                                 <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
                                 <div class="col-sm-6">
-                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="modelObecjtTL.SHORT_DESC">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Nombre Regla" [(ngModel)]="modelObecjtTL.SHORT_DESC">
                                 </div>
                               </div>
                               <div class="form-group row">
@@ -29,10 +29,9 @@
                                    <div class="form-group row">
                                     <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
                                     <div class="col-sm-6">
-                                      <select id="select" name="select" class="form-control form-control-sm">
-                                        <!--<option template="ngFor let folder of folders">{{folder.V_SEGMENT_NAME}}</option>-->
+                                      <select id="select" name="select" class="form-control form-control-sm" [(ngModel)]="modelObecjtB.FOLDER_NAME">
                                           <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
-                                      </select>
+                                       </select>
                                     </div>
                                   </div>
                                   <div class="form-group row">
@@ -127,7 +126,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
                                 <div class="col-sm-6">
-                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="modelObecjtTL.SHORT_DESC">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Nombre Regla" [(ngModel)]="modelObecjtTL.SHORT_DESC">
                                 </div>
                               </div>
                               <div class="form-group row">
@@ -164,7 +163,8 @@
                                   <label class="col-sm-4 form-control-label" for="select">Nombre Tabla</label>
                                   <div class="col-sm-6">
                                     <select id="select" name="select" class="form-control form-control-sm">
-                                      <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                       <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
+                                      <!--<option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>-->
                                     </select>
                                   </div>
                                 </div>
@@ -172,7 +172,8 @@
                                   <label class="col-sm-4 form-control-label" for="select">Nombre Columna</label>
                                   <div class="col-sm-6">
                                     <select id="select" name="select" class="form-control form-control-sm">
-                                      <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                                       <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
+                                      <!--<option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>-->
                                     </select>
                                   </div>
                                 </div>
@@ -308,7 +309,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
                                 <div class="col-sm-6">
-                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="modelObecjtTL.SHORT_DESC">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Nombre Regla" [(ngModel)]="modelObecjtTL.SHORT_DESC">
                                 </div>
                               </div>
                               <div class="form-group row">
@@ -400,7 +401,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
                                 <div class="col-sm-6">
-                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="modelObecjtTL.SHORT_DESC">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Nombre Regla" [(ngModel)]="modelObecjtTL.SHORT_DESC">
                                 </div>
                               </div>
                               <div class="form-group row">
@@ -441,7 +442,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 form-control-label" for="input-small"><strong>Nombre Regla</strong></label>
                                 <div class="col-sm-6">
-                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Código Alfanumerico" [(ngModel)]="modelObecjtTL.SHORT_DESC">
+                                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder="Nombre Regla" [(ngModel)]="modelObecjtTL.SHORT_DESC">
                                 </div>
                               </div>
                               <div class="form-group row">
