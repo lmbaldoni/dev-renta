@@ -5,7 +5,7 @@ import 'rxjs/Rx';
 
 import { Rule } from './rules.model';
 
-const BASE_URL = 'http://localhost:8000/reglas/';
+const BASE_URL = 'http://localhost:8000/';
 
 @Injectable()
 export class RulesService {

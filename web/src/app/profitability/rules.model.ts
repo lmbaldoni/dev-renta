@@ -16,4 +16,3 @@ export class Rule {
     public OUTPUT_OPTION_CD: string
     ){}
 }
-

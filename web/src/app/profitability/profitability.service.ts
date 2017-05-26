@@ -5,15 +5,21 @@ import 'rxjs/Rx';
 
 //import { Dimension } from './dimension.model';
 
-const BASE_URL = 'http://localhost:8000/dimensions/';
+const BASE_URL = 'http://localhost:8000/';
 
 @Injectable()
-export class DimensionsService {
+export class ProfitabilityService {
 
 	constructor(private http: Http) { }
 
 	getDimensions() {
-		return this.http.get(BASE_URL)
+		return this.http.get(BASE_URL+'dimensions/')
+			.map(response => response.json().results)
+			.catch(error => this.handleError(error));
+	}
+
+	getFolders() {
+		return this.http.get(BASE_URL+'folders/')
 			.map(response => response.json().results)
 			.catch(error => this.handleError(error));
 	}

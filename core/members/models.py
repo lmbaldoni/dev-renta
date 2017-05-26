@@ -15,7 +15,7 @@ class Member(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'DIM_ORG_UNIT_B'
+        db_table = 'DIM_PRODUCT_B'
 
 class Attribute(models.Model):
     id = models.AutoField(primary_key=True)
@@ -26,7 +26,7 @@ class Attribute(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'DIM_ORG_UNIT_ATTR'
+        db_table = 'DIM_PRODUCT_ATTR'
 
 class Dimension(models.Model):
     dimension_name = models.CharField(max_length=100)

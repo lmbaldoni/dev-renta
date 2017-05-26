@@ -18,7 +18,8 @@
                 <label class="col-sm-4 form-control-label" for="select"><strong>Dimensión</strong></label>
                 <div class="col-sm-6">
                   <select id="select" name="select" class="form-control form-control-sm">
-                    <option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>
+                    <!--<option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>-->
+                     <option *ngFor="let dimension of dimensions">{{dimension.dimension_name}}</option>
                   </select>
                 </div>
               </div>

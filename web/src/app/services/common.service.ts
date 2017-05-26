@@ -3,7 +3,10 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
-const BASE_URL = 'http://localhost:8000/';
+const BASE_URL_FOLDER = 'http://localhost:8000/folders/';
+const BASE_URL = 'http://localhost:8000/dimensions/';
+
+import { Folder } from './common.model';
 
 @Injectable()
 export class CommonService {
@@ -11,13 +14,13 @@ export class CommonService {
 	constructor(private http: Http) { }
 
 	getFolders() {
-		return this.http.get('http://localhost:8000/folders/')
+		return this.http.get(BASE_URL_FOLDER)
 			.map(response => response.json().result)
 			.catch(error => this.handleError(error));
 	}
 
 	getDimensions() {
-		return this.http.get(BASE_URL+'dimensions/')
+		return this.http.get(BASE_URL)
 			.map(response => response.json().result)
 			.catch(error => this.handleError(error));
 	}
