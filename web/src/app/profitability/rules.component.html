@@ -206,52 +206,16 @@
                                   <table class="table table-bordered table-striped table-sm">
                                     <thead>
                                       <tr>
-                                        <th>Codigo Alfanumerico</th>
-                                        <th>Codigo Numerico</th>
-                                        <th>Nombre</th>
-                                        <th>EsHoja</th>
+                                        <th>Dimensión</th>
+                                        <th>Valor</th>
+                                        <th>Descripción</th>
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <td>Vishnu Serghei</td>
-                                        <td>2012/01/01</td>
-                                        <td>Member</td>
-                                        <td>
-                                          Member
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>Zbyněk Phoibos</td>
-                                        <td>2012/02/01</td>
-                                        <td>Staff</td>
-                                        <td>
-                                        Member
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>Einar Randall</td>
-                                        <td>2012/02/01</td>
-                                        <td>Admin</td>
-                                        <td>
-                                          Member
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>Félix Troels</td>
-                                        <td>2012/03/01</td>
-                                        <td>Member</td>
-                                        <td>
-                                          Member
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>Aulus Agmundr</td>
-                                        <td>2012/01/21</td>
-                                        <td>Staff</td>
-                                        <td>
-                                          Member
-                                        </td>
+                                      <tr template="ngFor let dimension of dimensions" >
+                                        <td>{{dimension.dimension_name}}</td>
+                                        <td>all</td>
+                                        <td>descripcion</td>
                                       </tr>
                                     </tbody>
                                   </table>
