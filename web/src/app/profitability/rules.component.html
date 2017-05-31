@@ -61,7 +61,7 @@
                                       <div class="col-md-6">
                                         <div class="radio">
                                           <label for="radio1">
-                                            <input type="radio"checked="checked" id="radio1" name="radios" value="option1"> Regla Operador Dinamico
+                                            <input type="radio" checked="checked" id="radio1" name="radios" value="option1"> Regla Operador Dinamico
                                           </label>
                                         </div>
                                       </div>
@@ -137,7 +137,7 @@
                             </div>
                       </div>
                           <div class="col-md-6">
-                                <div class="card-block">
+                                <div class="card-block" >
                                    <div class="form-group row">
                                     <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
                                     <div class="col-sm-6">
@@ -165,12 +165,21 @@
                                     </select>
                                   </div>
                                 </div>
-                               <div class="form-group row">
+                               <div class="form-group row" *ngIf="ColumnExpresionSelect">
                                   <label class="col-sm-4 form-control-label" for="select">Nombre Columna</label>
                                   <div class="col-sm-6">
-                                    <select id="select" name="select" class="form-control form-control-sm">
+                                    <select id="select" name="select" class="form-control form-control-sm" [(ngModel)]="modelObecjtB.COLUMN_NAME">
                                        <option *ngFor="let column of columns">{{column.display_name}}</option>
                                       <!--<option template="ngFor let dimension of dimensions">{{dimension.dimension_name}}</option>-->
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group row" *ngIf="!ColumnExpresionSelect">
+                                  <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
+                                  <div class="col-sm-6">
+                                    <select id="select" name="select" class="form-control form-control-sm" [(ngModel)]="modelObecjtB.FOLDER_NAME">
+                                      <!--<option template="ngFor let folder of folders">{{folder.V_SEGMENT_NAME}}</option>-->
+                                        <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
                                     </select>
                                   </div>
                                 </div>
@@ -184,14 +193,22 @@
                                       <label class="col-md-3 form-control-label">Columna/Expresión</label>
                                       <div class="col-md-9">
                                         <label class="radio-inline" for="inline-radio1">
-                                          <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> Columna
+                                          <input type="radio" id="inline-radio1" name="inline-radios" value="column" checked="checked" (click)="setColumnExpresion(true)"> Columna
                                         </label>
                                         <label class="radio-inline" for="inline-radio2">
-                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Expresión
+                                          <input type="radio" id="inline-radio2" name="inline-radios" value="expresion" (click)="setColumnExpresion(false)"> Expresión
                                         </label>
                                       </div>
                                     </div>
-                                  
+                                    <div class="form-group row" *ngIf="!ColumnExpresionSelect">
+                                      <label class="col-sm-4 form-control-label" for="select">Expresion</label>
+                                      <div class="col-sm-6">
+                                        <select id="select" name="select" class="form-control form-control-sm" [(ngModel)]="modelObecjtB.FOLDER_NAME">
+                                          <!--<option template="ngFor let folder of folders">{{folder.V_SEGMENT_NAME}}</option>-->
+                                            <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
+                                        </select>
+                                      </div>
+                                    </div>
                                 </div>
                           </div>
                       </div>

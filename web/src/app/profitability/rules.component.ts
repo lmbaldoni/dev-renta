@@ -27,6 +27,8 @@ export class RulesComponent implements OnInit  {
   public modelFolder = new Folder('','','','');
   public modelTable = new Table('','');
 
+  ColumnExpresionSelect: boolean = true;
+  
   constructor(private http: Http,private rulesService: RulesService,private profitabilityService: ProfitabilityService) { 
     
   }
@@ -56,7 +58,10 @@ export class RulesComponent implements OnInit  {
                     columns => this.columns = columns,
                     error => console.error(`Error: ${error}`)
                   );
-  
+  }
+
+  setColumnExpresion( clicked: boolean ){
+    this.ColumnExpresionSelect = clicked;
   }
 
 
