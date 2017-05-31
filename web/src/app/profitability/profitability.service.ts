@@ -30,6 +30,12 @@ export class ProfitabilityService {
 			.catch(error => this.handleError(error));
 	}
 
+	getColumn() {
+		return this.http.get(BASE_URL+'columns/')
+			.map(response => response.json().results)
+			.catch(error => this.handleError(error));
+	}
+
 	private handleError(error: any) {
 		console.error(error);
 		return Observable.throw("Server error (" + error.status + "): " + error.text())

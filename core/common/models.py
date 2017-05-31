@@ -20,3 +20,12 @@ class Table(models.Model):
     class Meta:
         managed = False
         db_table = 'TABLES'
+
+class Column(models.Model):
+    display_name = models.CharField(max_length=100)
+    column_name = models.CharField(max_length=30,primary_key=True)
+    table_name = models.CharField(max_length=30,primary_key=True)
+   
+    class Meta:
+        managed = False
+        db_table = 'COLUMNS'

@@ -19,6 +19,7 @@ export class RulesComponent implements OnInit  {
   public members = [];
   public folders = [];
   public tables = [];
+  public columns = [];
   
   public modelRule = new Rule(null,null,null,'','','',null,null,'',null,null,'',null,'');
   public modelObecjtB = new ObjectB(null,'',null,null,'',null,'','','','','');
@@ -49,8 +50,12 @@ export class RulesComponent implements OnInit  {
                     dimensions => this.dimensions = dimensions,
                     error => console.error(`Error: ${error}`)
                   );
-
-   
+    
+  //servicio que recupera las dimensiones
+       this.profitabilityService.getColumn().subscribe(
+                    columns => this.columns = columns,
+                    error => console.error(`Error: ${error}`)
+                  );
   
   }
 

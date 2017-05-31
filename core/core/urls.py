@@ -3,7 +3,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 from members.viewsets import MemberViewSet,AttributeViewSet,DimensionViewSet
-from common.viewsets import FolderViewSet,TableViewSet
+from common.viewsets import FolderViewSet,TableViewSet,ColumnViewSet
 from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'members', MemberViewSet)
@@ -11,6 +11,7 @@ router.register(r'attributes', AttributeViewSet)
 router.register(r'dimensions', DimensionViewSet)
 router.register(r'folders', FolderViewSet)
 router.register(r'tables', TableViewSet)
+router.register(r'columns', ColumnViewSet)
 
 
 urlpatterns = [#'',
