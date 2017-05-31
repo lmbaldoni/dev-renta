@@ -2,12 +2,13 @@ import { Component , OnInit } from '@angular/core';
 
 //Modelos de datos
 import { Rule  } from './rules.model';
-import { Folder , ObjectB , ObjectTL  } from '../services/common.model';
+import { Folder , ObjectB , ObjectTL , Table } from '../services/common.model';
 
 //importar libreria de servicios
 import { Http } from '@angular/http';
 import { RulesService } from './rules.service';
 import { ProfitabilityService } from './profitability.service';
+
 
 @Component({
   templateUrl: 'rules.component.html'  
@@ -17,11 +18,13 @@ export class RulesComponent implements OnInit  {
   public dimensions = [];
   public members = [];
   public folders = [];
+  public tables = [];
   
   public modelRule = new Rule(null,null,null,'','','',null,null,'',null,null,'',null,'');
   public modelObecjtB = new ObjectB(null,'',null,null,'',null,'','','','','');
   public modelObecjtTL = new ObjectTL(null,'','','','');
   public modelFolder = new Folder('','','','');
+  public modelTable = new Table('','');
 
   constructor(private http: Http,private rulesService: RulesService,private profitabilityService: ProfitabilityService) { 
     
@@ -35,11 +38,19 @@ export class RulesComponent implements OnInit  {
                     error => console.error(`Error: ${error}`)
                   );
   
-  //servicio que recupera las carpetas
+  //servicio que recupera las tablas de PFT
+       this.profitabilityService.getTables().subscribe(
+                    tables => this.tables = tables,
+                    error => console.error(`Error: ${error}`)
+                  );
+  
+  //servicio que recupera las dimensiones
        this.profitabilityService.getDimensions().subscribe(
                     dimensions => this.dimensions = dimensions,
                     error => console.error(`Error: ${error}`)
                   );
+
+   
   
   }
 

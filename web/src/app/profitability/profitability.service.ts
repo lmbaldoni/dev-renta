@@ -24,6 +24,12 @@ export class ProfitabilityService {
 			.catch(error => this.handleError(error));
 	}
 
+	getTables() {
+		return this.http.get(BASE_URL+'tables/')
+			.map(response => response.json().results)
+			.catch(error => this.handleError(error));
+	}
+
 	private handleError(error: any) {
 		console.error(error);
 		return Observable.throw("Server error (" + error.status + "): " + error.text())

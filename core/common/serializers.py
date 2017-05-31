@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Folder
+from .models import Folder , Table
 
 class FolderSerializer(serializers.ModelSerializer):
     class Meta:
@@ -10,3 +10,9 @@ class FolderSerializer(serializers.ModelSerializer):
                     'V_SEGMENT_NAME',
                     'V_SEGMENT_DESC',
                     )
+
+class TableSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Table
+        fields = (  'table_name',
+                    'display_name',)

@@ -8,6 +8,7 @@ import { ProfitabilityRoutingModule } from './profitability-routing.module';
 import { RulesComponent } from './rules.component';
 import { RulesService } from './rules.service';
 import { ProfitabilityService } from './profitability.service';
+//import { CommonService } from '../services/common.service';
 
 // Tabs Component
 import { TabsModule } from 'ngx-bootstrap/tabs';

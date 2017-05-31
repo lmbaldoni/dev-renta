@@ -12,3 +12,11 @@ class Folder(models.Model):
     class Meta:
         managed = False
         db_table = 'SEG_FOLDER'
+
+class Table(models.Model):
+    table_name = models.CharField(max_length=30,blank=False)
+    display_name = models.CharField(max_length=100,blank=False)
+   
+    class Meta:
+        managed = False
+        db_table = 'TABLES'

@@ -32,3 +32,10 @@ export class Folder {
 	public V_SEGMENT_DESC: string 
     ){}
 }
+
+export class Table {
+	constructor( //'',''
+	public table_name: string,
+	public display_name: string
+    ){}
+}
