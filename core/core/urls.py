@@ -4,6 +4,8 @@ admin.autodiscover()
 
 from members.viewsets import MemberViewSet,AttributeViewSet,DimensionViewSet
 from common.viewsets import FolderViewSet,TableViewSet,ColumnViewSet
+from profitability.viewsets import FsiMAllocDetailsViewSet,FsiMAllocLeafSelectionViewSet,FsiMAllocationRuleViewSet 
+
 from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'members', MemberViewSet)
@@ -12,6 +14,9 @@ router.register(r'dimensions', DimensionViewSet)
 router.register(r'folders', FolderViewSet)
 router.register(r'tables', TableViewSet)
 router.register(r'columns', ColumnViewSet)
+router.register(r'ruleDetails', FsiMAllocDetailsViewSet)
+router.register(r'ruleLeaf', FsiMAllocLeafSelectionViewSet)
+router.register(r'ruleHeader', FsiMAllocationRuleViewSet)
 
 
 urlpatterns = [#'',

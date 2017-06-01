@@ -193,10 +193,10 @@
                                       <label class="col-md-3 form-control-label">Columna/Expresión</label>
                                       <div class="col-md-9">
                                         <label class="radio-inline" for="inline-radio1">
-                                          <input type="radio" id="inline-radio1" name="inline-radios" value="column" checked="checked" (click)="setColumnExpresion(true)"> Columna
+                                          <input type="radio" id="inline-radio1" name="inline-radios1" value="column" checked="checked" (click)="setColumnExpresion(true)"> Columna
                                         </label>
-                                        <label class="radio-inline" for="inline-radio2">
-                                          <input type="radio" id="inline-radio2" name="inline-radios" value="expresion" (click)="setColumnExpresion(false)"> Expresión
+                                        <label class="radio-inline" for="inline-radio1">
+                                          <input type="radio" id="inline-radio1" name="inline-radios1" value="expresion" (click)="setColumnExpresion(false)"> Expresión
                                         </label>
                                       </div>
                                     </div>
@@ -239,27 +239,57 @@
                           <hr>
                         </div>
                       <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-9">
                                 <div class="card-block">
                                     <div class="form-group row">
                                       <label class="col-md-3 form-control-label">Tipo de Filtro</label>
                                       <div class="col-md-9">
-                                        <label class="radio-inline" for="inline-radio1">
-                                          <input type="radio" id="inline-radio1" name="inline-radios" value="option1" checked="checked" (click)="setFiltro(true)"> Sin filtro
+                                        <label class="radio-inline" for="inline-radio2">
+                                          <input type="radio" id="inline-radio2" name="filtro" value="SinFiltro" checked="checked" (click)="setFiltro(filtro.value)"> Sin filtro
                                         </label>
                                         <label class="radio-inline" for="inline-radio2">
-                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de dato
+                                          <input type="radio" id="inline-radio2" name="filtro" value="FiltroDatos" (click)="setFiltro(filtro.value)"> Filtro de Datos
                                         </label>
                                         <label class="radio-inline" for="inline-radio2">
-                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Filtro de atributo
+                                          <input type="radio" id="inline-radio2" name="filtro" value="FiltroAtributo" (click)="setFiltro(filtro.value)"> Filtro de Atributo
                                         </label>
                                         <label class="radio-inline" for="inline-radio2">
-                                          <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Grupo de filtro
+                                          <input type="radio" id="inline-radio2" name="filtro" value="GrupoFiltros" (click)="setFiltro(filtro.value)"> Grupo de Filtros
                                         </label>
                                       </div>
                                     </div>
                                   
                                 </div>
+                          </div>
+                          <div class="col-md-12">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                            <div class="card-block" >
+                                              <div class="form-group row" *ngIf="selectFiltro">
+                                                <label class="col-sm-4 form-control-label" for="select">Carpeta</label>
+                                                <div class="col-sm-6">
+                                                  <select id="select" name="select" class="form-control form-control-sm" [(ngModel)]="modelObecjtB.FOLDER_NAME">
+                                                    <!--<option template="ngFor let folder of folders">{{folder.V_SEGMENT_NAME}}</option>-->
+                                                      <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                              <div class="card-block" >
+                                                <div class="form-group row" *ngIf="selectFiltro">
+                                                  <label class="col-sm-4 form-control-label" for="select">{{tipo_filtro}}</label>
+                                                  <div class="col-sm-6">
+                                                    <select id="select" name="select" class="form-control form-control-sm" [(ngModel)]="modelObecjtB.FOLDER_NAME">
+                                                      <!--<option template="ngFor let folder of folders">{{folder.V_SEGMENT_NAME}}</option>-->
+                                                        <option *ngFor="let folder of folders">{{folder.V_SEGMENT_NAME}}</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                 </div>
                           </div>
                       </div>
                       <div class='col-lg-12 '>

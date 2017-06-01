@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'members',
     'batchs',
-    'common'
+    'common',
+    'profitability'
 ]
 
 MIDDLEWARE = [
