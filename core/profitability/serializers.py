@@ -1,7 +1,25 @@
 from rest_framework import serializers
 from .models import FsiMAllocDetails , FsiMAllocLeafSelection , FsiMAllocationRule
 
+class FsiMAllocLeafSelectionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FsiMAllocLeafSelection
+        fields = (  'leaf_selection_sys_id',
+                    'leaf_selection_flag',
+                    'leaf_num_id',
+                    'leaf_node',
+                    'hierarchy_sys_id',
+                    'hierarchy_level',
+                    'tree_filter_sys_id',
+                    'alloc_dim_subtype_cd',
+                    'dimension_currency_value',
+                    'leaf_code',
+                    'hier_type',
+                    'hier_code',)
+
 class FsiMAllocDetailsSerializer(serializers.ModelSerializer):
+    dimensions = FsiMAllocLeafSelectionSerializer(many=True)
+    
     class Meta:
         model = FsiMAllocDetails
         fields = (  'alloc_element_sys_id',
@@ -20,23 +38,15 @@ class FsiMAllocDetailsSerializer(serializers.ModelSerializer):
                     'balance_type_cd',
                     'allocation_type_cd',
                     'percent_driver_type',
-                    'scenario_cd',)
+                    'scenario_cd',
+                    'dimensions',)
 
-class FsiMAllocLeafSelectionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = FsiMAllocLeafSelection
-        fields = (  'leaf_selection_sys_id',
-                    'leaf_selection_flag',
-                    'leaf_num_id',
-                    'leaf_node',
-                    'hierarchy_sys_id',
-                    'hierarchy_level',
-                    'tree_filter_sys_id',
-                    'alloc_dim_subtype_cd',
-                    'dimension_currency_value',
-                    'leaf_code',
-                    'hier_type',
-                    'hier_code',)
+    # def create(self, validated_data):
+    #     dimenions_data = validated_data.pop('dimensions')
+    #     ruleFsiMAllocDetails = FsiMAllocDetails.objects.create(**validated_data)
+    #     for dimenions_data in dimenions_data:
+    #         FsiMAllocLeafSelection.objects.create(ruleFsiMAllocDetails=ruleFsiMAllocDetails, **FsiMAllocLeafSelection)
+    #     return ruleFsiMAllocDetails
 
 class FsiMAllocationRuleSerializer(serializers.ModelSerializer):
     class Meta:
