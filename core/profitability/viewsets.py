@@ -1,6 +1,7 @@
-from .models import FsiMAllocDetails,FsiMAllocLeafSelection,FsiMAllocationRule
+from .models import FsiMAllocDetails,FsiMAllocLeafSelection,FsiMAllocationRule,Album,Track
 from .serializers import FsiMAllocDetailsSerializer , FsiMAllocLeafSelectionSerializer ,  FsiMAllocationRuleSerializer
 from rest_framework import viewsets
+from .serializers import AlbumSerializer,TrackSerializer
 
 class FsiMAllocDetailsViewSet(viewsets.ModelViewSet):
  
@@ -16,3 +17,13 @@ class FsiMAllocationRuleViewSet(viewsets.ModelViewSet):
      
     serializer_class = FsiMAllocationRuleSerializer
     queryset = FsiMAllocationRule.objects.all()
+
+class TrackViewSet(viewsets.ModelViewSet):
+    
+    serializer_class = TrackSerializer
+    queryset = Track.objects.all()
+
+class AlbumSerializerViewSet(viewsets.ModelViewSet):
+    
+    serializer_class = AlbumSerializer
+    queryset = Album.objects.all()
