@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .models import FsiMAllocDetails , FsiMAllocLeafSelection , FsiMAllocationRule
 from .serializers import FsiMAllocDetailsSerializer , FsiMAllocLeafSelectionSerializer ,  FsiMAllocationRuleSerializer
-from .serializers import AlbumSerializer
+ from .serializers import AlbumSerializer
 
 class FsiMAllocDetailsViewSet(viewsets.ModelViewSet):
     queryset = FsiMAllocDetails.objects.all()
