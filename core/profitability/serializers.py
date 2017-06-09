@@ -18,7 +18,7 @@ class FsiMAllocLeafSelectionSerializer(serializers.ModelSerializer):
                     'hier_code',)
 
 class FsiMAllocDetailsSerializer(serializers.ModelSerializer):
-    leafs = FsiMAllocLeafSelectionSerializer(many=True)
+    #leafs = FsiMAllocLeafSelectionSerializer(many=True)
     
     class Meta:
         model = FsiMAllocDetails
@@ -27,7 +27,7 @@ class FsiMAllocDetailsSerializer(serializers.ModelSerializer):
                     'lookup_table_sys_id',
                     'table_sys_id',
                     'source_constant',
-                    # 'leaf_selection_sys_id',
+                    'leaf_selection_sys_id',
                     'table_name',
                     'column_type',
                     'column_name',
@@ -39,7 +39,7 @@ class FsiMAllocDetailsSerializer(serializers.ModelSerializer):
                     'allocation_type_cd',
                     'percent_driver_type',
                     'scenario_cd',
-                    'leafs')
+                    )
      
     #  def create(self, validated_data):
     #         leafs_data = validated_data.pop('leafs')
@@ -49,6 +49,8 @@ class FsiMAllocDetailsSerializer(serializers.ModelSerializer):
     #     return fsiMAllocDetails
 
 class FsiMAllocationRuleSerializer(serializers.ModelSerializer):
+    sources = FsiMAllocDetailsSerializer(many=True)
+    
     class Meta:
         model = FsiMAllocationRule
         fields = (  'allocation_sys_id',
@@ -64,7 +66,8 @@ class FsiMAllocationRuleSerializer(serializers.ModelSerializer):
                     'assignment_sys_id',
                     'no_offset_flag',
                     'offset_sys_id',
-                    'output_option_cd')
+                    'output_option_cd',
+                    'sources')
 
 class TrackSerializer(serializers.ModelSerializer):
     class Meta:
